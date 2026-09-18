@@ -110,8 +110,9 @@ The asymmetry here is the part worth noticing. Cinema 3D continued while consume
 
 ### PC gaming and the driver era
 
-- [Nvidia 3D Vision](https://en.wikipedia.org/wiki/Nvidia_3D_Vision) - Active-shutter kit and driver that rendered existing games in stereo. Discontinued in 2019.
+- [Nvidia 3D Vision](https://en.wikipedia.org/wiki/Nvidia_3D_Vision) - Active-shutter kit and driver that rendered existing games in stereo. Its 3DTV Play half sent that stereo to a 3D television over [HDMI 1.4](https://en.wikipedia.org/wiki/HDMI) as frame packing — the same frame packing the set auto-detects — so a GeForce card drove the TV straight from the PC using the set's own glasses. Discontinued in 2019.
 - [iZ3D](https://en.wikipedia.org/wiki/IZ3D) - The vendor-neutral alternative: a dual-LCD monitor with passive glasses and a driver that worked on AMD and Nvidia alike, at a time when stereo was being locked to one GPU vendor. The company folded around 2012 and the driver became abandonware, which is exactly how this era's software tends to end.
+- [TriDef 3D](https://roadtovr.com/ddd-release-beta-tridef-3d-drivers-with-experiemental-oculus-rift-support/) - The third driver of the era, from **DDD Group** ("Dynamic Digital Depth", the "DDD" mark). TriDef Ignition injected stereo into DirectX games the same way iZ3D did, powered AMD's HD3D, shipped in Acer, Lenovo and Samsung notebooks, and kept going into the VR wave with experimental Oculus Rift support.
 - [Multiple buffering](https://en.wikipedia.org/wiki/Multiple_buffering) - Quad buffering, the API-level mechanism stereo rendering depends on.
 
 ### Games and handhelds
@@ -119,6 +120,8 @@ The asymmetry here is the part worth noticing. Cinema 3D continued while consume
 - [Virtual Boy](https://en.wikipedia.org/wiki/Virtual_Boy) - Nintendo's 1995 worn stereo display: a commercial failure, and a genuine mirror-scanned stereoscope.
 - [Stereoscopic video game](https://en.wikipedia.org/wiki/Stereoscopic_video_game) - How games have rendered two eyes, from the 1980s onward.
 - [LG Optimus 3D](https://en.wikipedia.org/wiki/LG_Optimus_3D) **3D game library** - The 2011 glasses-free phone shipped with Gameloft titles rendered natively in 3D (N.O.V.A., Asphalt 6, Let's Golf 2) and a **3D Game Converter** that lifted a whitelist of 2D Android games into stereo in real time by reading each game's depth buffer for the second view. The converter is the mobile counterpart to the [PC driver era](#pc-gaming-and-the-driver-era) — Nvidia 3D Vision and iZ3D's trick, moved into a phone — and it ended the same way: abandonware when the platform died.
+- [HTC Evo 3D](https://en.wikipedia.org/wiki/HTC_Evo_3D) - The other 2011 glasses-free phone, with no converter: it leaned on a preloaded Gameloft storefront instead, shipping a *Spider-Man: Total Mayhem* 3D demo out of the box with *Assassin's Creed: Altair's Chronicles* and *GT Racing* on sale at launch.
+- [Sharp AQUOS PHONE](https://en.wikipedia.org/wiki/Sharp_Aquos_Phone) - The Japanese wave's answer to the converter: the SH80F claimed to be the first Android phone to convert 2D to 3D in real time, and shipped EA's *Need for Speed Shift* playable in 3D.
 
 ### Perception and curiosities
 
