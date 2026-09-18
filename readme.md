@@ -118,6 +118,7 @@ The asymmetry here is the part worth noticing. Cinema 3D continued while consume
 
 - [Virtual Boy](https://en.wikipedia.org/wiki/Virtual_Boy) - Nintendo's 1995 worn stereo display: a commercial failure, and a genuine mirror-scanned stereoscope.
 - [Stereoscopic video game](https://en.wikipedia.org/wiki/Stereoscopic_video_game) - How games have rendered two eyes, from the 1980s onward.
+- [LG Optimus 3D](https://en.wikipedia.org/wiki/LG_Optimus_3D) **3D game library** - The 2011 glasses-free phone shipped with Gameloft titles rendered natively in 3D (N.O.V.A., Asphalt 6, Let's Golf 2) and a **3D Game Converter** that lifted a whitelist of 2D Android games into stereo in real time by reading each game's depth buffer for the second view. The converter is the mobile counterpart to the [PC driver era](#pc-gaming-and-the-driver-era) — Nvidia 3D Vision and iZ3D's trick, moved into a phone — and it ended the same way: abandonware when the platform died.
 
 ### Perception and curiosities
 
@@ -319,7 +320,7 @@ This is the join between the two halves of this list, and the thing most explana
 The 2011 wave is why stereo files exist in ordinary people's archives: these devices both *shot* stereo pairs and *displayed* them, with no glasses and no extra hardware. Most of the MPO and JPS files in circulation came from here.
 
 - [Nintendo 3DS](https://en.wikipedia.org/wiki/Nintendo_3DS) - Parallax-barrier handheld that shot and displayed MPO stereo photographs; the [New Nintendo 3DS](https://en.wikipedia.org/wiki/New_Nintendo_3DS) added head tracking to hold the sweet spot.
-- [LG Optimus 3D](https://en.wikipedia.org/wiki/LG_Optimus_3D) - Glasses-free phone with a dual-camera stereo pair, 2011, and one of the few that recorded 3D video as well as stills.
+- [LG Optimus 3D](https://en.wikipedia.org/wiki/LG_Optimus_3D) - Glasses-free phone with a dual-camera stereo pair, 2011, and one of the few that recorded 3D video as well as stills. Its software also converted 2D games into 3D — see [Games and handhelds](#games-and-handhelds).
 - [HTC Evo 3D](https://en.wikipedia.org/wiki/HTC_Evo_3D) - Its direct contemporary: same parallax barrier, same twin cameras, same brief window.
 - [LG Optimus Pad](https://en.wikipedia.org/wiki/LG_Optimus_Pad) - The tablet of the same generation, shooting stereo video while showing it in 2D.
 - [Red Hydrogen One](https://en.wikipedia.org/wiki/Red_Hydrogen_One) - The 2018 attempt at reviving glasses-free 3D on a phone, with a four-view light-field display.
