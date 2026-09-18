@@ -7,7 +7,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 ## Contents
 
 - [History](#history)
-  - [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Cinema](#cinema-and-hollywood) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
+  - [Prehistory](#prehistory-knowing-about-two-eyes) · [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Cinema](#cinema-and-hollywood) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
 - [How stereo is stored](#how-stereo-is-stored)
 - [Depth, and making the second view](#depth-and-making-the-second-view)
 - [Standards and specifications](#standards-and-specifications)
@@ -26,6 +26,16 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 ## History
 
 Two centuries in five movements. The formats in the next section only make sense in this order.
+
+### Prehistory: knowing about two eyes
+
+The stereoscope is Victorian. Understanding that two eyes see different images, and that this is what depth is made of, is far older and not European in origin.
+
+- [Mozi](https://en.wikipedia.org/wiki/Mozi) - The earliest known description of the [camera obscura](https://en.wikipedia.org/wiki/Camera_obscura) is in the Mohist writings, China, around the 4th century BC: the beginning of understanding how an image forms at all.
+- [Euclid's Optics](https://en.wikipedia.org/wiki/Euclid%27s_Optics) - Around 300 BC, notes that the two eyes see different amounts of a sphere. The geometry of binocular disparity, written down two millennia before anyone built a viewer for it.
+- [Ibn al-Haytham](https://en.wikipedia.org/wiki/Ibn_al-Haytham) - His [Book of Optics](https://en.wikipedia.org/wiki/Book_of_Optics), completed around 1021 in Cairo, studies [binocular vision](https://en.wikipedia.org/wiki/Binocular_vision) and the fusion of two images experimentally, and is the foundation the European work later built on.
+- [Leonardo da Vinci](https://en.wikipedia.org/wiki/Leonardo_da_Vinci) - Identified the problem that defines this entire list: a painting cannot reproduce depth as the eyes see it, because each eye receives a different view and a flat surface can only give one.
+- [Giambattista della Porta](https://en.wikipedia.org/wiki/Giambattista_della_Porta) - Wrote on binocular vision in the sixteenth century, in the same generation that drawings later argued to be stereo pairs were made, such as those attributed to [Jacopo da Empoli](https://en.wikipedia.org/wiki/Jacopo_da_Empoli). The attribution is disputed, which is itself worth knowing before repeating it.
 
 ### Origins, 1838 onwards
 
@@ -342,7 +352,7 @@ Stated openly, because a curated list that hides its blind spots is worse than o
 
 - **The history here is Anglo-centric.** Soviet stereo cinema in particular ran its own programme from the 1940s, including glasses-free raster-screen projection in Moscow, and it is close to undocumented in English sources. If you can source it properly, that is the single most valuable addition available.
 - **Japanese stereo photography and 3D television culture** are thin here, despite Japan being where much of the hardware and several of the formats came from.
-- **Latin American, Indian and Chinese** coverage is essentially absent.
+- **Latin American, Indian and Chinese** coverage is essentially absent for the modern era. The prehistory section above reaches China through the Mohist camera obscura, but the two thousand years in between are missing entirely.
 - **Pre-1900 material** leans on a handful of famous names; the publishing industry around stereo cards was vast and is represented by two entries.
 - Several entries describe things that are defunct or unreliable. That is deliberate, but it means some links will rot; reports are welcome.
 
