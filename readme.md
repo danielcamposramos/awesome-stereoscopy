@@ -526,16 +526,34 @@ Consumer 3D was withdrawn, not abandoned by the people who had it. The gap betwe
 
 ## Adjacent fields
 
-Different problem, same word. "Stereo" in computer vision means recovering depth from two views, rather than presenting two views to two eyes:
+Same word, and in one case the same root, for a different problem.
 
-- [Stereopsis and binocular disparity](https://en.wikipedia.org/wiki/Stereopsis) - The perceptual basis both fields share.
+### Depth from two views
+
+"Stereo" in computer vision means recovering depth from two views, rather than presenting two views to two eyes. The perceptual basis is the one described under [who can see it, and who cannot](#who-can-see-it-and-who-cannot).
+
 - [SimpleStereo](https://github.com/decadenza/SimpleStereo) - Calibration and depth estimation, for when the goal is a depth map rather than a stereo pair.
+
+### Two ears, two eyes
+
+Stereo sound is not a pun on this list's subject. It is the same idea in another sense organ, from the same Greek word: *stereoscopy* is στερεός (stereós, "firm, solid") with σκοπέω, "to look"; *stereophonic* is that same στερεός with φωνή, "sound". Both were named for making something solid out of two flat signals, and both work the same way — two receptors, and a brain reading the difference between them.
+
+- [Stereophonic sound](https://en.wikipedia.org/wiki/Stereophonic_sound) - Invented by Alan Blumlein at EMI in 1931 to fix a problem in a cinema. In the early talkies the actor could be on one side of the screen while his voice came from a single speaker somewhere else, and Blumlein told his wife he had found a way to "make the sound follow the actor across the screen". His patent, applied for that December and accepted in 1933 as UK 394,325, covered stereo records, stereo films and surround sound. Stereo pictures and stereo sound both began as cinema problems.
+- [Alan Blumlein](https://en.wikipedia.org/wiki/Alan_Blumlein) - The engineer behind that patent and 127 others, who died in 1942 testing airborne radar, and whose two-microphone technique is still standard practice.
+- [Binaural recording](https://en.wikipedia.org/wiki/Binaural_recording) - Two microphones in the ears of a dummy head: a two-camera rig built for ears. Because the head is really there, the head shadow and the timing and level differences between the ears are recorded rather than simulated, which is exactly the argument for shooting a stereo pair instead of synthesising one.
+- [Sound localization](https://en.wikipedia.org/wiki/Sound_localization) - Interaural time and level differences, computed in the brainstem: the ears' counterpart to binocular disparity. The two senses divide the work, since the eyes cover a fraction of the world and fail in darkness, while localisation works in every direction at once.
+- [Head-related transfer function](https://en.wikipedia.org/wiki/Head-related_transfer_function) - How one particular head and pair of ears filter the sound arriving at them. It differs from person to person, which is why binaural audio suits some listeners better than others — the audio counterpart of interpupillary distance, and of the fact that some viewers cannot fuse a stereo pair at all.
 
 ## Related lists
 
 - [awesome-vr](https://github.com/danielcamposramos/awesome-vr) - Virtual reality as its own subject: headsets, the open runtimes that keep them working, standards, comfort and accessibility, and the platforms that were switched off. A headset is a stereoscope you wear, and this is where that thread continues.
 - [awesome-ar](https://github.com/danielcamposramos/awesome-ar) - Augmented reality: see-through optics, the SLAM and visual-inertial tracking that decide where the room is, the SDKs and the standards.
 - [awesome-webxr](https://github.com/msub2/awesome-webxr) - The browser side of both, maintained separately.
+- [awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision) - Where the other meaning of "stereo" lives: matching, calibration and depth from two views as a research field.
+- [awesome-3D-gaussian-splatting](https://github.com/MrNeRF/awesome-3D-gaussian-splatting) - The current literature on splatting and view synthesis, which is where the second eye increasingly comes from.
+- [awesome-holography](https://github.com/bchao1/awesome-holography) - Holographic displays, the end of the road this list keeps walking towards.
+- [awesome-OpenSourcePhotography](https://github.com/ibaaj/awesome-OpenSourcePhotography) - Open-source photography tooling generally, for the parts of a stereo workflow that are simply photography.
+- [awesome-ffmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg) - Tooling around the one program most of this list's conversions actually run on.
 
 ## Known gaps
 
