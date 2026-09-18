@@ -231,7 +231,8 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 
 ## Preservation
 
-- [sony-bravia-linux](https://github.com/danielcamposramos/sony-bravia-linux) - Documents why 3D files play flat on hardware that supports them, with measurements, upstream fixes across the encode-to-display chain, and the same research published in eleven languages.
+- [sony-bravia-linux](https://github.com/danielcamposramos/sony-bravia-linux) - The project this list grew out of. It documents why correctly authored 3D files play flat on hardware that supports them: the in-stream frame-packing SEI that displays act on and almost nothing wrote. Measurements on real sets, fixes taken upstream across the whole encode, remux, serve and play chain, tools that repair existing files losslessly, and the same research published in eleven languages so owners can find it in their own.
+- [Consumer Rights Wiki: Sony BRAVIA pre-Android Linux TVs](https://consumerrights.wiki/index.php?title=Sony_BRAVIA_pre-Android_Linux_TVs_(2011-2012)) - A worked example of documenting what happens to a 3D product line after its services are switched off, sourced to the manufacturer's own notices.
 
 ## Adjacent fields
 
