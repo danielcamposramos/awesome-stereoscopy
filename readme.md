@@ -10,6 +10,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
   - [Prehistory](#prehistory-knowing-about-two-eyes) · [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Cinema](#cinema-and-hollywood) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
 - [How stereo is stored](#how-stereo-is-stored)
 - [Depth, and making the second view](#depth-and-making-the-second-view)
+- [Who can see it, and who cannot](#who-can-see-it-and-who-cannot)
 - [Standards and specifications](#standards-and-specifications)
 - [Tools](#tools)
 - [Players and viewers](#players-and-viewers)
@@ -201,6 +202,26 @@ Depth is the common denominator. Measure it and you can synthesise a view, or yo
 - [Johnny Lee](https://en.wikipedia.org/wiki/Johnny_Lee_(computer_scientist)) - His 2007 [Wii Remote](https://en.wikipedia.org/wiki/Wii_Remote) head-tracking demo produced convincing depth on an ordinary flat screen with no glasses, by moving the rendered viewpoint with the viewer's head.
 - [Parallax](https://en.wikipedia.org/wiki/Parallax) - The cue it exploits; motion parallax is a depth signal on its own, which is why the New Nintendo 3DS added head tracking to keep the sweet spot.
 - [Depth perception](https://en.wikipedia.org/wiki/Depth_perception) - The full set of cues the brain actually uses, of which binocular disparity is only one.
+
+## Who can see it, and who cannot
+
+The medium assumes two working eyes that cooperate, and for a significant minority they do not. This is not a footnote to stereoscopy; it is a boundary condition on the whole subject, and it explains part of why every consumer 3D wave met resistance that surprised the people selling it.
+
+- [Stereopsis](https://en.wikipedia.org/wiki/Stereopsis) and [binocular vision](https://en.wikipedia.org/wiki/Binocular_vision) - The faculty being exploited, and how the two images fuse.
+- [Stereoblindness](https://en.wikipedia.org/wiki/Stereoblindness) - The inability to perceive depth from binocular disparity. Estimates vary by definition and test, but a meaningful percentage of people are affected, and many discover it only when a 3D film does nothing for them.
+- [Amblyopia](https://en.wikipedia.org/wiki/Amblyopia) and [strabismus](https://en.wikipedia.org/wiki/Strabismus) - The common causes: one eye suppressed in childhood, or eyes that do not align, so the brain never learns to fuse.
+- [Monocular vision](https://en.wikipedia.org/wiki/Monocular_vision) - Living with one eye. Depth does not vanish, because the other cues remain, but judging distance, catching, pouring and driving all get measurably harder. It is the clearest everyday demonstration of what the second view is actually worth.
+- [Binocular summation](https://en.wikipedia.org/wiki/Binocular_summation) - The other half of the benefit: two eyes also see fainter, finer detail than one.
+
+### Stereo as treatment, not only entertainment
+
+The same apparatus that shows a film can rebuild the faculty itself, which is the most underrated fact in this entire list:
+
+- [Vision therapy](https://en.wikipedia.org/wiki/Vision_therapy) - Including dichoptic training, where each eye is shown a different image so the weaker one must contribute. Modern versions use exactly the hardware in this list: stereoscopic displays, anaglyph glasses, headsets.
+- [Stereopsis recovery](https://en.wikipedia.org/wiki/Stereopsis_recovery) - Evidence that adults can gain stereo vision long after the supposed critical period closed.
+- [Susan R. Barry](https://en.wikipedia.org/wiki/Susan_R._Barry) - The neurobiologist who acquired stereopsis in her late forties and wrote about what it was like to see depth for the first time. Her case, reported by [Oliver Sacks](https://en.wikipedia.org/wiki/Oliver_Sacks) as "Stereo Sue", is the single best argument that this medium is about perception rather than gimmickry.
+
+**The design consequence**, for anyone building with the formats in this list: never let stereo be the only channel carrying meaning. Keep the image readable flat, because some of your audience will always see it that way — and, as the entries above show, some of them may be using your work to change that.
 
 ## Standards and specifications
 
