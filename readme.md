@@ -15,6 +15,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [Tools](#tools)
 - [Players and viewers](#players-and-viewers)
 - [Servers and delivery](#servers-and-delivery)
+- [Displays decide the format](#displays-decide-the-format)
 - [Displays and devices](#displays-and-devices)
 - [Headsets and worn displays](#headsets-and-worn-displays)
 - [Beyond the eyes](#beyond-the-eyes)
@@ -261,6 +262,28 @@ The same apparatus that shows a film can rebuild the faculty itself, which is th
 - [Gerbera](https://gerbera.io) - Lightweight UPnP server with transcoding profiles.
 - [Universal Media Server](https://www.universalmediaserver.com) - DLNA server with an extensive renderer-configuration collection.
 - [ReadyMedia (MiniDLNA)](https://sourceforge.net/projects/minidlna/) - Minimal DLNA server that serves files untouched, which is often exactly what a 3D file needs.
+
+## Displays decide the format
+
+This is the join between the two halves of this list, and the thing most explanations skip: **a display can only show the packing its optics are built for.** Side-by-side versus over-under, full versus half, interleaved versus frame-sequential — none of those were arbitrary decisions. Each one exists because some screen needed the two views arranged that way.
+
+| Display | How it separates the eyes | What it wants |
+|---|---|---|
+| [CRT](https://en.wikipedia.org/wiki/Cathode_ray_tube) with shutter glasses | alternating fields in time, at high [refresh rate](https://en.wikipedia.org/wiki/Refresh_rate) | frame-sequential; the original PC stereo, and why [interlaced video](https://en.wikipedia.org/wiki/Interlaced_video) and 120 Hz mattered so much |
+| [Active shutter](https://en.wikipedia.org/wiki/Active_shutter_3D_system) LCD/[plasma](https://en.wikipedia.org/wiki/Plasma_display)/[OLED](https://en.wikipedia.org/wiki/OLED) | alternating whole frames, glasses synced | full-frame per eye: frame packing, or a half-width/half-height frame the set unsqueezes |
+| [Passive polarised](https://en.wikipedia.org/wiki/Polarized_3D_system) (FPR) panels | [circular polarisation](https://en.wikipedia.org/wiki/Circular_polarization), alternate rows filtered | **row-interleaved at the panel**: each eye gets half the vertical resolution, always |
+| [Parallax barrier](https://en.wikipedia.org/wiki/Parallax_barrier) / [lenticular](https://en.wikipedia.org/wiki/Lenticular_printing) | alternate columns sent to each eye | **column-interleaved**, which is why glasses-free devices are the odd ones out |
+| [DLP](https://en.wikipedia.org/wiki/Digital_light_processing) [rear-projection](https://en.wikipedia.org/wiki/Rear-projection_television) TVs | micromirrors, eyes split in a chequer pattern | **checkerboard**, which is exactly why `frame_packing_arrangement_type` 0 exists in H.264 |
+| Cinema, single projector | [RealD](https://en.wikipedia.org/wiki/RealD_3D) circular polarisation switched per frame | frame-sequential, and a [silver screen](https://en.wikipedia.org/wiki/Silver_screen) — an ordinary white screen depolarises the light and the effect dies |
+| Cinema, [Dolby 3D](https://en.wikipedia.org/wiki/Dolby_3D) | [Infitec](https://en.wikipedia.org/wiki/Infitec) wavelength splitting | full colour on a normal screen, expensive glasses |
+| [IMAX](https://en.wikipedia.org/wiki/IMAX) | historically two projectors, one per eye | two full-resolution streams, the highest-fidelity arrangement there is |
+
+**So the format questions answer themselves:**
+
+- **Side-by-side or over-under?** Side-by-side halves horizontal resolution; over-under halves vertical. On a passive panel that is already throwing away half the rows, over-under costs you less that you had not already lost. On an active-shutter set both are unsqueezed identically, so the choice is mostly about what your broadcaster or ripper picked.
+- **Full or half?** "Frame compatible" (half) exists so a 3D picture fits down a pipe built for 2D: same bitrate, same infrastructure, half the resolution per eye. Full frame packing needs a link that knows about 3D, which is what HDMI 1.4 added and what Blu-ray 3D uses with [MVC](https://en.wikipedia.org/wiki/Multiview_Video_Coding).
+- **Why is my half-width file stretched?** Because half-SBS is [anamorphic](https://en.wikipedia.org/wiki/Anamorphic_format): the display is expected to know it must stretch each half back to full width. If nothing tells it — the exact failure this list keeps returning to — you get two squashed pictures side by side instead of one 3D image.
+- **Why does interleaved content look wrong on the wrong screen?** Row-interleaved assumes the panel filters alternate rows. Send it to an active-shutter set and it is just a striped 2D picture.
 
 ## Displays and devices
 
