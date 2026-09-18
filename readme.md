@@ -9,6 +9,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [History](#history)
   - [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Cinema](#cinema-and-hollywood) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
 - [How stereo is stored](#how-stereo-is-stored)
+- [Depth, and making the second view](#depth-and-making-the-second-view)
 - [Standards and specifications](#standards-and-specifications)
 - [Tools](#tools)
 - [Players and viewers](#players-and-viewers)
@@ -122,10 +123,38 @@ One practical note, because it costs people their archives: anaglyph made for CR
 - [Multiview Video Coding](https://en.wikipedia.org/wiki/Multiview_Video_Coding) - The MVC extension used by Blu-ray 3D: a second view coded as a prediction of the first.
 - [Stereoscopic video coding](https://en.wikipedia.org/wiki/Stereoscopic_video_coding) - The general survey of how stereo is packed into video streams.
 - **MPO** - Two JPEGs in one file with an index, the format 3D cameras wrote. Standardised by CIPA as DC-007.
+- [2D-plus-depth](https://en.wikipedia.org/wiki/2D-plus-depth) - One view plus a greyscale depth map, standardised as MPEG-C Part 3. The display synthesises the other eye, which is how a single file can serve 2D screens and autostereoscopic ones at once.
 - **MV-HEVC** - The multiview extension of HEVC, and the encoding behind Apple's "spatial video": two views in one modern codec, which is the same idea as MVC a decade later. See [High Efficiency Video Coding](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding).
 - **JPS and PNS** - A side-by-side pair in a JPEG or PNG, by community convention rather than by standard. A `.jps` is a valid JPEG that most software refuses purely because of its extension.
 
 And separately from the pixels, **how the file says what it is**: a container tag (Matroska's `StereoMode`) or an in-stream message (H.264's `frame_packing_arrangement` SEI). Hardware 3D displays generally act on the second and ignore the first, which is why correctly authored files so often play flat.
+
+## Depth, and making the second view
+
+Stereo needs two views. When only one exists, depth is how the other one gets made, and that single idea connects a games console accessory, a phone's front camera and the current wave of monocular depth models.
+
+### Measuring depth
+
+- [Depth map](https://en.wikipedia.org/wiki/Depth_map) - The intermediate representation everything here produces or consumes.
+- [Kinect](https://en.wikipedia.org/wiki/Kinect) - Microsoft's depth camera made real-time depth cheap and ordinary in 2010, and was promptly used for everything except the games it shipped with: scanning, reconstruction, research.
+- [Structured light](https://en.wikipedia.org/wiki/Structured_light) and [time-of-flight camera](https://en.wikipedia.org/wiki/Time-of-flight_camera) - The two ways a consumer device measures depth actively; the first Kinect used one, the second used the other.
+- [Lidar](https://en.wikipedia.org/wiki/Lidar) - The same principle at longer range, now sitting in phones and tablets.
+- [Face ID](https://en.wikipedia.org/wiki/Face_ID) - Apple's structured-light dot projector, the reason tens of millions of pockets contain a depth camera whose maps feed portrait effects and spatial stills.
+- [Photogrammetry](https://en.wikipedia.org/wiki/Photogrammetry) and [3D reconstruction](https://en.wikipedia.org/wiki/3D_reconstruction) - Recovering geometry from ordinary photographs, the software route to the same result.
+- [Light field](https://en.wikipedia.org/wiki/Light_field) - Capturing rays rather than pixels, which makes any view synthesisable after the fact.
+
+### Estimating depth from a single image
+
+- [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) and [Depth Anything 3](https://github.com/ByteDance-Seed/Depth-Anything-3) - Current monocular depth foundation models, and the most practical way today to derive a depth map from an ordinary photograph or frame.
+- [MiDaS](https://github.com/isl-org/MiDaS) - The robust monocular depth estimator that established the approach.
+
+These matter to this list for one reason: a view plus a depth map can be warped into a stereo pair. That is what 2D-to-3D conversion has always been, whether done by hand in a post house, in real time by a television's "simulated 3D" mode, or by a model on a laptop. It is also the honest route for recovering colour from anaglyph, where the usable stereo information is thin and the geometry has to come from somewhere.
+
+### Depth without two views: head tracking and parallax
+
+- [Johnny Lee](https://en.wikipedia.org/wiki/Johnny_Lee_(computer_scientist)) - His 2007 [Wii Remote](https://en.wikipedia.org/wiki/Wii_Remote) head-tracking demo produced convincing depth on an ordinary flat screen with no glasses, by moving the rendered viewpoint with the viewer's head.
+- [Parallax](https://en.wikipedia.org/wiki/Parallax) - The cue it exploits; motion parallax is a depth signal on its own, which is why the New Nintendo 3DS added head tracking to keep the sweet spot.
+- [Depth perception](https://en.wikipedia.org/wiki/Depth_perception) - The full set of cues the brain actually uses, of which binocular disparity is only one.
 
 ## Standards and specifications
 
