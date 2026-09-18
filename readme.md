@@ -11,6 +11,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
   - [Prehistory](#prehistory-knowing-about-two-eyes) · [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Cinema](#cinema-and-hollywood) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
 - [How stereo is stored](#how-stereo-is-stored)
 - [Depth, and making the second view](#depth-and-making-the-second-view)
+- [Capture](#capture)
 - [Who can see it, and who cannot](#who-can-see-it-and-who-cannot)
 - [Standards and specifications](#standards-and-specifications)
 - [Tools](#tools)
@@ -227,6 +228,35 @@ Depth is the common denominator. Measure it and you can synthesise a view, or yo
 - [Parallax](https://en.wikipedia.org/wiki/Parallax) - The cue it exploits; motion parallax is a depth signal on its own, which is why the New Nintendo 3DS added head tracking to keep the sweet spot.
 - [Depth perception](https://en.wikipedia.org/wiki/Depth_perception) - The full set of cues the brain actually uses, of which binocular disparity is only one.
 
+## Capture
+
+A stereo pair is shot before it is stored or shown. The hardware falls into three kinds: a twin-lens camera that does both eyes in one body, and two ordinary cameras fixed together in a rig.
+
+### Still cameras
+
+Twin-lens compacts that write MPO straight out of the box. The [Fujifilm FinePix Real 3D](https://en.wikipedia.org/wiki/Fujifilm_FinePix_Real_3D) W1 and W3 (2009–2010) are the ones that made the format ordinary, and they sit with the glasses-free phones under [Glasses-free phones, handhelds and cameras](#glasses-free-phones-handhelds-and-cameras), because that 2011 generation both shot and displayed the pair. The category also includes:
+
+- [Panasonic Lumix DMC-3D1](https://en.wikipedia.org/wiki/Panasonic_Lumix_DMC-3D1) - A twin-lens compact of the same wave: MPO stills and 3D video from a pocket body.
+
+### Camcorders
+
+The same twin lenses aimed at motion. Every maker claimed a "world's first" with a different qualifier, which is its own small lesson in how crowded that one year was:
+
+- [Sony HDR-TD10](https://www.sony.jp/products/overseas/contents/pickup/english/110324_promotion/TD10_Web/index.html) - "Double Full HD 3D" (2011): twin G Lenses, two Exmor R sensors and two BIONZ processors recording full resolution per eye.
+- [Panasonic HDC-SDT750](https://archive.nytimes.com/gadgetwise.blogs.nytimes.com/2011/01/12/make-your-own-3d-videos/) - The first 3D consumer camcorder (2010), via a detachable 3D conversion lens on a 3MOS body.
+- [JVC GS-TD1](http://everio.jvc.com/gs-td1/) - Twin-lens Full HD 3D (2011) on the FALCONBRID engine, recording a full-resolution "LR Independent" format and side-by-side for AVCHD 3D compatibility.
+
+The line between the two never really held: the still Fujifilm W3 also shot 720p 3D video, and every camcorder here shot 2D stills.
+
+### Two identical cameras in a rig
+
+The oldest method needs no 3D hardware at all: two identical ordinary cameras, synchronized, each becoming one eye. The two files are combined into side-by-side or top-bottom in post — the same frame-compatible packing the [displays section](#displays-decide-the-format) describes.
+
+- **Side-by-side bar rig** - Two cameras bolted to a plate about an [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) apart (roughly 63 mm). Camera body width forces the lenses a little wider than the eyes, so hand-held bar rigs lean toward mild **hyperstereo** — exaggerated depth that suits landscapes and hates close-ups.
+- **Over-under rig** - Two cameras stacked with one inverted, the lenses brought near-coaxial; one stream is flipped in post. The compact answer when the pair has to stay narrow.
+- **Beam-splitter rig** - A semi-silvered [beam splitter](https://en.wikipedia.org/wiki/Beam_splitter) at 45°, one camera shooting through it and the other the reflection, which is how [3D films](https://en.wikipedia.org/wiki/3D_film) bring the lenses down to near-zero spacing for close work.
+- **Sync is the hard part** - Genlock or a sync cable where the cameras have one; otherwise a clapper or an audio spike to align the streams in post. Mismatched exposure, focus or rolling shutter between the two eyes ruins a rig shot far more than the spacing does.
+
 ## Who can see it, and who cannot
 
 The medium assumes two working eyes that cooperate, and for a significant minority they do not. This is not a footnote to stereoscopy; it is a boundary condition on the whole subject, and it explains part of why every consumer 3D wave met resistance that surprised the people selling it.
@@ -253,6 +283,10 @@ The same apparatus that shows a film can rebuild the faculty itself, which is th
 - [Matroska element specification](https://www.matroska.org/technical/elements.html) - Defines `StereoMode`, the container-level 3D flag and its value table.
 - [CIPA standards](https://www.cipa.jp/e/std/std-sec.html) - Publishes DC-007, the Multi-Picture Format that defines MPO.
 - [DVB specifications](https://dvb.org/specifications/) - The frame-compatible and service-compatible 3DTV specifications used by broadcasters.
+- [MPEG](https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group) - The video-coding body; Multiview Video Coding (MVC), 2D-plus-depth and MV-HEVC are all its work.
+- [Blu-ray 3D](https://en.wikipedia.org/wiki/Blu-ray_3D) - The Blu-ray Disc Association's delivery spec for the 3D disc era.
+- [HDMI Forum](https://en.wikipedia.org/wiki/HDMI_Forum) - HDMI 1.4a, the 3D signalling that tells a set which packing is coming down the cable.
+- [SMPTE](https://en.wikipedia.org/wiki/SMPTE) - The cinema and broadcast engineering body behind the professional 3D standards.
 
 ## Tools
 
