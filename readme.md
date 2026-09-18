@@ -15,6 +15,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [Servers and delivery](#servers-and-delivery)
 - [Displays and devices](#displays-and-devices)
 - [Headsets and worn displays](#headsets-and-worn-displays)
+- [Beyond the eyes](#beyond-the-eyes)
 - [Communities and archives](#communities-and-archives)
 - [Preservation](#preservation)
 - [Adjacent fields](#adjacent-fields)
@@ -219,6 +220,24 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 - [WebXR](https://en.wikipedia.org/wiki/WebXR) - Stereo rendering in the browser; [immersiveweb.dev](https://immersiveweb.dev) and the [samples](https://github.com/immersive-web/webxr-samples).
 - [Godot XR Tools](https://github.com/GodotVR/godot-xr-tools) - XR toolkit for the Godot engine.
 - [ARCore SDK](https://github.com/google-ar/arcore-android-sdk) - Google's AR framework for Android.
+
+## Beyond the eyes
+
+**Scope note, stated plainly: none of this is stereoscopy.** A haptic vest puts no image in either eye. It is here because the stereo image is the first component of presence and never the only one, and because the question "what would full immersion actually take" leads straight out of the display and into the body. Treat this section as the neighbours, clearly labelled, not as the subject.
+
+- [Haptic technology](https://en.wikipedia.org/wiki/Haptic_technology) - Touch as an output device, and the general field the rest of this section sits in.
+- [Haptic suit](https://en.wikipedia.org/wiki/Haptic_suit) - Worn feedback across the torso and limbs, the wearable half of "full body".
+- [bHaptics](https://www.bhaptics.com) - The vests, sleeves and face haptics that actually shipped to consumers.
+- [HaptX](https://haptx.com) - Force-feedback gloves aimed at industrial and research use, where the hand resists as well as buzzes.
+- [Teslasuit](https://teslasuit.io) - Full-body suit combining electro-muscular stimulation, motion capture and biometrics.
+- [Wired glove](https://en.wikipedia.org/wiki/Wired_glove) - The lineage, from the Power Glove and DataGlove onward: the first serious attempt to get the hand into the scene.
+- [OpenGloves](https://github.com/LucidVR/opengloves-driver) - Open driver for do-it-yourself haptic gloves, the community answer to gloves costing more than the headset.
+- [SlimeVR](https://slimevr.dev) - Open-source full-body tracking: [firmware](https://github.com/SlimeVR/SlimeVR-Tracker-ESP), [server](https://github.com/SlimeVR/SlimeVR-Server) and an [OpenVR driver](https://github.com/SlimeVR/SlimeVR-OpenVR-Driver) for cheap IMU trackers. The clearest example in this section of a proprietary capability being rebuilt as something people can own and repair.
+- [Motion capture](https://en.wikipedia.org/wiki/Motion_capture) and [finger tracking](https://en.wikipedia.org/wiki/Finger_tracking) - Getting the body into the scene at all, which is the other half of full-body VR.
+- [Omnidirectional treadmill](https://en.wikipedia.org/wiki/Omnidirectional_treadmill) and [Virtuix Omni](https://en.wikipedia.org/wiki/Virtuix_Omni) - Walking without leaving the room, the oldest unsolved problem in the category.
+- [KAT VR](https://www.kat-vr.com) - Current locomotion platforms of that kind.
+- [Galvanic vestibular stimulation](https://en.wikipedia.org/wiki/Galvanic_vestibular_stimulation) - Driving the [vestibular system](https://en.wikipedia.org/wiki/Vestibular_system) directly, the research edge where motion is felt rather than shown, and the most direct attack on motion sickness.
+- [Brain-computer interface](https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface) - The far end of the same road, where the display disappears entirely.
 
 ## Communities and archives
 
