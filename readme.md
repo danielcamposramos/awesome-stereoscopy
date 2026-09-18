@@ -24,6 +24,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [Communities and archives](#communities-and-archives)
 - [Preservation](#preservation)
 - [Adjacent fields](#adjacent-fields)
+- [Related lists](#related-lists)
 - [Known gaps](#known-gaps)
 - [Contributing](#contributing)
 
@@ -529,6 +530,12 @@ Different problem, same word. "Stereo" in computer vision means recovering depth
 
 - [Stereopsis and binocular disparity](https://en.wikipedia.org/wiki/Stereopsis) - The perceptual basis both fields share.
 - [SimpleStereo](https://github.com/decadenza/SimpleStereo) - Calibration and depth estimation, for when the goal is a depth map rather than a stereo pair.
+
+## Related lists
+
+- [awesome-vr](https://github.com/danielcamposramos/awesome-vr) - Virtual reality as its own subject: headsets, the open runtimes that keep them working, standards, comfort and accessibility, and the platforms that were switched off. A headset is a stereoscope you wear, and this is where that thread continues.
+- [awesome-ar](https://github.com/danielcamposramos/awesome-ar) - Augmented reality: see-through optics, the SLAM and visual-inertial tracking that decide where the room is, the SDKs and the standards.
+- [awesome-webxr](https://github.com/msub2/awesome-webxr) - The browser side of both, maintained separately.
 
 ## Known gaps
 
