@@ -8,7 +8,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 ## Contents
 
 - [History](#history)
-  - [Prehistory](#prehistory-knowing-about-two-eyes) · [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Instrument](#stereo-as-an-instrument) · [Cinema](#cinema-and-hollywood) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
+  - [Prehistory](#prehistory-knowing-about-two-eyes) · [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Instrument](#stereo-as-an-instrument) · [Cinema](#cinema-and-hollywood) · [World cinema](#world-stereo-cinema) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
 - [How stereo is stored](#how-stereo-is-stored)
 - [Depth, and making the second view](#depth-and-making-the-second-view)
 - [Capture](#capture)
@@ -54,8 +54,11 @@ The stereoscope is Victorian. Understanding that two eyes see different images, 
 
 ### Stereo photography as a mass medium
 
+- [London Stereoscopic and Photographic Company](https://en.wikipedia.org/wiki/London_Stereoscopic_and_Photographic_Company) - The 1854 London firm whose name became synonymous with the Victorian stereo card.
+- [Kilburn Brothers](https://en.wikipedia.org/wiki/Kilburn_Brothers) - The Littleton, New Hampshire firm that mass-produced stereoviews for the American market through the late nineteenth century.
 - [Underwood & Underwood](https://en.wikipedia.org/wiki/Underwood_%26_Underwood) - At its peak the largest publisher of stereographs in the world, producing them by the millions.
 - [Keystone View Company](https://en.wikipedia.org/wiki/Keystone_View_Company) - Outlasted its rivals and supplied schools, keeping stereo cards in print into the twentieth century.
+- [T. Enami](https://en.wikipedia.org/wiki/T._Enami) - A Meiji-era Japanese photographer whose hand-coloured stereoviews of Japan were distributed internationally, the Japanese side of the same pre-1900 card boom.
 - [View-Master](https://en.wikipedia.org/wiki/View-Master) - From 1939, the reels that carried stereo photography through every boom and bust since.
 - [Stereo Realist](https://en.wikipedia.org/wiki/Stereo_Realist) - The 1947 camera that made 35 mm stereo slides the ordinary format of the 1950s boom, and whose "Realist format" mount outlived the camera.
 
@@ -64,7 +67,7 @@ The stereoscope is Victorian. Understanding that two eyes see different images, 
 Most of this list is stereo as entertainment. It has also, since before cinema, been a working instrument — a way of seeing small things, mapped ground and distant planets in depth, where the stereo pair is doing a job rather than telling a story.
 
 - [Stereo microscope](https://en.wikipedia.org/wiki/Stereo_microscope) - The [Greenough](https://en.wikipedia.org/wiki/Greenough) design of 1892 gives a binocular, magnified, three-dimensional view of a small object, and it remains the most common stereoscopic instrument alive today — in surgery, electronics and biology, where depth is the point of the tool. The two-eyes-one-object path is the same one Wheatstone described, aimed down at a specimen instead of out at a view.
-- [Stereoplotter](https://en.wikipedia.org/wiki/Stereoplotter) - The instrument that turned overlapping [aerial photographs](https://en.wikipedia.org/wiki/Aerial_photography) into surveyed maps, by fusing the pair into a stereo model of the terrain. Stereo aerial photography, flown for reconnaissance and cartography through two world wars, is the reason much of the twentieth century's ground was measured in stereo before it was measured any other way.
+- [Stereoplotter](https://en.wikipedia.org/wiki/Stereoplotter) - The instrument that turned overlapping [aerial photographs](https://en.wikipedia.org/wiki/Aerial_photography) into surveyed maps, by fusing the pair into a stereo model of the terrain. Stereo aerial photography, flown for reconnaissance and cartography through two world wars, is the reason much of the twentieth century's ground was measured in stereo before it was measured any other way; the software descendants of that measurement sit under [From depth to objects](#from-depth-to-objects).
 - [Curiosity rover](https://en.wikipedia.org/wiki/Curiosity_(rover)) - Its twin Mastcam cameras shoot stereo pairs on Mars, and NASA publishes them as [anaglyph](https://en.wikipedia.org/wiki/Anaglyph_3D) images — one of the few places the general public still meets red-cyan stereo in the present day.
 
 ### Cinema and Hollywood
@@ -78,9 +81,18 @@ Most of this list is stereo as entertainment. It has also, since before cinema, 
 - [Jaws 3-D](https://en.wikipedia.org/wiki/Jaws_3-D) and [Friday the 13th Part III](https://en.wikipedia.org/wiki/Friday_the_13th_Part_III) - The early-1980s revival, remembered mostly for things thrown at the camera, which is a large part of why the format kept having to earn its reputation back.
 - [Captain EO](https://en.wikipedia.org/wiki/Captain_EO) - 1986, seventeen minutes, 70mm 3-D: directed by Francis Ford Coppola, executive-produced by George Lucas, starring Michael Jackson, and at roughly $23.7 million the most expensive film ever made per minute. It ran at the Disney parks from 1986, returned in 2010 after fan campaigns following Jackson's death, and closed at Epcot in December 2015. The best argument on record that stereo 3D was never only a gimmick, and [sourced production notes](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/judging-by-the-cover.md) for the chaos behind it.
 - [4D film](https://en.wikipedia.org/wiki/4D_film) - Stereo projection plus effects in the room: motion seats, water, air, scent. The venue format that outlived every consumer 3D wave, because the experience cannot be taken home. The "5D" and "6D" booths in shopping centres are the same thing with a larger number on the sign, and the count has no technical meaning.
+- [IMAX](https://en.wikipedia.org/wiki/IMAX) - Where large-format stereo projection was kept working continuously between the revivals.
+
+### World stereo cinema
+
+Hollywood's golden era is the loudest chapter, not the only one — these cinemas ran in parallel, and together they answer the idea that stereo film is a single-nation story:
+
 - **Semyon Pavlovich Ivanov (1906-1972)** - Invented the Soviet glasses-free stereoscopic cinema system in 1935: a radial raster screen that let an audience see stereo with no glasses at all, a decade before Hollywood's golden era began. Moscow had a cinema running on it from 1941. He has [an article in Russian](https://ru.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2,_%D0%A1%D0%B5%D0%BC%D1%91%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%28%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%29) and none in English, where the same name returns a Soviet general instead, which is the Anglo-centrism of this subject in one example. See also [autostereoscopy in Russian](https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D1%82%D0%B5%D1%80%D0%B5%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F), which describes his raster.
 - [Robinson Crusoe](https://en.wikipedia.org/wiki/Robinson_Crusoe_(1947_film)) - The 1947 Soviet 3D feature shown on that system, glasses-free, and the most visible surviving artefact of a stereo-cinema programme that ran in parallel with Hollywood's.
-- [IMAX](https://en.wikipedia.org/wiki/IMAX) - Where large-format stereo projection was kept working continuously between the revivals.
+- **The Soviet stereokino programme** - Not one film but a state cinema that ran for decades: after Robinson Crusoe the system matured into **Стерео-70** (1963), which won an Academy Award for technical achievement and shot more than thirty films, including puppet animation. The fullest account is [the Russian Wikipedia article on stereocinematography](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D1%80%D0%B5%D0%BE%D0%BA%D0%B8%D0%BD%D0%B5%D0%BC%D0%B0%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84), which has no English equivalent.
+- [My Dear Kuttichathan](https://en.wikipedia.org/wiki/My_Dear_Kuttichathan) - India's first 3D film, a 1984 Malayalam children's feature later dubbed into several Indian languages.
+- [Legend of the Naga Pearls](https://en.wikipedia.org/wiki/Legend_of_the_Naga_Pearls) - A 2017 Chinese 3D fantasy film, one of the post-*Avatar* wave of Chinese-language 3D productions.
+- **El Corazón y la Espada** (*Sword of Granada*, 1953) - Mexico's first 3D feature, shot with a dual-camera Polaroid rig and shown in red-cyan anaglyph, restored by the 3D Film Archive and screened again in 2025. [UW–Madison Cinematheque note](https://cinema.wisc.edu/2025/03/06/sword-of-granada-a-golden-age-3-d-rarity/).
 
 ### The format war that decided the frame
 
@@ -159,7 +171,7 @@ The glasses decide the encoding, and they are not interchangeable. Which pair a 
 - [Complementary colours](https://en.wikipedia.org/wiki/Complementary_colors) - Why any of it works, and why the pairs are always opposites.
 
 One practical note, because it costs people their archives: anaglyph made for CRT phosphors ghosts on a modern LED panel, since the filters were chosen against a different spectrum. The fix is a per-panel correction on top of Dubois, not a different file.
-- **Vectograph** - A polarised 3D print, invented by [Edwin Land](https://en.wikipedia.org/wiki/Edwin_Land) at Polaroid in the 1940s: the two views are printed as differently-polarised images on a single sheet and read through polarised glasses. The print counterpart to a polarised cinema, and the format that let Second World War aerial reconnaissance be viewed in stereo.
+- **Vectograph** - A polarised 3D print, invented by [Edwin Land](https://en.wikipedia.org/wiki/Edwin_Land) at Polaroid in the 1940s: the two views are printed as differently-polarised images on a single sheet and read through polarised glasses. The print counterpart to a [polarised cinema](#displays-decide-the-format), and the format that let Second World War aerial reconnaissance be viewed in stereo.
 - **Side-by-side and over-under**, "frame compatible" - Two half-resolution views inside one ordinary frame. The broadcast era's compromise, and still the most common layout in the wild.
 - **Frame packing** - Both views at full resolution in one coded frame, as HDMI 1.4 and Blu-ray 3D carry them.
 - **Row and column interleaving** - Alternate lines or columns per eye, matching passive polarised and parallax-barrier panels directly.
@@ -364,6 +376,7 @@ This is the join between the two halves of this list, and the thing most explana
 - [Parallax barrier](https://en.wikipedia.org/wiki/Parallax_barrier) - The glasses-free method used by the Nintendo 3DS and the 3D phones.
 - [Lenticular printing](https://en.wikipedia.org/wiki/Lenticular_printing) - The same idea on paper, and the oldest glasses-free medium still in production.
 - [iZ3D](https://en.wikipedia.org/wiki/IZ3D) - Dual stacked LCD panels, one carrying intensity and one carrying polarisation, viewed through passive glasses. See [PC gaming and the driver era](#pc-gaming-and-the-driver-era).
+- [Toshiba REGZA](https://en.wikipedia.org/wiki/Toshiba_Regza) - The Japanese end of the 3D television wave: the GL1 (2010) was shown as the first glasses-free 3D television, and the 55X3 (2011) shipped a glasses-free 3D display in the first 4K set.
 
 ### Glasses-free phones, handhelds and cameras
 
@@ -398,6 +411,7 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 - [Meta Quest](https://en.wikipedia.org/wiki/Meta_Quest) and [Meta Quest 3](https://en.wikipedia.org/wiki/Meta_Quest_3) - The standalone line that made headsets a mass product.
 - [Apple Vision Pro](https://en.wikipedia.org/wiki/Apple_Vision_Pro) - Notable here for making stereoscopic capture ordinary again: its "spatial video" is an MV-HEVC stereo pair shot on a phone.
 - [Augmented reality](https://en.wikipedia.org/wiki/Augmented_reality) - The same stereo optics aimed at the world instead of a virtual scene; "mixed reality" redirects here.
+- [Stereoscopic video game](https://en.wikipedia.org/wiki/Stereoscopic_video_game) - How games render two eyes, here for the headset class; [Games and handhelds](#games-and-handhelds) covers the phone and handheld class.
 
 ### Open software for headsets
 
@@ -483,10 +497,10 @@ Different problem, same word. "Stereo" in computer vision means recovering depth
 
 Stated openly, because a curated list that hides its blind spots is worse than one that names them. These are the places this list is weakest, and the contributions most wanted:
 
-- **The history here is Anglo-centric.** One case is now partly closed: Soviet glasses-free stereo cinema, invented by Semyon Pavlovich Ivanov in 1935 and running in a Moscow cinema from 1941, is in the cinema section above, cited to Russian sources because English Wikipedia has no article on him at all. The rest of that programme, and the non-English record generally, is still missing. Contributions in any language are wanted; cite what you can.
-- **Japanese stereo photography and 3D television culture** are thin here, despite Japan being where much of the hardware and several of the formats came from.
-- **Latin American, Indian and Chinese** coverage is essentially absent for the modern era. The prehistory section reaches China through the Mohist camera obscura and India through Sushruta and the perception debates, but the long middles are missing. One specific open question: whether older Sanskrit sources discuss binocular depth directly. Nothing citable was found, and a claim that cannot be sourced does not belong here, so the space is left open rather than filled.
-- **Pre-1900 material** leans on a handful of famous names; the publishing industry around stereo cards was vast and is represented by two entries.
+- **The record is still Western-leaning.** A [World stereo cinema](#world-stereo-cinema) section now carries Soviet, Indian, Chinese and Mexican 3D, and the prehistory reaches China through the Mohist camera obscura and India through Sushruta — but each of those regions is one or two entries against Hollywood's dozens. The non-English record generally is the biggest single hole left. Contributions in any language are wanted; cite what you can.
+- **Japanese coverage** is now present — the Meiji stereoview photographer T. Enami, Toshiba's glasses-free REGZA sets, and the Fujifilm, Sony and Sharp hardware already listed — but the country's stereo-photography societies and 3D broadcast history are still missing.
+- **Latin American, Indian and Chinese** coverage is now one film each, and the modern eras remain thin. One specific open question: whether older Sanskrit sources discuss binocular depth directly. Nothing citable was found, and a claim that cannot be sourced does not belong here, so the space is left open rather than filled.
+- **Pre-1900 publishing** is now five entries (the London Stereoscopic and Photographic Company, Kilburn Brothers, Underwood & Underwood, Keystone, and T. Enami) — still a fraction of the thousands of firms that shipped cards, and the European continental publishers are entirely absent.
 - Several entries describe things that are defunct or unreliable. That is deliberate, but it means some links will rot; reports are welcome.
 
 ## Contributing
