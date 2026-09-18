@@ -234,6 +234,13 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 - [sony-bravia-linux](https://github.com/danielcamposramos/sony-bravia-linux) - The project this list grew out of. It documents why correctly authored 3D files play flat on hardware that supports them: the in-stream frame-packing SEI that displays act on and almost nothing wrote. Measurements on real sets, fixes taken upstream across the whole encode, remux, serve and play chain, tools that repair existing files losslessly, and the same research published in eleven languages so owners can find it in their own.
 - [Consumer Rights Wiki: Sony BRAVIA pre-Android Linux TVs](https://consumerrights.wiki/index.php?title=Sony_BRAVIA_pre-Android_Linux_TVs_(2011-2012)) - A worked example of documenting what happens to a 3D product line after its services are switched off, sourced to the manufacturer's own notices.
 
+### The format that retired but did not die
+
+Consumer 3D was withdrawn, not abandoned by the people who had it. The gap between those two things is where this whole list lives, and it shows up publicly whenever somebody well equipped tries to use the hardware they already own:
+
+- [I built a 3D theater in my basement](https://www.youtube.com/watch?v=_4Sz6J49jho) - Linus Tech Tips, 2024. Worth watching for one admission at [10:20](https://www.youtube.com/watch?v=_4Sz6J49jho&t=620s): getting the *files* to play took "more tinkering behind the scenes than anything else we've done so far" — ripping discs and remuxing by hand, on a channel with a full engineering team behind it. He also notes in the same video that dozens of 3D titles still ship on Blu-ray every year, which is the point: the content exists, and the playback chain is what broke.
+- [Phereo](https://phereo.com) - Filed under communities above, and relevant here too: an archive of community stereo photography whose backend has become unreliable, which is how a format's material disappears in practice. Not with an announcement, just with timeouts.
+
 ## Adjacent fields
 
 Different problem, same word. "Stereo" in computer vision means recovering depth from two views, rather than presenting two views to two eyes:
