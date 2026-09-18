@@ -20,6 +20,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [Communities and archives](#communities-and-archives)
 - [Preservation](#preservation)
 - [Adjacent fields](#adjacent-fields)
+- [Known gaps](#known-gaps)
 - [Contributing](#contributing)
 
 ## History
@@ -52,6 +53,7 @@ Two centuries in five movements. The formats in the next section only make sense
 - [Jaws 3-D](https://en.wikipedia.org/wiki/Jaws_3-D) and [Friday the 13th Part III](https://en.wikipedia.org/wiki/Friday_the_13th_Part_III) - The early-1980s revival, remembered mostly for things thrown at the camera, which is a large part of why the format kept having to earn its reputation back.
 - [Captain EO](https://en.wikipedia.org/wiki/Captain_EO) - 1986, seventeen minutes, 70mm 3-D: directed by Francis Ford Coppola, executive-produced by George Lucas, starring Michael Jackson, and at roughly $23.7 million the most expensive film ever made per minute. It ran at the Disney parks from 1986, returned in 2010 after fan campaigns following Jackson's death, and closed at Epcot in December 2015. The best argument on record that stereo 3D was never only a gimmick, and [sourced production notes](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/judging-by-the-cover.md) for the chaos behind it.
 - [4D film](https://en.wikipedia.org/wiki/4D_film) - Stereo projection plus effects in the room: motion seats, water, air, scent. The venue format that outlived every consumer 3D wave, because the experience cannot be taken home. The "5D" and "6D" booths in shopping centres are the same thing with a larger number on the sign, and the count has no technical meaning.
+- [Robinson Crusoe](https://en.wikipedia.org/wiki/Robinson_Crusoe_(1947_film)) - A 1947 Soviet 3D feature, from a stereo-cinema programme that ran in parallel with Hollywood's and is barely documented in English. See the gaps note below.
 - [IMAX](https://en.wikipedia.org/wiki/IMAX) - Where large-format stereo projection was kept working continuously between the revivals.
 
 ### Theme parks: where 3D never stopped
@@ -333,6 +335,16 @@ Different problem, same word. "Stereo" in computer vision means recovering depth
 
 - [Stereopsis and binocular disparity](https://en.wikipedia.org/wiki/Stereopsis) - The perceptual basis both fields share.
 - [SimpleStereo](https://github.com/decadenza/SimpleStereo) - Calibration and depth estimation, for when the goal is a depth map rather than a stereo pair.
+
+## Known gaps
+
+Stated openly, because a curated list that hides its blind spots is worse than one that names them. These are the places this list is weakest, and the contributions most wanted:
+
+- **The history here is Anglo-centric.** Soviet stereo cinema in particular ran its own programme from the 1940s, including glasses-free raster-screen projection in Moscow, and it is close to undocumented in English sources. If you can source it properly, that is the single most valuable addition available.
+- **Japanese stereo photography and 3D television culture** are thin here, despite Japan being where much of the hardware and several of the formats came from.
+- **Latin American, Indian and Chinese** coverage is essentially absent.
+- **Pre-1900 material** leans on a handful of famous names; the publishing industry around stereo cards was vast and is represented by two entries.
+- Several entries describe things that are defunct or unreliable. That is deliberate, but it means some links will rot; reports are welcome.
 
 ## Contributing
 
