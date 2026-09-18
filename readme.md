@@ -131,7 +131,7 @@ And separately from the pixels, **how the file says what it is**: a container ta
 
 ## Depth, and making the second view
 
-Stereo needs two views. When only one exists, depth is how the other one gets made, and that single idea connects a games console accessory, a phone's front camera and the current wave of monocular depth models.
+3D means depth, and depth is what two eyes are for. Stereo needs two views; when only one exists, depth is how the other gets made. That single idea connects a games console accessory, a phone's front camera, the current monocular depth models, and, at the far end, scanners and printers that turn depth back into objects.
 
 ### Measuring depth
 
@@ -149,6 +149,18 @@ Stereo needs two views. When only one exists, depth is how the other one gets ma
 - [MiDaS](https://github.com/isl-org/MiDaS) - The robust monocular depth estimator that established the approach.
 
 These matter to this list for one reason: a view plus a depth map can be warped into a stereo pair. That is what 2D-to-3D conversion has always been, whether done by hand in a post house, in real time by a television's "simulated 3D" mode, or by a model on a laptop. It is also the honest route for recovering colour from anaglyph, where the usable stereo information is thin and the geometry has to come from somewhere.
+
+### From depth to objects
+
+Depth is the common denominator. Measure it and you can synthesise a view, or you can build the thing itself. The same scans, point clouds and meshes feed both a stereo pair and a printer, which is why "3D" means all of this at once and why the word has never split.
+
+- [3D scanning](https://en.wikipedia.org/wiki/3D_scanning) - Capturing an object's geometry, by the same structured-light, time-of-flight and photogrammetric methods used above.
+- [Point cloud](https://en.wikipedia.org/wiki/Point_cloud) and [polygon mesh](https://en.wikipedia.org/wiki/Polygon_mesh) - What a depth measurement becomes once it is more than a picture.
+- [3D printing](https://en.wikipedia.org/wiki/3D_printing) and [stereolithography](https://en.wikipedia.org/wiki/Stereolithography) - The output end: geometry returned to the physical world, where it needs no glasses at all. Note the name: *stereo*lithography, from the same root, for the same reason.
+- [Meshroom](https://github.com/alicevision/Meshroom) - Free photogrammetry pipeline built on AliceVision: photographs in, textured mesh out.
+- [COLMAP](https://github.com/colmap/colmap) - Structure-from-motion and multi-view stereo, the reference implementation most pipelines lean on.
+- [openMVG](https://github.com/openMVG/openMVG) - Multiple-view geometry library, the maths underneath.
+- [Volumetric display](https://en.wikipedia.org/wiki/Volumetric_display) and [holography](https://en.wikipedia.org/wiki/Holography) - The end of the road this list keeps walking towards: depth that is actually there, rather than depth delivered one eye at a time.
 
 ### Depth without two views: head tracking and parallax
 
@@ -265,6 +277,7 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 - [Motion capture](https://en.wikipedia.org/wiki/Motion_capture) and [finger tracking](https://en.wikipedia.org/wiki/Finger_tracking) - Getting the body into the scene at all, which is the other half of full-body VR.
 - [Omnidirectional treadmill](https://en.wikipedia.org/wiki/Omnidirectional_treadmill) and [Virtuix Omni](https://en.wikipedia.org/wiki/Virtuix_Omni) - Walking without leaving the room, the oldest unsolved problem in the category.
 - [KAT VR](https://www.kat-vr.com) - Current locomotion platforms of that kind.
+- **Disney HoloTile** - An omnidirectional floor of small rotating tiles that lets several people walk anywhere, in any direction, without moving from the spot, invented by [Lanny Smoot](https://en.wikipedia.org/wiki/Lanny_Smoot) at [Walt Disney Imagineering](https://en.wikipedia.org/wiki/Walt_Disney_Imagineering): [coverage](https://xchange.avixa.org/posts/disney-advances-vr-treadmill-technology-with-holotile), [Disney Research](https://la.disneyresearch.com). The same company that built Captain EO in 1986 is still inventing immersion hardware forty years later, which says something about where this medium has always been funded.
 - [Galvanic vestibular stimulation](https://en.wikipedia.org/wiki/Galvanic_vestibular_stimulation) - Driving the [vestibular system](https://en.wikipedia.org/wiki/Vestibular_system) directly, the research edge where motion is felt rather than shown, and the most direct attack on motion sickness.
 - [Brain-computer interface](https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface) - The far end of the same road, where the display disappears entirely.
 
