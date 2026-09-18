@@ -188,6 +188,13 @@ If a model can produce the geometry, the second view costs nothing: a stereo pai
 - [Sora](https://en.wikipedia.org/wiki/Sora_(text-to-video_model)) and [generative AI](https://en.wikipedia.org/wiki/Generative_AI) - Generated video, and the point at which a "world model" that stays geometrically consistent between frames becomes a renderer rather than a slideshow.
 - [awesome-world-models-video-games-3d](https://github.com/gxchris95/awesome-world-models-video-games-3d) - A companion list for that branch specifically.
 
+**Generated frames**, the in-between ones that were never filmed:
+
+- [Motion interpolation](https://en.wikipedia.org/wiki/Motion_interpolation) - Drawing the frames between two real ones, which is what lifts a 24 fps film toward 60 fps.
+- [FILM](https://github.com/google-research/frame-interpolation) and [RIFE](https://github.com/hzwer/ECCV2022-RIFE) - Two current frame-interpolation models: FILM for large motion, RIFE for real time.
+
+This is view synthesis turned sideways — applied to *time* instead of *space* — and it is the direct answer to the temporal-stereo problem the [high-refresh note](#displays-decide-the-format) describes: a 24 fps film gives each eye only 24 frames a second, so motion stutters ("still shots are good but motion's a little rough"). Generate the in-between frames and each eye gets a smooth 48 or 60. The open question is doing it twice — once per eye — and keeping the two streams consistent, so the depth does not break.
+
 **Text to 3D and image to 3D**, which produce geometry directly and therefore produce stereo for free:
 
 - [Shap-E](https://github.com/openai/shap-e) and [Point-E](https://github.com/openai/point-e) - Text and image to 3D, the models that made the category ordinary.
