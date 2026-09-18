@@ -8,7 +8,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 ## Contents
 
 - [History](#history)
-  - [Prehistory](#prehistory-knowing-about-two-eyes) · [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Cinema](#cinema-and-hollywood) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
+  - [Prehistory](#prehistory-knowing-about-two-eyes) · [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Instrument](#stereo-as-an-instrument) · [Cinema](#cinema-and-hollywood) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
 - [How stereo is stored](#how-stereo-is-stored)
 - [Depth, and making the second view](#depth-and-making-the-second-view)
 - [Capture](#capture)
@@ -57,6 +57,15 @@ The stereoscope is Victorian. Understanding that two eyes see different images, 
 - [Underwood & Underwood](https://en.wikipedia.org/wiki/Underwood_%26_Underwood) - At its peak the largest publisher of stereographs in the world, producing them by the millions.
 - [Keystone View Company](https://en.wikipedia.org/wiki/Keystone_View_Company) - Outlasted its rivals and supplied schools, keeping stereo cards in print into the twentieth century.
 - [View-Master](https://en.wikipedia.org/wiki/View-Master) - From 1939, the reels that carried stereo photography through every boom and bust since.
+- [Stereo Realist](https://en.wikipedia.org/wiki/Stereo_Realist) - The 1947 camera that made 35 mm stereo slides the ordinary format of the 1950s boom, and whose "Realist format" mount outlived the camera.
+
+### Stereo as an instrument
+
+Most of this list is stereo as entertainment. It has also, since before cinema, been a working instrument — a way of seeing small things, mapped ground and distant planets in depth, where the stereo pair is doing a job rather than telling a story.
+
+- [Stereo microscope](https://en.wikipedia.org/wiki/Stereo_microscope) - The [Greenough](https://en.wikipedia.org/wiki/Greenough) design of 1892 gives a binocular, magnified, three-dimensional view of a small object, and it remains the most common stereoscopic instrument alive today — in surgery, electronics and biology, where depth is the point of the tool. The two-eyes-one-object path is the same one Wheatstone described, aimed down at a specimen instead of out at a view.
+- [Stereoplotter](https://en.wikipedia.org/wiki/Stereoplotter) - The instrument that turned overlapping [aerial photographs](https://en.wikipedia.org/wiki/Aerial_photography) into surveyed maps, by fusing the pair into a stereo model of the terrain. Stereo aerial photography, flown for reconnaissance and cartography through two world wars, is the reason much of the twentieth century's ground was measured in stereo before it was measured any other way.
+- [Curiosity rover](https://en.wikipedia.org/wiki/Curiosity_(rover)) - Its twin Mastcam cameras shoot stereo pairs on Mars, and NASA publishes them as [anaglyph](https://en.wikipedia.org/wiki/Anaglyph_3D) images — one of the few places the general public still meets red-cyan stereo in the present day.
 
 ### Cinema and Hollywood
 
@@ -150,6 +159,7 @@ The glasses decide the encoding, and they are not interchangeable. Which pair a 
 - [Complementary colours](https://en.wikipedia.org/wiki/Complementary_colors) - Why any of it works, and why the pairs are always opposites.
 
 One practical note, because it costs people their archives: anaglyph made for CRT phosphors ghosts on a modern LED panel, since the filters were chosen against a different spectrum. The fix is a per-panel correction on top of Dubois, not a different file.
+- **Vectograph** - A polarised 3D print, invented by [Edwin Land](https://en.wikipedia.org/wiki/Edwin_Land) at Polaroid in the 1940s: the two views are printed as differently-polarised images on a single sheet and read through polarised glasses. The print counterpart to a polarised cinema, and the format that let Second World War aerial reconnaissance be viewed in stereo.
 - **Side-by-side and over-under**, "frame compatible" - Two half-resolution views inside one ordinary frame. The broadcast era's compromise, and still the most common layout in the wild.
 - **Frame packing** - Both views at full resolution in one coded frame, as HDMI 1.4 and Blu-ray 3D carry them.
 - **Row and column interleaving** - Alternate lines or columns per eye, matching passive polarised and parallax-barrier panels directly.
@@ -158,6 +168,7 @@ One practical note, because it costs people their archives: anaglyph made for CR
 - **MPO** - Two JPEGs in one file with an index, the format 3D cameras wrote. Standardised by CIPA as DC-007.
 - [2D-plus-depth](https://en.wikipedia.org/wiki/2D-plus-depth) - One view plus a greyscale depth map, standardised as MPEG-C Part 3. The display synthesises the other eye, which is how a single file can serve 2D screens and autostereoscopic ones at once.
 - **MV-HEVC** - The multiview extension of HEVC, and the encoding behind Apple's "spatial video": two views in one modern codec, which is the same idea as MVC a decade later. See [High Efficiency Video Coding](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding).
+- **VR180** - Google's 180° stereo photo and video format, an equirectangular pair aimed at headsets, which is the headset-era counterpart to the frame-compatible and full-resolution packings above. See [VR photography](https://en.wikipedia.org/wiki/VR_photography).
 - **JPS and PNS** - A side-by-side pair in a JPEG or PNG, by community convention rather than by standard. A `.jps` is a valid JPEG that most software refuses purely because of its extension.
 
 And separately from the pixels, **how the file says what it is**: a container tag (Matroska's `StereoMode`) or an in-stream message (H.264's `frame_packing_arrangement` SEI). Hardware 3D displays generally act on the second and ignore the first, which is why correctly authored files so often play flat.
@@ -245,6 +256,7 @@ The same twin lenses aimed at motion. Every maker claimed a "world's first" with
 - [Sony HDR-TD10](https://www.sony.jp/products/overseas/contents/pickup/english/110324_promotion/TD10_Web/index.html) - "Double Full HD 3D" (2011): twin G Lenses, two Exmor R sensors and two BIONZ processors recording full resolution per eye.
 - [Panasonic HDC-SDT750](https://archive.nytimes.com/gadgetwise.blogs.nytimes.com/2011/01/12/make-your-own-3d-videos/) - The first 3D consumer camcorder (2010), via a detachable 3D conversion lens on a 3MOS body.
 - [JVC GS-TD1](http://everio.jvc.com/gs-td1/) - Twin-lens Full HD 3D (2011) on the FALCONBRID engine, recording a full-resolution "LR Independent" format and side-by-side for AVCHD 3D compatibility.
+- **Sony Bloggie 3D (MHS-FS3)** - The pocket end of the same wave: a small twin-lens camcorder that recorded 1080p 3D side-by-side. No stable manufacturer page survives to link to.
 
 The line between the two never really held: the still Fujifilm W3 also shot 720p 3D video, and every camcorder here shot 2D stills.
 
@@ -295,6 +307,7 @@ The same apparatus that shows a film can rebuild the faculty itself, which is th
 - [HandBrake](https://handbrake.fr) - Cross-platform encoder; writes the frame-packing SEI on H.264 output.
 - [MKVToolNix](https://mkvtoolnix.download) - Sets and inspects the Matroska `StereoMode` flag without re-encoding.
 - [StereoPhoto Maker](https://stereo.jpn.org/eng/stphmkr/) - The stereo-photography community's standard editor: alignment, conversion between every still format, batch processing.
+- [StereoMovie Maker](https://stereo.jpn.org/eng/stvmkr/) - The companion to StereoPhoto Maker for moving pictures: the same alignment and format conversion, applied to video pairs.
 - [StereoscoPy](https://github.com/2sh/StereoscoPy) - Python tool and library that builds anaglyph, side-by-side and cross-eye images from a pair.
 - [ExifTool](https://exiftool.org) - Reads and writes the MPO structure, and is the practical way to check whether a file is really a stereo pair.
 - [sony-bravia-linux tools](https://github.com/danielcamposramos/sony-bravia-linux/tree/main/tools) - Losslessly injects the frame-packing SEI into existing H.264 files, converts anaglyph back to side-by-side, writes MPO, and indexes a library by stereo format.
@@ -359,6 +372,7 @@ The 2011 wave is why stereo files exist in ordinary people's archives: these dev
 - [Nintendo 3DS](https://en.wikipedia.org/wiki/Nintendo_3DS) - Parallax-barrier handheld that shot and displayed MPO stereo photographs; the [New Nintendo 3DS](https://en.wikipedia.org/wiki/New_Nintendo_3DS) added head tracking to hold the sweet spot.
 - [LG Optimus 3D](https://en.wikipedia.org/wiki/LG_Optimus_3D) - Glasses-free phone with a dual-camera stereo pair, 2011, and one of the few that recorded 3D video as well as stills. Its software also converted 2D games into 3D — see [Games and handhelds](#games-and-handhelds).
 - [HTC Evo 3D](https://en.wikipedia.org/wiki/HTC_Evo_3D) - Its direct contemporary: same parallax barrier, same twin cameras, same brief window.
+- **Fujitsu F-09C** - The Japanese half of the same 2011 wave: an NTT docomo flip phone with a glasses-free 3D display that shipped a 3D block-breaking game among its preloaded 3D apps. It has [an article in Japanese](https://ja.wikipedia.org/wiki/F-09C) and none in English, which is the Japanese gap this list admits to, in one phone.
 - [LG Optimus Pad](https://en.wikipedia.org/wiki/LG_Optimus_Pad) - The tablet of the same generation, shooting stereo video while showing it in 2D.
 - [Red Hydrogen One](https://en.wikipedia.org/wiki/Red_Hydrogen_One) - The 2018 attempt at reviving glasses-free 3D on a phone, with a four-view light-field display.
 - [Fujifilm FinePix Real 3D](https://en.wikipedia.org/wiki/Fujifilm_FinePix_Real_3D) - The twin-lens consumer cameras, with a glasses-free display on the back, that made MPO a format people actually had files in.
@@ -384,7 +398,6 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 - [Meta Quest](https://en.wikipedia.org/wiki/Meta_Quest) and [Meta Quest 3](https://en.wikipedia.org/wiki/Meta_Quest_3) - The standalone line that made headsets a mass product.
 - [Apple Vision Pro](https://en.wikipedia.org/wiki/Apple_Vision_Pro) - Notable here for making stereoscopic capture ordinary again: its "spatial video" is an MV-HEVC stereo pair shot on a phone.
 - [Augmented reality](https://en.wikipedia.org/wiki/Augmented_reality) - The same stereo optics aimed at the world instead of a virtual scene; "mixed reality" redirects here.
-- [Stereoscopic video game](https://en.wikipedia.org/wiki/Stereoscopic_video_game) - How games have rendered two eyes, from the 1980s onward.
 
 ### Open software for headsets
 
@@ -442,8 +455,10 @@ The cheapest immersion trick of all: extend the picture past the edges of the sc
 - [photo-3d group](https://photo-3d.groups.io/g/main) - One of the oldest continuously running stereo-photography mailing lists.
 - [MTBS3D](https://www.mtbs3d.com) - Meant to be Seen: forums and reporting that covered the PC and consumer 3D era closely.
 - [International Stereoscopic Union](https://www.isu3d.org) - The international body for stereo photography, with congresses and a journal.
+- [The Stereoscopic Society](https://www.stereoscopicsociety.org.uk/) - Founded in London in 1893, the oldest stereoscopic society in the world and still meeting.
 - [Stereo World](https://www.stereoworld.org) - The National Stereoscopic Association's magazine, continuous since 1974.
 - [Phereo](https://phereo.com) - Stereo-photo community whose archive is historically important. Its API has been unreliable; treat it as an archive rather than a live service.
+- **Reddit stereo communities** - [r/CrossView](https://www.reddit.com/r/CrossView/), [r/ParallelView](https://www.reddit.com/r/ParallelView/), [r/Anaglyph](https://www.reddit.com/r/Anaglyph/) and [r/wigglegrams](https://www.reddit.com/r/wigglegrams/) - the most active day-to-day stereo photography communities on the web, each with a fixed convention for the pair it displays.
 
 ## Preservation
 
