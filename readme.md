@@ -150,6 +150,26 @@ And separately from the pixels, **how the file says what it is**: a container ta
 
 These matter to this list for one reason: a view plus a depth map can be warped into a stereo pair. That is what 2D-to-3D conversion has always been, whether done by hand in a post house, in real time by a television's "simulated 3D" mode, or by a model on a laptop. It is also the honest route for recovering colour from anaglyph, where the usable stereo information is thin and the geometry has to come from somewhere.
 
+### Generated views and generated worlds
+
+If a model can produce the geometry, the second view costs nothing: a stereo pair is simply two camera positions in the same scene. That makes this the newest answer to the oldest problem in the list, which is where the other eye comes from.
+
+- [View synthesis](https://en.wikipedia.org/wiki/View_synthesis) - Rendering viewpoints that were never photographed, the general problem.
+- [Neural radiance field](https://en.wikipedia.org/wiki/Neural_radiance_field) - NeRF: a scene encoded as a function of position and direction, renderable from anywhere.
+- [Gaussian splatting](https://en.wikipedia.org/wiki/Gaussian_splatting) - The faster successor now used in practice; the [reference implementation](https://github.com/graphdeco-inria/gaussian-splatting) and [Nerfstudio](https://github.com/nerfstudio-project/nerfstudio) for the whole pipeline.
+- [Sora](https://en.wikipedia.org/wiki/Sora_(text-to-video_model)) and [generative AI](https://en.wikipedia.org/wiki/Generative_AI) - Generated video, and the point at which a "world model" that stays geometrically consistent between frames becomes a renderer rather than a slideshow.
+- [awesome-world-models-video-games-3d](https://github.com/gxchris95/awesome-world-models-video-games-3d) - A companion list for that branch specifically.
+
+**Text to 3D and image to 3D**, which produce geometry directly and therefore produce stereo for free:
+
+- [Shap-E](https://github.com/openai/shap-e) and [Point-E](https://github.com/openai/point-e) - Text and image to 3D, the models that made the category ordinary.
+- [threestudio](https://github.com/threestudio-project/threestudio) - Unified framework covering most text-to-3D methods in one place.
+- [stable-dreamfusion](https://github.com/ashawkey/stable-dreamfusion) - Open implementation of the DreamFusion approach.
+- [TripoSR](https://github.com/VAST-AI-Research/TripoSR) and [InstantMesh](https://github.com/TencentARC/InstantMesh) - One image to a mesh, in seconds.
+- [Hunyuan3D 2](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) - Current large open model for 3D generation.
+
+The honest caveat for this list: generated depth is invented depth. It is excellent for making something watchable and it is not a recovery of what was actually in front of the lens, which matters when the goal is restoring an archive rather than producing an effect.
+
 ### From depth to objects
 
 Depth is the common denominator. Measure it and you can synthesise a view, or you can build the thing itself. The same scans, point clouds and meshes feed both a stereo pair and a printer, which is why "3D" means all of this at once and why the word has never split.
@@ -275,7 +295,12 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 - [OpenGloves](https://github.com/LucidVR/opengloves-driver) - Open driver for do-it-yourself haptic gloves, the community answer to gloves costing more than the headset.
 - [SlimeVR](https://slimevr.dev) - Open-source full-body tracking: [firmware](https://github.com/SlimeVR/SlimeVR-Tracker-ESP), [server](https://github.com/SlimeVR/SlimeVR-Server) and an [OpenVR driver](https://github.com/SlimeVR/SlimeVR-OpenVR-Driver) for cheap IMU trackers. The clearest example in this section of a proprietary capability being rebuilt as something people can own and repair.
 - [Motion capture](https://en.wikipedia.org/wiki/Motion_capture) and [finger tracking](https://en.wikipedia.org/wiki/Finger_tracking) - Getting the body into the scene at all, which is the other half of full-body VR.
-- [Omnidirectional treadmill](https://en.wikipedia.org/wiki/Omnidirectional_treadmill) and [Virtuix Omni](https://en.wikipedia.org/wiki/Virtuix_Omni) - Walking without leaving the room, the oldest unsolved problem in the category.
+
+### Omnidirectional controllers
+
+Locomotion is the oldest unsolved problem in the category: the scene is infinite and the room is not.
+
+- [Omnidirectional treadmill](https://en.wikipedia.org/wiki/Omnidirectional_treadmill) and [Virtuix Omni](https://en.wikipedia.org/wiki/Virtuix_Omni) - Walking without leaving the room, the approach most attempts have taken.
 - [KAT VR](https://www.kat-vr.com) - Current locomotion platforms of that kind.
 - **Disney HoloTile** - An omnidirectional floor of small rotating tiles that lets several people walk anywhere, in any direction, without moving from the spot, invented by [Lanny Smoot](https://en.wikipedia.org/wiki/Lanny_Smoot) at [Walt Disney Imagineering](https://en.wikipedia.org/wiki/Walt_Disney_Imagineering): [coverage](https://xchange.avixa.org/posts/disney-advances-vr-treadmill-technology-with-holotile), [Disney Research](https://la.disneyresearch.com). The same company that built Captain EO in 1986 is still inventing immersion hardware forty years later, which says something about where this medium has always been funded.
 - [Galvanic vestibular stimulation](https://en.wikipedia.org/wiki/Galvanic_vestibular_stimulation) - Driving the [vestibular system](https://en.wikipedia.org/wiki/Vestibular_system) directly, the research edge where motion is felt rather than shown, and the most direct attack on motion sickness.
