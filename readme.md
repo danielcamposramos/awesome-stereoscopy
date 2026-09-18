@@ -300,7 +300,10 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 
 **Scope note, stated plainly: none of this is stereoscopy.** A haptic vest puts no image in either eye. It is here because the stereo image is the first component of presence and never the only one, and because the question "what would full immersion actually take" leads straight out of the display and into the body. Treat this section as the neighbours, clearly labelled, not as the subject.
 
-- [Haptic technology](https://en.wikipedia.org/wiki/Haptic_technology) - Touch as an output device, and the general field the rest of this section sits in.
+- [Haptic technology](https://en.wikipedia.org/wiki/Haptic_technology) - Touch as an output device, and the general field the rest of this section sits in. "Force feedback" redirects here, and the idea is worth stating in this list's own terms: it is **depth you feel instead of see**. A wheel that fights back, a trigger that resists, a seat that moves — the same substitution a 4D cinema makes when it adds motion and air to a stereo image.
+- [Rumble Pak](https://en.wikipedia.org/wiki/Rumble_Pak) - 1997, where force feedback became something ordinary people owned.
+- [Motion simulator](https://en.wikipedia.org/wiki/Motion_simulator) - Moving the body to sell the image, from flight trainers to the motion seats in 4D theatres and the Back to the Future ride above.
+- [Proprioception](https://en.wikipedia.org/wiki/Proprioception) - The sense these devices actually address: where your body believes it is. Contradict it and you get [simulator sickness](https://en.wikipedia.org/wiki/Simulator_sickness), which is the single biggest limit on all of it.
 - [Haptic suit](https://en.wikipedia.org/wiki/Haptic_suit) - Worn feedback across the torso and limbs, the wearable half of "full body".
 - [bHaptics](https://www.bhaptics.com) - The vests, sleeves and face haptics that actually shipped to consumers.
 - [HaptX](https://haptx.com) - Force-feedback gloves aimed at industrial and research use, where the hand resists as well as buzzes.
@@ -319,6 +322,17 @@ Locomotion is the oldest unsolved problem in the category: the scene is infinite
 - **Disney HoloTile** - An omnidirectional floor of small rotating tiles that lets several people walk anywhere, in any direction, without moving from the spot, invented by [Lanny Smoot](https://en.wikipedia.org/wiki/Lanny_Smoot) at [Walt Disney Imagineering](https://en.wikipedia.org/wiki/Walt_Disney_Imagineering): [coverage](https://xchange.avixa.org/posts/disney-advances-vr-treadmill-technology-with-holotile), [Disney Research](https://la.disneyresearch.com). The same company that built Captain EO in 1986 is still inventing immersion hardware forty years later, which says something about where this medium has always been funded.
 - [Galvanic vestibular stimulation](https://en.wikipedia.org/wiki/Galvanic_vestibular_stimulation) - Driving the [vestibular system](https://en.wikipedia.org/wiki/Vestibular_system) directly, the research edge where motion is felt rather than shown, and the most direct attack on motion sickness.
 - [Brain-computer interface](https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface) - The far end of the same road, where the display disappears entirely.
+
+### Light beyond the frame
+
+The cheapest immersion trick of all: extend the picture past the edges of the screen into the room, so [peripheral vision](https://en.wikipedia.org/wiki/Peripheral_vision) stops reporting that the image ends. No stereo involved, and the effect on presence is real.
+
+- [Ambilight](https://en.wikipedia.org/wiki/Ambilight) - Philips' built-in version, lighting the wall with colours sampled from the edges of the frame. Often misremembered as an LG feature; it is Philips', through [TP Vision](https://en.wikipedia.org/wiki/TP_Vision).
+- [Hyperion](https://github.com/hyperion-project/hyperion.ng) - The open-source implementation, which does the same for any screen and any LED strip, including televisions whose manufacturer never offered it.
+- [WLED](https://github.com/Aircoookie/WLED) - The firmware most of those strips end up running.
+- [Lightpack / Prismatik](https://github.com/psieg/Lightpack) and [Adalight](https://github.com/dmadison/Adalight-FastLED) - The earlier open hardware and sketch that started the do-it-yourself lineage.
+- [Philips Hue](https://en.wikipedia.org/wiki/Philips_Hue) - The commercial route, via its HDMI sync hardware.
+- [Field of view](https://en.wikipedia.org/wiki/Field_of_view) - Why any of it works, and the quantity every immersion technology in this section is ultimately buying.
 
 ## Communities and archives
 
