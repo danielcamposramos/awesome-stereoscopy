@@ -49,8 +49,22 @@ Two centuries in five movements. The formats in the next section only make sense
 - [Dial M for Murder](https://en.wikipedia.org/wiki/Dial_M_for_Murder) - Hitchcock shot it in 3D in 1954, then it was mostly shown flat: the era's ending in one film.
 - [Jaws 3-D](https://en.wikipedia.org/wiki/Jaws_3-D) and [Friday the 13th Part III](https://en.wikipedia.org/wiki/Friday_the_13th_Part_III) - The early-1980s revival, remembered mostly for things thrown at the camera, which is a large part of why the format kept having to earn its reputation back.
 - [Captain EO](https://en.wikipedia.org/wiki/Captain_EO) - 1986, seventeen minutes, 70mm 3-D: directed by Francis Ford Coppola, executive-produced by George Lucas, starring Michael Jackson, and at roughly $23.7 million the most expensive film ever made per minute. It ran at the Disney parks from 1986, returned in 2010 after fan campaigns following Jackson's death, and closed at Epcot in December 2015. The best argument on record that stereo 3D was never only a gimmick, and [sourced production notes](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/judging-by-the-cover.md) for the chaos behind it.
-- [4D film](https://en.wikipedia.org/wiki/4D_film) - Stereo projection plus effects in the room. The venue format that outlived every consumer 3D wave, because the experience cannot be taken home.
+- [4D film](https://en.wikipedia.org/wiki/4D_film) - Stereo projection plus effects in the room: motion seats, water, air, scent. The venue format that outlived every consumer 3D wave, because the experience cannot be taken home. The "5D" and "6D" booths in shopping centres are the same thing with a larger number on the sign, and the count has no technical meaning.
 - [IMAX](https://en.wikipedia.org/wiki/IMAX) - Where large-format stereo projection was kept working continuously between the revivals.
+
+### Theme parks: where 3D never stopped
+
+Consumer 3D came and went twice. In parks it simply ran, for decades, because the venue can charge for what a living room cannot reproduce.
+
+- [Magic Journeys](https://en.wikipedia.org/wiki/Magic_Journeys) - 1982, Disney's first 3D film, and the start of the park lineage.
+- [Captain EO](https://en.wikipedia.org/wiki/Captain_EO) - 1986, the one above.
+- [Muppet*Vision 3D](https://en.wikipedia.org/wiki/Muppet*Vision_3D) - 1991, Jim Henson's last completed project, and a masterclass in using stereo for comic timing rather than for objects flying at the audience.
+- [Honey, I Shrunk the Audience!](https://en.wikipedia.org/wiki/Honey,_I_Shrunk_the_Audience!) - 1994, which took over Captain EO's theatre and held it until Captain EO came back.
+- [T2-3D: Battle Across Time](https://en.wikipedia.org/wiki/T2-3D:_Battle_Across_Time) - 1996, directed by James Cameron: 70mm 3D intercut with live actors on stage, and one of the most expensive films per minute ever made.
+- [It's Tough to Be a Bug!](https://en.wikipedia.org/wiki/It%27s_Tough_to_Be_a_Bug!) - 1998, in-theatre effects married to stereo.
+- [Shrek 4-D](https://en.wikipedia.org/wiki/Shrek_4-D) - 2003, the format's most widely cloned example.
+- [Pirates 4-D](https://en.wikipedia.org/wiki/Pirates_4-D) - 1999, the same formula outside the big two.
+- [Back to the Future: The Ride](https://en.wikipedia.org/wiki/Back_to_the_Future:_The_Ride) - 1991. Included as the honest contrast: a motion simulator with 70mm dome projection, *not* stereoscopic, which is exactly the line "4D" marketing tends to blur.
 - [Digital 3D](https://en.wikipedia.org/wiki/Digital_3D) - The projection technology behind the 2000s revival.
 - [RealD 3D](https://en.wikipedia.org/wiki/RealD_3D) - Circular-polarised projection, the system most cinema 3D actually runs on.
 - [Dolby 3D](https://en.wikipedia.org/wiki/Dolby_3D) - The wavelength-multiplexing alternative, with expensive glasses and no silver screen.
@@ -86,7 +100,21 @@ The asymmetry here is the part worth noticing. Cinema 3D continued while consume
 
 Every stereoscopic file answers one question: where is the second eye? The answers, in rough order of age:
 
-- [Anaglyph 3D](https://en.wikipedia.org/wiki/Anaglyph_3D) - Both eyes multiplexed into colour channels, 1853 onwards. Lossy and universal: it plays on anything, including paper.
+- [Anaglyph 3D](https://en.wikipedia.org/wiki/Anaglyph_3D) - Both eyes multiplexed into colour channels, 1853 onwards. Lossy and universal: it plays on anything, including paper, and it is the only stereo format that survives being printed, photocopied or posted anywhere.
+
+### Anaglyph colour codes
+
+The glasses decide the encoding, and they are not interchangeable. Which pair a file was made for is part of the file's meaning, and getting it wrong is why so much archived anaglyph looks broken:
+
+- **Red / cyan** - The default, and what almost everything in circulation assumes. Left eye red, right eye cyan. Cyan covers green and blue, which is why the right eye keeps most of the colour information and the left eye keeps almost none.
+- **Red / green** and **red / blue** - The older pairs, common in print and comics. Nearly no colour survives, but the separation is strong and the filters are cheap.
+- **Green / magenta** - Marketed as Trioscopics. Splits the luminance more evenly between the eyes than red/cyan, so it holds colour noticeably better.
+- **Amber / dark blue** - [ColorCode 3-D](https://en.wikipedia.org/wiki/ColorCode_3-D), designed so the image is nearly watchable without glasses, at the cost of heavy eye asymmetry.
+- **Dubois anaglyph** - Not another colour pair but the right way to compute one: a least-squares optimisation of the channel mix for a given filter pair, which reduces the ghosting and retinal rivalry that plain channel-copying produces. Stock FFmpeg implements it as `arcd`, `agmd` and `aybd`.
+- [Infitec](https://en.wikipedia.org/wiki/Infitec) - The professional descendant of the idea: narrow interference filters splitting each primary rather than whole channels, used by Dolby 3D. Full colour, expensive glasses.
+- [Complementary colours](https://en.wikipedia.org/wiki/Complementary_colors) - Why any of it works, and why the pairs are always opposites.
+
+One practical note, because it costs people their archives: anaglyph made for CRT phosphors ghosts on a modern LED panel, since the filters were chosen against a different spectrum. The fix is a per-panel correction on top of Dubois, not a different file.
 - **Side-by-side and over-under**, "frame compatible" - Two half-resolution views inside one ordinary frame. The broadcast era's compromise, and still the most common layout in the wild.
 - **Frame packing** - Both views at full resolution in one coded frame, as HDMI 1.4 and Blu-ray 3D carry them.
 - **Row and column interleaving** - Alternate lines or columns per eye, matching passive polarised and parallax-barrier panels directly.
