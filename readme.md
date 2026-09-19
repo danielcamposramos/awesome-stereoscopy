@@ -8,7 +8,6 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 ## Contents
 
 - [History](#history)
-  - [Prehistory](#prehistory-knowing-about-two-eyes) · [Origins](#origins-1838-onwards) · [Photography](#stereo-photography-as-a-mass-medium) · [Continental trade](#the-continental-trade) · [Beyond Europe](#beyond-europe-and-north-america) · [Instrument](#stereo-as-an-instrument) · [Cinema](#cinema-and-hollywood) · [World cinema](#world-stereo-cinema) · [Television](#television-and-home-video) · [PC gaming](#pc-gaming-and-the-driver-era) · [Games and handhelds](#games-and-handhelds)
 - [How stereo is stored](#how-stereo-is-stored)
 - [Depth, and making the second view](#depth-and-making-the-second-view)
 - [Capture](#capture)
@@ -26,7 +25,6 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [Adjacent fields](#adjacent-fields)
 - [Related lists](#related-lists)
 - [Known gaps](#known-gaps)
-- [Contributing](#contributing)
 
 ## History
 
@@ -116,9 +114,9 @@ Most of this list is stereo as entertainment. It has also, since before cinema, 
 
 Hollywood's golden era is the loudest chapter, not the only one — these cinemas ran in parallel, and together they answer the idea that stereo film is a single-nation story:
 
-- **Semyon Pavlovich Ivanov (1906-1972)** - Invented the Soviet glasses-free stereoscopic cinema system in 1935: a radial raster screen that let an audience see stereo with no glasses at all, a decade before Hollywood's golden era began. Moscow had a cinema running on it from 1941. He has [an article in Russian](https://ru.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2,_%D0%A1%D0%B5%D0%BC%D1%91%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%28%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%29) and none in English, where the same name returns a Soviet general instead, which is the Anglo-centrism of this subject in one example. See also [autostereoscopy in Russian](https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D1%82%D0%B5%D1%80%D0%B5%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F), which describes his raster.
+- [Semyon Pavlovich Ivanov](https://ru.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2,_%D0%A1%D0%B5%D0%BC%D1%91%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%28%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%29) - Russian, 1906-1972, who invented the Soviet glasses-free stereoscopic cinema system in 1935: a radial raster screen that let an audience see stereo with no glasses at all, a decade before Hollywood's golden era began. Moscow had a cinema running on it from 1941. His article is in Russian and there is none in English, where the same name returns a Soviet general instead, which is the Anglo-centrism of this subject in one example. See also [autostereoscopy in Russian](https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D1%82%D0%B5%D1%80%D0%B5%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F), which describes his raster.
 - [Robinson Crusoe](https://en.wikipedia.org/wiki/Robinson_Crusoe_(1947_film)) - The 1947 Soviet 3D feature shown on that system, glasses-free, and the most visible surviving artefact of a stereo-cinema programme that ran in parallel with Hollywood's.
-- **The Soviet stereokino programme** - Not one film but a state cinema that ran for decades: after Robinson Crusoe the system matured into **Стерео-70** (1963), which won an Academy Award for technical achievement and shot more than thirty films, including puppet animation. The fullest account is [the Russian Wikipedia article on stereocinematography](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D1%80%D0%B5%D0%BE%D0%BA%D0%B8%D0%BD%D0%B5%D0%BC%D0%B0%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84), which has no English equivalent.
+- [The Soviet stereokino programme](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D1%80%D0%B5%D0%BE%D0%BA%D0%B8%D0%BD%D0%B5%D0%BC%D0%B0%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84) - Not one film but a state cinema that ran for decades: after Robinson Crusoe the system matured into **Стерео-70** (1963), which won an Academy Award for technical achievement and shot more than thirty films, including puppet animation. The fullest account is the Russian Wikipedia article on stereocinematography, which has no English equivalent.
 - [Toho Toovision](https://eiga.com/extra/oguchi/7/2/) - Japan's first 3D fiction films: two anaglyph shorts, *Watashi wa nerawarete iru* (私は狙われている) and *Tobidashita nichiyōbi* (飛び出した日曜日), which opened at the Nichigeki in Tokyo on 22 April 1953. The camera system had been developed from 1941 by the Toho engineer Kiichi Iwabuchi, at the studio unit that made training films for naval aviation. Shochiku answered on 12 May with *Kettō* (決闘), shot on its own "Shochiku Natural Vision" system, and then both studios announced they would stop making 3D films to concentrate on widescreen, TohoScope and Shochiku GrandScope: [the format war](#the-format-war-that-decided-the-frame), fought again in Japan. The history is by the stereo-film researcher Takayuki Ōguchi, in Japanese; see also [the Japanese Wikipedia article on 3D film](https://ja.wikipedia.org/wiki/%E7%AB%8B%E4%BD%93%E6%98%A0%E7%94%BB).
 - [El Corazón y la Espada](https://cinema.wisc.edu/2025/03/06/sword-of-granada-a-golden-age-3-d-rarity/) - *Sword of Granada*, 1953: shot by Estudios Tepeyac on a dual-camera 3D rig from the Howard Anderson Optical Company, and shown in dual-strip polarised 3D. It is usually billed as the first 3D feature shot in Mexico, a claim the UW–Madison Cinematheque note linked here calls contentious, since Rosa Elena Cabiedes' 54-minute *El Reportero TD* may predate it by about a year. Restored by the 3D Film Archive and screened again in 2025.
 - [Buenos Aires en relieve](https://www.archivorta.com.ar/buenos-aires-en-relieve-la-primera-pelicula-argentina-en-3d-1954/) - Argentina's first 3D film, a medium-length picture directed by Don Napy with Jorge A. Duclout as technical director for the relief and the colour. It premiered on 10 March 1954 at the first Mar del Plata International Film Festival, with President Perón present, on the same programme as André de Toth's *House of Wax*, and was billed as made "entirely by Argentine technicians and systems". It has no Wikipedia article; the account is from the historical archive of Radio y Televisión Argentina, in Spanish.
@@ -136,14 +134,13 @@ The stereo formats below did not choose their shape in a vacuum. They inherited 
 
 **The 16:9 truce.** The one ratio that was not a weapon was 16:9 (1.78:1). It was proposed at SMPTE in 1984 by Kerns H. Powers as the [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of the extremes, 4:3 and 2.35:1 — a single shape inside which every existing ratio fits with the least waste. It is the only format here chosen for compatibility rather than spectacle, which is why the modern television is 16:9.
 
-**The anamorphic squeeze, the trick half-SBS inherited.** CinemaScope ran on the [Hypergonar](https://en.wikipedia.org/wiki/Henri_Chr%C3%A9tien), an anamorphic lens by [Henri Chrétien](https://en.wikipedia.org/wiki/Henri_Chr%C3%A9tien) whose lineage runs back to the wide-view periscopes of First World War tanks. A 2× horizontal squeeze records a wide picture on ordinary 35mm film; a matching lens at the projector unsqueezes it. This is the same squeeze-and-unsqueeze that [side-by-side](#displays-decide-the-format) relies on, and the same failure: if nothing unsqueezes it, it stays stretched. Half-SBS is CinemaScope with the second lens missing.
+**The anamorphic squeeze, the trick half-SBS inherited.** CinemaScope ran on the [Hypergonar](https://en.wikipedia.org/wiki/Henri_Chr%C3%A9tien), an anamorphic lens by Henri Chrétien whose lineage runs back to the wide-view periscopes of First World War tanks. A 2× horizontal squeeze records a wide picture on ordinary 35mm film; a matching lens at the projector unsqueezes it. This is the same squeeze-and-unsqueeze that side-by-side relies on, and the same failure: if nothing unsqueezes it, it stays stretched. Half-SBS is CinemaScope with the second lens missing.
 
 ### Theme parks: where 3D never stopped
 
 Consumer 3D came and went twice. In parks it simply ran, for decades, because the venue can charge for what a living room cannot reproduce.
 
 - [Magic Journeys](https://en.wikipedia.org/wiki/Magic_Journeys) - 1982, Disney's first 3D film, and the start of the park lineage.
-- [Captain EO](https://en.wikipedia.org/wiki/Captain_EO) - 1986, the one above.
 - [Muppet*Vision 3D](https://en.wikipedia.org/wiki/Muppet*Vision_3D) - 1991, Jim Henson's last completed project, and a masterclass in using stereo for comic timing rather than for objects flying at the audience.
 - [Honey, I Shrunk the Audience!](https://en.wikipedia.org/wiki/Honey,_I_Shrunk_the_Audience!) - 1994, which took over Captain EO's theatre and held it until Captain EO came back.
 - [T2-3D: Battle Across Time](https://en.wikipedia.org/wiki/T2-3D:_Battle_Across_Time) - 1996, directed by James Cameron: 70mm 3D intercut with live actors on stage, and one of the most expensive films per minute ever made.
@@ -162,7 +159,7 @@ Consumer 3D came and went twice. In parks it simply ran, for decades, because th
 The asymmetry here is the part worth noticing. Cinema 3D continued while consumer 3D was withdrawn, and the withdrawal has dates. The broadcasters went first: DirecTV stopped its 3D programming in 2012, ESPN in 2013, and the BBC ended its 3D shows the same year, citing a "lack of public appetite". Then the manufacturers: Vizio stopped making 3D sets in 2014, Samsung in March 2016, Panasonic after it, and in January 2017 the last two holdouts, Sony and LG, [dropped 3D support entirely](https://www.smh.com.au/technology/its-official-3d-tv-is-dead-20170127-gtznpi.html) — the report at the time concluding that "the cinema will soon, once again, be the only place for 3D films". It was right, and 3D screenings are still routine in multiplexes today. The explanation usually given is commercial rather than technical, since a cinema ticket, an IMAX screen or a theme-park attraction can carry a surcharge and a living room cannot. Worth noting too, from [The Verge at CES 2013](https://www.theverge.com/2013/1/7/3848856/sony-ces-2013-4k-oled-prototypes-to-flagship-xperia-phones), that Sony had tried to own every link of the chain for 3D — content creation, distribution and playback — before running exactly the same play for 4K, which is the one that stuck. Whatever the reason, the effect on owners was the same: hardware that kept its panel and lost its ecosystem, which is why several entries in this list are about recovering formats rather than buying them.
 
 - [3D television](https://en.wikipedia.org/wiki/3D_television) - The 2010-2013 consumer wave, the ramp-up after *Avatar*, and the withdrawal that followed.
-- [Multiview Video Coding](https://en.wikipedia.org/wiki/Multiview_Video_Coding) - The MVC extension that carried Blu-ray 3D, and the reason a 3D disc is not simply two files.
+- Multiview Video Coding - The MVC extension that carried Blu-ray 3D, and the reason a 3D disc is not simply two files.
 - [3D television broadcasting in Japan](https://ja.wikipedia.org/wiki/%E7%AB%8B%E4%BD%93%E3%83%86%E3%83%AC%E3%83%93%E6%94%BE%E9%80%81) - A national 3D broadcast era from start to finish, documented in Japanese Wikipedia with no English equivalent. BS11 began regular 3D broadcasting in December 2007, in the "MT" format developed by NHK Media Technology, and BS-TBS followed, two years before the post-*Avatar* sets. Sky PerfecTV! started HD 3D on 19 June 2010, BS11 carried Japan's first live 3D broadcast, from the Sanja Festival, the same year, and WOWOW ran a paid 3D slot from April 2012 to March 2015. The end is dated too: when BS11's short programme *3D Kikō* finished on 30 September 2015, regular 3D disappeared from free commercial television.
 - [Integral 3D television](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B0%E3%83%A9%E3%83%AB%E7%AB%8B%E4%BD%93%E3%83%86%E3%83%AC%E3%83%93) - The glasses-free line of NHK's Science & Technology Research Laboratories: a lens array of tiny lenses used for both capture and display, developed as an application of 8K Super Hi-Vision, with the first prototype shown at the laboratories' 1999 open house. A [2007 visit report](https://gijutsu.jbmia.or.jp/rep_res/2007/07kengaku-NHK.pdf) records it as joint research with JVC, commissioned by NICT. It is documented in Japanese only; the English article on the laboratories does not mention it.
 
@@ -176,14 +173,13 @@ The asymmetry here is the part worth noticing. Cinema 3D continued while consume
 ### Games and handhelds
 
 - [Virtual Boy](https://en.wikipedia.org/wiki/Virtual_Boy) - Nintendo's 1995 worn stereo display: a commercial failure, and a genuine mirror-scanned stereoscope.
-- [Stereoscopic video game](https://en.wikipedia.org/wiki/Stereoscopic_video_game) - How games have rendered two eyes, from the 1980s onward.
-- [LG Optimus 3D](https://en.wikipedia.org/wiki/LG_Optimus_3D) **3D game library** - The 2011 glasses-free phone shipped with Gameloft titles rendered natively in 3D (N.O.V.A., Asphalt 6, Let's Golf 2) and a **3D Game Converter** that lifted a whitelist of 2D Android games into stereo in real time by reading each game's depth buffer for the second view. The converter is the mobile counterpart to the [PC driver era](#pc-gaming-and-the-driver-era) — Nvidia 3D Vision and iZ3D's trick, moved into a phone — and it ended the same way: abandonware when the platform died.
-- [HTC Evo 3D](https://en.wikipedia.org/wiki/HTC_Evo_3D) - The other 2011 glasses-free phone, with no converter: it leaned on a preloaded Gameloft storefront instead, shipping a *Spider-Man: Total Mayhem* 3D demo out of the box with *Assassin's Creed: Altair's Chronicles* and *GT Racing* on sale at launch.
+- [Stereoscopic video game](https://en.wikipedia.org/wiki/Stereoscopic_video_game) - How games have rendered two eyes, from the 1980s onward, on consoles, handhelds and headsets alike.
+**The 2011 phones had game libraries too.** The LG Optimus 3D shipped Gameloft titles rendered natively in 3D (N.O.V.A., Asphalt 6, Let's Golf 2) and a **3D Game Converter** that lifted a whitelist of 2D Android games into stereo in real time by reading each game's depth buffer for the second view. The converter is the mobile counterpart to the [PC driver era](#pc-gaming-and-the-driver-era) — Nvidia 3D Vision and iZ3D's trick, moved into a phone — and it ended the same way, abandonware when the platform died. The HTC Evo 3D had no converter and leaned on a preloaded Gameloft storefront instead, shipping a *Spider-Man: Total Mayhem* 3D demo out of the box with *Assassin's Creed: Altair's Chronicles* and *GT Racing* on sale at launch. Both phones are described under [glasses-free phones, handhelds and cameras](#glasses-free-phones-handhelds-and-cameras).
+
 - [Sharp AQUOS PHONE](https://en.wikipedia.org/wiki/Sharp_Aquos_Phone) - The Japanese wave's answer to the converter: the SH80F claimed to be the first Android phone to convert 2D to 3D in real time, and shipped EA's *Need for Speed Shift* playable in 3D.
 
 ### Perception and curiosities
 
-- [Stereopsis](https://en.wikipedia.org/wiki/Stereopsis) - How depth perception actually works, and why luminance matters more than colour in a stereo pair.
 - [Pulfrich effect](https://en.wikipedia.org/wiki/Pulfrich_effect) - Depth from a delay in one eye, which produced a whole genre of cheap 3D broadcasts.
 - [Autostereogram](https://en.wikipedia.org/wiki/Autostereogram) - The *Magic Eye* branch: stereo with no device at all.
 - [Wiggle stereoscopy](https://en.wikipedia.org/wiki/Wiggle_stereoscopy) - Animation as a stereo display, needing neither glasses nor a special screen.
@@ -198,26 +194,42 @@ Every stereoscopic file answers one question: where is the second eye? The answe
 
 The glasses decide the encoding, and they are not interchangeable. Which pair a file was made for is part of the file's meaning, and getting it wrong is why so much archived anaglyph looks broken:
 
-- **Red / cyan** - The default, and what almost everything in circulation assumes. Left eye red, right eye cyan. Cyan covers green and blue, which is why the right eye keeps most of the colour information and the left eye keeps almost none.
-- **Red / green** and **red / blue** - The older pairs, common in print and comics. Nearly no colour survives, but the separation is strong and the filters are cheap.
-- **Green / magenta** - Marketed as Trioscopics. Splits the luminance more evenly between the eyes than red/cyan, so it holds colour noticeably better.
-- **Amber / dark blue** - [ColorCode 3-D](https://en.wikipedia.org/wiki/ColorCode_3-D), designed so the image is nearly watchable without glasses, at the cost of heavy eye asymmetry.
-- **Dubois anaglyph** - Not another colour pair but the right way to compute one: a least-squares optimisation of the channel mix for a given filter pair, which reduces the ghosting and retinal rivalry that plain channel-copying produces. Stock FFmpeg implements it as `arcd`, `agmd` and `aybd`.
-- [Infitec](https://en.wikipedia.org/wiki/Infitec) - The professional descendant of the idea: narrow interference filters splitting each primary rather than whole channels, used by Dolby 3D. Full colour, expensive glasses.
-- [Complementary colours](https://en.wikipedia.org/wiki/Complementary_colors) - Why any of it works, and why the pairs are always opposites.
+**Red / cyan.** The default, and what almost everything in circulation assumes. Left eye red, right eye cyan. Cyan covers green and blue, which is why the right eye keeps most of the colour information and the left eye keeps almost none.
+
+**Red / green** and **red / blue.** The older pairs, common in print and comics. Nearly no colour survives, but the separation is strong and the filters are cheap.
+
+**Green / magenta.** Marketed as Trioscopics. Splits the luminance more evenly between the eyes than red/cyan, so it holds colour noticeably better.
+
+**Amber / dark blue.** [ColorCode 3-D](https://en.wikipedia.org/wiki/ColorCode_3-D), designed so the image is nearly watchable without glasses, at the cost of heavy eye asymmetry.
+
+**Dubois anaglyph.** Not another colour pair but the right way to compute one: a least-squares optimisation of the channel mix for a given filter pair, which reduces the ghosting and retinal rivalry that plain channel-copying produces. Stock FFmpeg implements it as `arcd`, `agmd` and `aybd`.
+
+[Infitec](https://en.wikipedia.org/wiki/Infitec) - The professional descendant of the idea: narrow interference filters splitting each primary rather than whole channels, used by Dolby 3D. Full colour, expensive glasses.
+
+[Complementary colours](https://en.wikipedia.org/wiki/Complementary_colors) - Why any of it works, and why the pairs are always opposites.
 
 One practical note, because it costs people their archives: anaglyph made for CRT phosphors ghosts on a modern LED panel, since the filters were chosen against a different spectrum. The fix is a per-panel correction on top of Dubois, not a different file.
-- [Vectograph](https://en.wikipedia.org/wiki/Vectograph) - A polarised 3D print: the two views are printed as differently-polarised images on a single sheet and read through polarised glasses. Conceived by Joseph Mahler, who developed it into a practical process with [Edwin Land](https://en.wikipedia.org/wiki/Edwin_Land) at Polaroid. The print counterpart to a [polarised cinema](#displays-decide-the-format): in the Second World War, stereo aerial reconnaissance was printed as vectographs, both for troops in the field and as transparencies projected for group viewing.
-- **Side-by-side and over-under**, "frame compatible" - Two half-resolution views inside one ordinary frame. The broadcast era's compromise, and still the most common layout in the wild.
-- **Frame packing** - Both views at full resolution in one coded frame, as HDMI 1.4 and Blu-ray 3D carry them.
-- **Row and column interleaving** - Alternate lines or columns per eye, matching passive polarised and parallax-barrier panels directly.
-- [Multiview Video Coding](https://en.wikipedia.org/wiki/Multiview_Video_Coding) - The MVC extension used by Blu-ray 3D: a second view coded as a prediction of the first.
-- [Stereoscopic video coding](https://en.wikipedia.org/wiki/Stereoscopic_video_coding) - The general survey of how stereo is packed into video streams.
-- **MPO** - Two JPEGs in one file with an index, the format 3D cameras wrote. Standardised by CIPA as DC-007.
-- [2D-plus-depth](https://en.wikipedia.org/wiki/2D-plus-depth) - One view plus a greyscale depth map, standardised as MPEG-C Part 3. The display synthesises the other eye, which is how a single file can serve 2D screens and autostereoscopic ones at once.
-- **MV-HEVC** - The multiview extension of HEVC, and the encoding behind Apple's "spatial video": two views in one modern codec, which is the same idea as MVC a decade later. See [High Efficiency Video Coding](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding).
-- **VR180** - Google's 180° stereo photo and video format, an equirectangular pair aimed at headsets, which is the headset-era counterpart to the frame-compatible and full-resolution packings above. See [VR photography](https://en.wikipedia.org/wiki/VR_photography).
-- **JPS and PNS** - A side-by-side pair in a JPEG or PNG, by community convention rather than by standard. A `.jps` is a valid JPEG that most software refuses purely because of its extension.
+[Vectograph](https://en.wikipedia.org/wiki/Vectograph) - A polarised 3D print: the two views are printed as differently-polarised images on a single sheet and read through polarised glasses. Conceived by Joseph Mahler, who developed it into a practical process with [Edwin Land](https://en.wikipedia.org/wiki/Edwin_Land) at Polaroid. The print counterpart to a polarised cinema: in the Second World War, stereo aerial reconnaissance was printed as vectographs, both for troops in the field and as transparencies projected for group viewing.
+
+**Side-by-side and over-under**, "frame compatible" - Two half-resolution views inside one ordinary frame. The broadcast era's compromise, and still the most common layout in the wild.
+
+**Frame packing.** Both views at full resolution in one coded frame, as HDMI 1.4 and Blu-ray 3D carry them.
+
+**Row and column interleaving.** Alternate lines or columns per eye, matching passive polarised and parallax-barrier panels directly.
+
+[Multiview Video Coding](https://en.wikipedia.org/wiki/Multiview_Video_Coding) - The MVC extension used by Blu-ray 3D: a second view coded as a prediction of the first.
+
+[Stereoscopic video coding](https://en.wikipedia.org/wiki/Stereoscopic_video_coding) - The general survey of how stereo is packed into video streams.
+
+**MPO.** Two JPEGs in one file with an index, the format 3D cameras wrote. Standardised by CIPA as DC-007.
+
+[2D-plus-depth](https://en.wikipedia.org/wiki/2D-plus-depth) - One view plus a greyscale depth map, standardised as MPEG-C Part 3. The display synthesises the other eye, which is how a single file can serve 2D screens and autostereoscopic ones at once.
+
+**MV-HEVC.** The multiview extension of HEVC, and the encoding behind Apple's "spatial video": two views in one modern codec, which is the same idea as MVC a decade later. See [High Efficiency Video Coding](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding).
+
+**VR180.** Google's 180° stereo photo and video format, an equirectangular pair aimed at headsets, which is the headset-era counterpart to the frame-compatible and full-resolution packings above. See [VR photography](https://en.wikipedia.org/wiki/VR_photography).
+
+**JPS and PNS.** A side-by-side pair in a JPEG or PNG, by community convention rather than by standard. A `.jps` is a valid JPEG that most software refuses purely because of its extension.
 
 And separately from the pixels, **how the file says what it is**: a container tag (Matroska's `StereoMode`) or an in-stream message (H.264's `frame_packing_arrangement` SEI). Hardware 3D displays generally act on the second and ignore the first, which is why correctly authored files so often play flat.
 
@@ -257,7 +269,7 @@ If a model can produce the geometry, the second view costs nothing: a stereo pai
 - [Motion interpolation](https://en.wikipedia.org/wiki/Motion_interpolation) - Drawing the frames between two real ones, which is what lifts a 24 fps film toward 60 fps.
 - [FILM](https://github.com/google-research/frame-interpolation) and [RIFE](https://github.com/hzwer/ECCV2022-RIFE) - Two current frame-interpolation models: FILM for large motion, RIFE for real time.
 
-This is view synthesis turned sideways — applied to *time* instead of *space* — and it is the direct answer to the temporal-stereo problem the [high-refresh note](#displays-decide-the-format) describes: a 24 fps film gives each eye only 24 frames a second, so motion stutters ("still shots are good but motion's a little rough"). Generate the in-between frames and each eye gets a smooth 48 or 60. The open question is doing it twice — once per eye — and keeping the two streams consistent, so the depth does not break.
+This is view synthesis turned sideways — applied to *time* instead of *space* — and it is the direct answer to the temporal-stereo problem the high-refresh note describes: a 24 fps film gives each eye only 24 frames a second, so motion stutters ("still shots are good but motion's a little rough"). Generate the in-between frames and each eye gets a smooth 48 or 60. The open question is doing it twice — once per eye — and keeping the two streams consistent, so the depth does not break.
 
 **Text to 3D and image to 3D**, which produce geometry directly and therefore produce stereo for free:
 
@@ -304,18 +316,20 @@ The same twin lenses aimed at motion. Every maker claimed a "world's first" with
 - [Sony HDR-TD10](https://www.sony.jp/products/overseas/contents/pickup/english/110324_promotion/TD10_Web/index.html) - "Double Full HD 3D" (2011): twin G Lenses, two Exmor R sensors and two BIONZ processors recording full resolution per eye.
 - [Panasonic HDC-SDT750](https://archive.nytimes.com/gadgetwise.blogs.nytimes.com/2011/01/12/make-your-own-3d-videos/) - The first 3D consumer camcorder (2010), via a detachable 3D conversion lens on a 3MOS body.
 - [JVC GS-TD1](http://everio.jvc.com/gs-td1/) - Twin-lens Full HD 3D (2011) on the FALCONBRID engine, recording a full-resolution "LR Independent" format and side-by-side for AVCHD 3D compatibility.
-- **Sony Bloggie 3D (MHS-FS3)** - The pocket end of the same wave: a small twin-lens camcorder that recorded 1080p 3D side-by-side. No stable manufacturer page survives to link to.
 
-The line between the two never really held: the still Fujifilm W3 also shot 720p 3D video, and every camcorder here shot 2D stills.
+The **Sony Bloggie 3D (MHS-FS3)** belongs here too, the pocket end of the same wave, recording 1080p 3D side-by-side; no stable manufacturer page survives to link to. The line between stills and motion never really held either: the still Fujifilm W3 also shot 720p 3D video, and every camcorder here shot 2D stills.
 
 ### Two identical cameras in a rig
 
-The oldest method needs no 3D hardware at all: two identical ordinary cameras, synchronized, each becoming one eye. The two files are combined into side-by-side or top-bottom in post — the same frame-compatible packing the [displays section](#displays-decide-the-format) describes.
+The oldest method needs no 3D hardware at all: two identical ordinary cameras, synchronized, each becoming one eye. The two files are combined into side-by-side or top-bottom in post — the same frame-compatible packing the displays section describes.
 
-- **Side-by-side bar rig** - Two cameras bolted to a plate about an [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) apart (roughly 63 mm). Camera body width forces the lenses a little wider than the eyes, so hand-held bar rigs lean toward mild **hyperstereo** — exaggerated depth that suits landscapes and hates close-ups.
-- **Over-under rig** - Two cameras stacked with one inverted, the lenses brought near-coaxial; one stream is flipped in post. The compact answer when the pair has to stay narrow.
-- **Beam-splitter rig** - A semi-silvered [beam splitter](https://en.wikipedia.org/wiki/Beam_splitter) at 45°, one camera shooting through it and the other the reflection, which is how [3D films](https://en.wikipedia.org/wiki/3D_film) bring the lenses down to near-zero spacing for close work.
-- **Sync is the hard part** - Genlock or a sync cable where the cameras have one; otherwise a clapper or an audio spike to align the streams in post. Mismatched exposure, focus or rolling shutter between the two eyes ruins a rig shot far more than the spacing does.
+**Side-by-side bar rig.** Two cameras bolted to a plate about an [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) apart (roughly 63 mm). Camera body width forces the lenses a little wider than the eyes, so hand-held bar rigs lean toward mild **hyperstereo** — exaggerated depth that suits landscapes and hates close-ups.
+
+**Over-under rig.** Two cameras stacked with one inverted, the lenses brought near-coaxial; one stream is flipped in post. The compact answer when the pair has to stay narrow.
+
+**Beam-splitter rig.** A semi-silvered [beam splitter](https://en.wikipedia.org/wiki/Beam_splitter) at 45°, one camera shooting through it and the other the reflection, which is how 3D films bring the lenses down to near-zero spacing for close work.
+
+**Sync is the hard part.** Genlock or a sync cable where the cameras have one; otherwise a clapper or an audio spike to align the streams in post. Mismatched exposure, focus or rolling shutter between the two eyes ruins a rig shot far more than the spacing does.
 
 ## Who can see it, and who cannot
 
@@ -385,24 +399,28 @@ The same apparatus that shows a film can rebuild the faculty itself, which is th
 
 This is the join between the two halves of this list, and the thing most explanations skip: **a display can only show the packing its optics are built for.** Side-by-side versus over-under, full versus half, interleaved versus frame-sequential — none of those were arbitrary decisions. Each one exists because some screen needed the two views arranged that way.
 
-| Display | How it separates the eyes | What it wants |
-|---|---|---|
-| [CRT](https://en.wikipedia.org/wiki/Cathode_ray_tube) with shutter glasses | alternating fields in time, at high [refresh rate](https://en.wikipedia.org/wiki/Refresh_rate) | frame-sequential; the original PC stereo, and why [interlaced video](https://en.wikipedia.org/wiki/Interlaced_video) and 120 Hz mattered so much |
-| [Active shutter](https://en.wikipedia.org/wiki/Active_shutter_3D_system) LCD/[plasma](https://en.wikipedia.org/wiki/Plasma_display)/[OLED](https://en.wikipedia.org/wiki/OLED) | alternating whole frames, glasses synced | full-frame per eye: frame packing, or a half-width/half-height frame the set unsqueezes |
-| [Passive polarised](https://en.wikipedia.org/wiki/Polarized_3D_system) (FPR) panels | [circular polarisation](https://en.wikipedia.org/wiki/Circular_polarization), alternate rows filtered | **row-interleaved at the panel**: each eye gets half the vertical resolution, always |
-| [Parallax barrier](https://en.wikipedia.org/wiki/Parallax_barrier) / [lenticular](https://en.wikipedia.org/wiki/Lenticular_printing) | alternate columns sent to each eye | **column-interleaved**, which is why glasses-free devices are the odd ones out |
-| [DLP](https://en.wikipedia.org/wiki/Digital_light_processing) [rear-projection](https://en.wikipedia.org/wiki/Rear-projection_television) TVs | micromirrors, eyes split in a chequer pattern | **checkerboard**, which is exactly why `frame_packing_arrangement_type` 0 exists in H.264 |
-| Cinema, single projector | [RealD](https://en.wikipedia.org/wiki/RealD_3D) circular polarisation switched per frame | frame-sequential, and a [silver screen](https://en.wikipedia.org/wiki/Silver_screen) — an ordinary white screen depolarises the light and the effect dies |
-| Cinema, [Dolby 3D](https://en.wikipedia.org/wiki/Dolby_3D) | [Infitec](https://en.wikipedia.org/wiki/Infitec) wavelength splitting | full colour on a normal screen, expensive glasses |
-| [IMAX](https://en.wikipedia.org/wiki/IMAX) | historically two projectors, one per eye | two full-resolution streams, the highest-fidelity arrangement there is |
+| Display                                                                                                                                       | How it separates the eyes                                                                             | What it wants                                                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [CRT](https://en.wikipedia.org/wiki/Cathode_ray_tube) with shutter glasses                                                                    | alternating fields in time, at high [refresh rate](https://en.wikipedia.org/wiki/Refresh_rate)        | frame-sequential; the original PC stereo, and why [interlaced video](https://en.wikipedia.org/wiki/Interlaced_video) and 120 Hz mattered so much          |
+| Active shutter LCD/[plasma](https://en.wikipedia.org/wiki/Plasma_display)/[OLED](https://en.wikipedia.org/wiki/OLED)                          | alternating whole frames, glasses synced                                                              | full-frame per eye: frame packing, or a half-width/half-height frame the set unsqueezes                                                                   |
+| Passive polarised (FPR) panels                                                                                                                | [circular polarisation](https://en.wikipedia.org/wiki/Circular_polarization), alternate rows filtered | **row-interleaved at the panel**: each eye gets half the vertical resolution, always                                                                      |
+| Parallax barrier / lenticular                                                                                                                 | alternate columns sent to each eye                                                                    | **column-interleaved**, which is why glasses-free devices are the odd ones out                                                                            |
+| [DLP](https://en.wikipedia.org/wiki/Digital_light_processing) [rear-projection](https://en.wikipedia.org/wiki/Rear-projection_television) TVs | micromirrors, eyes split in a chequer pattern                                                         | **checkerboard**, which is exactly why `frame_packing_arrangement_type` 0 exists in H.264                                                                 |
+| Cinema, single projector                                                                                                                      | RealD circular polarisation switched per frame                                                        | frame-sequential, and a [silver screen](https://en.wikipedia.org/wiki/Silver_screen) — an ordinary white screen depolarises the light and the effect dies |
+| Cinema, Dolby 3D                                                                                                                              | Infitec wavelength splitting                                                                          | full colour on a normal screen, expensive glasses                                                                                                         |
+| IMAX                                                                                                                                          | historically two projectors, one per eye                                                              | two full-resolution streams, the highest-fidelity arrangement there is                                                                                    |
 
-**So the format questions answer themselves:**
+So the format questions answer themselves.
 
-- **Side-by-side or over-under?** Side-by-side halves horizontal resolution; over-under halves vertical. On a passive panel that is already throwing away half the rows, over-under costs you less that you had not already lost. On an active-shutter set both are unsqueezed identically, so the choice is mostly about what your broadcaster or ripper picked.
-- **Full or half?** "Frame compatible" (half) exists so a 3D picture fits down a pipe built for 2D: same bitrate, same infrastructure, half the resolution per eye. Full frame packing needs a link that knows about 3D, which is what HDMI 1.4 added and what Blu-ray 3D uses with [MVC](https://en.wikipedia.org/wiki/Multiview_Video_Coding).
-- **Why is my half-width file stretched?** Because half-SBS is [anamorphic](https://en.wikipedia.org/wiki/Anamorphic_format): the display is expected to know it must stretch each half back to full width. If nothing tells it — the exact failure this list keeps returning to — you get two squashed pictures side by side instead of one 3D image.
-- **Why does interleaved content look wrong on the wrong screen?** Row-interleaved assumes the panel filters alternate rows. Send it to an active-shutter set and it is just a striped 2D picture.
-- **Why does 3D need a high refresh rate?** Cinema locked itself to [24 frames per second](https://en.wikipedia.org/wiki/24p) when sync sound arrived, because 24 was the slowest speed that still carried an acceptable optical soundtrack, and slower film cost less. But the eye sees [flicker](https://en.wikipedia.org/wiki/Flicker_fusion_threshold) below roughly 50–60 Hz, so a projector flashes each frame two or three times (48 or 72 Hz) to keep 24 fps from strobing. Stereo doubles the demand: two eyes each need their 24 frames, an alternation of only 48 flashes per second — right on the flicker threshold. That is why active-shutter 3D televisions run at 120 Hz or higher, lighting each eye 60 times a second, and why a 24 fps 3D film is the most flicker-prone thing a display can be asked to show. The one frame rate cinema chose to sit on its floor is the one frame rate stereo tolerates least. The real-world symptom is described best by [Linus Tech Tips](https://www.youtube.com/watch?v=_4Sz6J49jho): active-shutter glasses gave his wife a headache, and a mis-synced dual-projector pair juddered in motion while still shots stayed clean.
+**Side-by-side or over-under?** Side-by-side halves horizontal resolution; over-under halves vertical. On a passive panel that is already throwing away half the rows, over-under costs you less that you had not already lost. On an active-shutter set both are unsqueezed identically, so the choice is mostly about what your broadcaster or ripper picked.
+
+**Full or half?** "Frame compatible" (half) exists so a 3D picture fits down a pipe built for 2D: same bitrate, same infrastructure, half the resolution per eye. Full frame packing needs a link that knows about 3D, which is what HDMI 1.4 added and what Blu-ray 3D uses with MVC.
+
+**Why is my half-width file stretched?** Because half-SBS is [anamorphic](https://en.wikipedia.org/wiki/Anamorphic_format): the display is expected to know it must stretch each half back to full width. If nothing tells it — the exact failure this list keeps returning to — you get two squashed pictures side by side instead of one 3D image.
+
+**Why does interleaved content look wrong on the wrong screen?** Row-interleaved assumes the panel filters alternate rows. Send it to an active-shutter set and it is just a striped 2D picture.
+
+**Why does 3D need a high refresh rate?** Cinema locked itself to [24 frames per second](https://en.wikipedia.org/wiki/24p) when sync sound arrived, because 24 was the slowest speed that still carried an acceptable optical soundtrack, and slower film cost less. But the eye sees [flicker](https://en.wikipedia.org/wiki/Flicker_fusion_threshold) below roughly 50–60 Hz, so a projector flashes each frame two or three times (48 or 72 Hz) to keep 24 fps from strobing. Stereo doubles the demand: two eyes each need their 24 frames, an alternation of only 48 flashes per second — right on the flicker threshold. That is why active-shutter 3D televisions run at 120 Hz or higher, lighting each eye 60 times a second, and why a 24 fps 3D film is the most flicker-prone thing a display can be asked to show. The one frame rate cinema chose to sit on its floor is the one frame rate stereo tolerates least. The real-world symptom is described best by [Linus Tech Tips](https://www.youtube.com/watch?v=_4Sz6J49jho): active-shutter glasses gave his wife a headache, and a mis-synced dual-projector pair juddered in motion while still shots stayed clean.
 
 ## Displays and devices
 
@@ -412,7 +430,6 @@ This is the join between the two halves of this list, and the thing most explana
 - [Autostereoscopy](https://en.wikipedia.org/wiki/Autostereoscopy) - Stereo with no glasses at all.
 - [Parallax barrier](https://en.wikipedia.org/wiki/Parallax_barrier) - The glasses-free method used by the Nintendo 3DS and the 3D phones.
 - [Lenticular printing](https://en.wikipedia.org/wiki/Lenticular_printing) - The same idea on paper, and the oldest glasses-free medium still in production.
-- [iZ3D](https://en.wikipedia.org/wiki/IZ3D) - Dual stacked LCD panels, one carrying intensity and one carrying polarisation, viewed through passive glasses. See [PC gaming and the driver era](#pc-gaming-and-the-driver-era).
 - [Toshiba REGZA](https://en.wikipedia.org/wiki/Toshiba_Regza) - The Japanese end of the 3D television wave: the GL1 (2010) was shown as the first glasses-free 3D television, and the 55X3 (2011) shipped a glasses-free 3D display in the first 4K set.
 
 ### Glasses-free phones, handhelds and cameras
@@ -422,12 +439,12 @@ The 2011 wave is why stereo files exist in ordinary people's archives: these dev
 - [Nintendo 3DS](https://en.wikipedia.org/wiki/Nintendo_3DS) - Parallax-barrier handheld that shot and displayed MPO stereo photographs; the [New Nintendo 3DS](https://en.wikipedia.org/wiki/New_Nintendo_3DS) added head tracking to hold the sweet spot.
 - [LG Optimus 3D](https://en.wikipedia.org/wiki/LG_Optimus_3D) - Glasses-free phone with a dual-camera stereo pair, 2011, and one of the few that recorded 3D video as well as stills. Its software also converted 2D games into 3D — see [Games and handhelds](#games-and-handhelds).
 - [HTC Evo 3D](https://en.wikipedia.org/wiki/HTC_Evo_3D) - Its direct contemporary: same parallax barrier, same twin cameras, same brief window.
-- **Fujitsu F-09C** - The Japanese half of the same 2011 wave: an NTT docomo flip phone with a glasses-free 3D display that shipped a 3D block-breaking game among its preloaded 3D apps. It has [an article in Japanese](https://ja.wikipedia.org/wiki/F-09C) and none in English, which is the Japanese gap this list admits to, in one phone.
+- [Fujitsu F-09C](https://ja.wikipedia.org/wiki/F-09C) - The Japanese half of the same 2011 wave: an NTT docomo flip phone with a glasses-free 3D display that shipped a 3D block-breaking game among its preloaded 3D apps. It has an article in Japanese and none in English, which is the Japanese gap this list admits to, in one phone.
 - [LG Optimus Pad](https://en.wikipedia.org/wiki/LG_Optimus_Pad) - The tablet of the same generation, shooting stereo video while showing it in 2D.
 - [Red Hydrogen One](https://en.wikipedia.org/wiki/Red_Hydrogen_One) - The 2018 attempt at reviving glasses-free 3D on a phone, with a four-view light-field display.
-- [Fujifilm FinePix Real 3D](https://en.wikipedia.org/wiki/Fujifilm_FinePix_Real_3D) - The twin-lens consumer cameras, with a glasses-free display on the back, that made MPO a format people actually had files in.
+- Fujifilm FinePix Real 3D - The twin-lens consumer cameras, with a glasses-free display on the back, that made MPO a format people actually had files in.
 - [Stereo camera](https://en.wikipedia.org/wiki/Stereo_camera) - The general form, from the Victorian twin-lens cameras onward.
-- **Budget glasses-free tablets** - Parallax-barrier Android tablets such as the Gadmei T883-3D sold in volume outside the brand-name market between roughly 2011 and 2013, and are now close to undocumented: no manufacturer site, no archive, firmware passed around in forums. One is catalogued in the [sony-bravia-linux legacy-formats notes](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/legacy-3d-formats.md) as a preserved example.
+- [Budget glasses-free tablets](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/legacy-3d-formats.md) - Parallax-barrier Android tablets such as the Gadmei T883-3D sold in volume outside the brand-name market between roughly 2011 and 2013, and are now close to undocumented: no manufacturer site, no archive, firmware passed around in forums. One is catalogued in the sony-bravia-linux legacy-formats notes as a preserved example.
 
 ### Current
 
@@ -441,14 +458,12 @@ A headset is a stereoscope you wear. The line from Wheatstone's mirrors through 
 - [Head-mounted display](https://en.wikipedia.org/wiki/Head-mounted_display) - The general form, from military optics to consumer headsets.
 - [Virtual reality headset](https://en.wikipedia.org/wiki/Virtual_reality_headset) - The modern category and how its stereo rendering works.
 - [Google Cardboard](https://en.wikipedia.org/wiki/Google_Cardboard) - A phone in a folded holder with two lenses. It is Brewster's 1849 box stereoscope and Holmes's 1861 handheld viewer, rebuilt around a screen, and it shows the same side-by-side pair the Victorians printed on cards.
-- [Virtual Boy](https://en.wikipedia.org/wiki/Virtual_Boy) - Nintendo's 1995 worn stereo display, the console ancestor of everything in this section.
 - [Oculus Rift](https://en.wikipedia.org/wiki/Oculus_Rift) - The 2012 development kit that restarted the category.
 - [HTC Vive](https://en.wikipedia.org/wiki/HTC_Vive) and [Valve Index](https://en.wikipedia.org/wiki/Valve_Index) - Room-scale PC headsets built around SteamVR.
 - [Steam Frame](https://en.wikipedia.org/wiki/Steam_Frame) - Valve's standalone headset.
 - [Meta Quest](https://en.wikipedia.org/wiki/Meta_Quest) and [Meta Quest 3](https://en.wikipedia.org/wiki/Meta_Quest_3) - The standalone line that made headsets a mass product.
 - [Apple Vision Pro](https://en.wikipedia.org/wiki/Apple_Vision_Pro) - Notable here for making stereoscopic capture ordinary again: its "spatial video" is an MV-HEVC stereo pair shot on a phone.
 - [Augmented reality](https://en.wikipedia.org/wiki/Augmented_reality) - The same stereo optics aimed at the world instead of a virtual scene; "mixed reality" redirects here.
-- [Stereoscopic video game](https://en.wikipedia.org/wiki/Stereoscopic_video_game) - How games render two eyes, here for the headset class; [Games and handhelds](#games-and-handhelds) covers the phone and handheld class.
 
 ### Open software for headsets
 
@@ -485,7 +500,7 @@ Locomotion is the oldest unsolved problem in the category: the scene is infinite
 
 - [Omnidirectional treadmill](https://en.wikipedia.org/wiki/Omnidirectional_treadmill) and [Virtuix Omni](https://en.wikipedia.org/wiki/Virtuix_Omni) - Walking without leaving the room, the approach most attempts have taken.
 - [KAT VR](https://www.kat-vr.com) - Current locomotion platforms of that kind.
-- **Disney HoloTile** - An omnidirectional floor of small rotating tiles that lets several people walk anywhere, in any direction, without moving from the spot, invented by [Lanny Smoot](https://en.wikipedia.org/wiki/Lanny_Smoot) at [Walt Disney Imagineering](https://en.wikipedia.org/wiki/Walt_Disney_Imagineering): [coverage](https://xchange.avixa.org/posts/disney-advances-vr-treadmill-technology-with-holotile), [Disney Research](https://la.disneyresearch.com). The same company that built Captain EO in 1986 is still inventing immersion hardware forty years later, which says something about where this medium has always been funded.
+- [Disney HoloTile](https://xchange.avixa.org/posts/disney-advances-vr-treadmill-technology-with-holotile) - An omnidirectional floor of small rotating tiles that lets several people walk anywhere, in any direction, without moving from the spot, invented by [Lanny Smoot](https://en.wikipedia.org/wiki/Lanny_Smoot) at [Walt Disney Imagineering](https://en.wikipedia.org/wiki/Walt_Disney_Imagineering), with more from [Disney Research](https://la.disneyresearch.com). The same company that built Captain EO in 1986 is still inventing immersion hardware forty years later, which says something about where this medium has always been funded.
 - [Galvanic vestibular stimulation](https://en.wikipedia.org/wiki/Galvanic_vestibular_stimulation) - Driving the [vestibular system](https://en.wikipedia.org/wiki/Vestibular_system) directly, the research edge where motion is felt rather than shown, and the most direct attack on motion sickness.
 - [Brain-computer interface](https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface) - The far end of the same road, where the display disappears entirely.
 
@@ -510,7 +525,7 @@ The cheapest immersion trick of all: extend the picture past the edges of the sc
 - [STEREO CLUB Tokyo](http://www.stereoclub.jp/) - The Tokyo stereo-photography club, founded in 1996 and still holding seasonal meetings. It hosted the International Stereoscopic Union's 24th world congress at Tsukuba in 2023, the first held in Japan, and its [chronology of stereo photography in Japan](https://isu2023.stereoclub.jp/index_stereojapan_j.html), in Japanese, records a far older society: the Japan Binocular Photography Society (日本双眼寫眞會), founded in 1923 at the urging of Hayao Yoshikawa and Shūsuke Satō.
 - [Stereo World](https://www.stereoworld.org) - The National Stereoscopic Association's magazine, continuous since 1974.
 - [Phereo](https://phereo.com) - Stereo-photo community whose archive is historically important. Its API has been unreliable; treat it as an archive rather than a live service.
-- **Reddit stereo communities** - [r/CrossView](https://www.reddit.com/r/CrossView/), [r/ParallelView](https://www.reddit.com/r/ParallelView/), [r/Anaglyph](https://www.reddit.com/r/Anaglyph/) and [r/wigglegrams](https://www.reddit.com/r/wigglegrams/) - the most active day-to-day stereo photography communities on the web, each with a fixed convention for the pair it displays.
+**Reddit stereo communities.** [r/CrossView](https://www.reddit.com/r/CrossView/), [r/ParallelView](https://www.reddit.com/r/ParallelView/), [r/Anaglyph](https://www.reddit.com/r/Anaglyph/) and [r/wigglegrams](https://www.reddit.com/r/wigglegrams/) are the most active day-to-day stereo photography communities on the web, each with a fixed convention for the pair it displays.
 
 ## Preservation
 
@@ -521,8 +536,8 @@ The cheapest immersion trick of all: extend the picture past the edges of the sc
 
 Consumer 3D was withdrawn, not abandoned by the people who had it. The gap between those two things is where this whole list lives, and it shows up publicly whenever somebody well equipped tries to use the hardware they already own:
 
-- [I built a 3D theater in my basement](https://www.youtube.com/watch?v=_4Sz6J49jho) - Linus Tech Tips, 2024. Worth watching for one admission at [10:20](https://www.youtube.com/watch?v=_4Sz6J49jho&t=620s): getting the *files* to play took "more tinkering behind the scenes than anything else we've done so far" — ripping discs and remuxing by hand, on a channel with a full engineering team behind it. He also notes in the same video that dozens of 3D titles still ship on Blu-ray every year, which is the point: the content exists, and the playback chain is what broke.
-- [Phereo](https://phereo.com) - Filed under communities above, and relevant here too: an archive of community stereo photography whose backend has become unreliable, which is how a format's material disappears in practice. Not with an announcement, just with timeouts.
+- I built a 3D theater in my basement - Linus Tech Tips, 2024. Worth watching for one admission at [10:20](https://www.youtube.com/watch?v=_4Sz6J49jho&t=620s): getting the *files* to play took "more tinkering behind the scenes than anything else we've done so far" — ripping discs and remuxing by hand, on a channel with a full engineering team behind it. He also notes in the same video that dozens of 3D titles still ship on Blu-ray every year, which is the point: the content exists, and the playback chain is what broke.
+**Phereo**, filed under communities above, is relevant here too: an archive of community stereo photography whose backend has become unreliable, which is how a format's material disappears in practice. Not with an announcement, just with timeouts.
 
 ## Adjacent fields
 
@@ -530,7 +545,7 @@ Same word, and in one case the same root, for a different problem.
 
 ### Depth from two views
 
-"Stereo" in computer vision means recovering depth from two views, rather than presenting two views to two eyes. The perceptual basis is the one described under [who can see it, and who cannot](#who-can-see-it-and-who-cannot).
+"Stereo" in computer vision means recovering depth from two views, rather than presenting two views to two eyes. The perceptual basis is the one described under who can see it, and who cannot.
 
 - [SimpleStereo](https://github.com/decadenza/SimpleStereo) - Calibration and depth estimation, for when the goal is a depth map rather than a stereo pair.
 
@@ -559,12 +574,17 @@ Stereo sound is not a pun on this list's subject. It is the same idea in another
 
 Stated openly, because a curated list that hides its blind spots is worse than one that names them. These are the places this list is weakest, and the contributions most wanted:
 
-- **The record is still Western-leaning, though less than it was.** [World stereo cinema](#world-stereo-cinema) now runs from the Soviet Union and Japan through Mexico, Argentina, China, Korea, India and Brazil, and [Beyond Europe and North America](#beyond-europe-and-north-america) carries stereo photography in Brazil, Iran, Lebanon and Japan. Still missing: anything citable from Southeast Asia or sub-Saharan Africa, the Chinese 3D wave of the 1980s (so far documented only on sites that cannot be cited), and nineteenth-century stereo photography by Indian practitioners. Contributions in any language are wanted; cite what you can.
-- **Mexico's first 3D film** is an open question. Rosa Elena Cabiedes' *El Reportero TD* (1953) may predate *El Corazón y la Espada*, but it is known here only through a citation of the FIAF *Journal of Film Preservation*; nothing else about the film or its director was found online.
-- **Japanese coverage** now reaches the stereo societies, the broadcast era and 1950s cinema. Two holes remain: no NHK network 3D broadcast trial, as distinct from its laboratory research, has been found with a source, and the 1923 society is known only through a later chronology.
-- **Sanskrit sources.** Whether older Sanskrit texts discuss binocular depth directly is still open. Nothing citable was found, and a claim that cannot be sourced does not belong here, so the space is left open rather than filled.
-- **Pre-1900 publishing** now has a [continental section](#the-continental-trade) covering France, Germany, Italy and Spain alongside the British, American and Japanese firms. No publisher from Austria, Switzerland, Belgium, the Netherlands, Scandinavia or the Russian Empire has yet been found with a citable source, and the thousands of smaller firms that shipped cards are still unrepresented.
-- Several entries describe things that are defunct or unreliable. That is deliberate, but it means some links will rot; reports are welcome.
+**The record is still Western-leaning, though less than it was.** [World stereo cinema](#world-stereo-cinema) now runs from the Soviet Union and Japan through Mexico, Argentina, China, Korea, India and Brazil, and [Beyond Europe and North America](#beyond-europe-and-north-america) carries stereo photography in Brazil, Iran, Lebanon and Japan. Still missing: anything citable from Southeast Asia or sub-Saharan Africa, the Chinese 3D wave of the 1980s (so far documented only on sites that cannot be cited), and nineteenth-century stereo photography by Indian practitioners. Contributions in any language are wanted; cite what you can.
+
+**Mexico's first 3D film** is an open question. Rosa Elena Cabiedes' *El Reportero TD* (1953) may predate *El Corazón y la Espada*, but it is known here only through a citation of the FIAF *Journal of Film Preservation*; nothing else about the film or its director was found online.
+
+**Japanese coverage** now reaches the stereo societies, the broadcast era and 1950s cinema. Two holes remain: no NHK network 3D broadcast trial, as distinct from its laboratory research, has been found with a source, and the 1923 society is known only through a later chronology.
+
+**Sanskrit sources.** Whether older Sanskrit texts discuss binocular depth directly is still open. Nothing citable was found, and a claim that cannot be sourced does not belong here, so the space is left open rather than filled.
+
+**Pre-1900 publishing** now has a [continental section](#the-continental-trade) covering France, Germany, Italy and Spain alongside the British, American and Japanese firms. No publisher from Austria, Switzerland, Belgium, the Netherlands, Scandinavia or the Russian Empire has yet been found with a citable source, and the thousands of smaller firms that shipped cards are still unrepresented.
+
+Several entries describe things that are defunct or unreliable. That is deliberate, but it means some links will rot; reports are welcome.
 
 ## Contributing
 
