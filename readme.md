@@ -325,6 +325,17 @@ Depth is the common denominator. Measure it and you can synthesise a view, or yo
 - [Parallax](https://en.wikipedia.org/wiki/Parallax) - The cue it exploits; motion parallax is a depth signal on its own, which is why the New Nintendo 3DS added head tracking to keep the sweet spot.
 - [Depth perception](https://en.wikipedia.org/wiki/Depth_perception) - The full set of cues the brain actually uses, of which binocular disparity is only one.
 
+### Depth drawn rather than computed
+
+Before real-time 3D was affordable, games still had to put space on a screen, and the answer was a fixed camera held above the scene at an angle. It is the flat era's complete answer to the problem this whole list is about, and it is worth understanding as an engineering choice rather than a limitation.
+
+- [Isometric video game graphics](https://en.wikipedia.org/wiki/Isometric_video_game_graphics) - The convention, used by [X-COM](https://en.wikipedia.org/wiki/UFO:_Enemy_Unknown) (1994), [Diablo](https://en.wikipedia.org/wiki/Diablo_(video_game)) (1996) and most of the strategy and role-playing games of that decade. Usually not true isometric but dimetric, with two of the three axis angles equal and a 2:1 pixel ratio.
+- [Axonometric projection](https://en.wikipedia.org/wiki/Axonometric_projection) - The family it belongs to. These are **parallel** projections, so an object does not shrink as it moves away, and the reason is economy: the machine never scales a sprite and never computes a perspective divide. A 386 could draw a large map quickly because it refused to do the one thing that makes distance look like distance.
+
+What replaces perspective is the rest of the monocular stack: occlusion, height on the screen, and a scale the player can trust because it never changes. It reads as space, and it reads as space for everyone, including the roughly one viewer in twenty who cannot fuse a stereo pair at all.
+
+The convention outlived its own justification. Modern games in the genre render in 3D and keep the camera exactly where it was, because an elevated fixed vantage turned out to be the right way to command a dozen units and read a floor plan, quite apart from what the hardware could afford. It is the one place in this list where a depth technique survived on ergonomics after the technical reason for it disappeared.
+
 ## Capture
 
 A stereo pair is shot before it is stored or shown. The hardware falls into two kinds: a twin-lens body that does both eyes at once, built as a still camera or as a camcorder, and two ordinary cameras fixed together in a rig.
