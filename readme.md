@@ -396,6 +396,9 @@ The same apparatus that shows a film can rebuild the faculty itself, which is th
 - [StereoPhoto Maker](https://stereo.jpn.org/eng/stphmkr/) - The stereo-photography community's standard editor: alignment, conversion between every still format, batch processing. Its author, Masuji Suto, received the Royal Photographic Society's Saxby Award, for achievement in three-dimensional imaging, in 2015.
 - [StereoMovie Maker](https://stereo.jpn.org/eng/stvmkr/) - The companion to StereoPhoto Maker for moving pictures: the same alignment and format conversion, applied to video pairs.
 - [StereoscoPy](https://github.com/2sh/StereoscoPy) - Python tool and library that builds anaglyph, side-by-side and cross-eye images from a pair.
+- [a2sbs.py](https://gist.github.com/JackDesBwa/f86eb3fcdf3a0be1734bcdb4f535a52a) - Recovers a side-by-side pair from an anaglyph. The conversion is necessarily approximate, because the anaglyph threw information away, but it goes past a plain greyscale split: it can rebuild chroma with an anisotropic blur, or from the optical flow where both views agree, and it can undo the anti-ghosting some creators burn into the image before applying the anaglyph matrix.
+- [mpo2sbs.py](https://gist.github.com/JackDesBwa/317ef94cc8c67c02c78c7e4b1e038b1a) - Turns an MPO camera file into a parallel side-by-side image, which is the conversion most tools assume you have already done.
+- [OBS SBS scripts](https://github.com/JackDesBwa/OBS_SBS_scripts) - Lua scripts for handling side-by-side sources inside OBS, for anyone streaming or recording in stereo.
 - [ExifTool](https://exiftool.org) - Reads and writes the MPO structure, and is the practical way to check whether a file is really a stereo pair.
 - [sony-bravia-linux tools](https://github.com/danielcamposramos/sony-bravia-linux/tree/main/tools) - Losslessly injects the frame-packing SEI into existing H.264 files, converts anaglyph back to side-by-side, writes MPO, and indexes a library by stereo format.
 
@@ -406,10 +409,10 @@ The same apparatus that shows a film can rebuild the faculty itself, which is th
 - [Bino](https://bino3d.org) - Dedicated 3D video player, strong on multi-display and projection setups.
 - [sView](https://www.sview.ru/en/) - Stereoscopic image and video viewer for desktop and mobile, with many output modes.
 - [Stereoscopic Player](https://www.3dtv.at) - Long-standing Windows player covering most stereo layouts.
-- [StereoWebViewer](https://github.com/JackDesBwa/StereoWebViewer) - Renders one side-by-side image into parallel, cross, anaglyph or interleaved output in a browser.
-- [threejs-StereoscopicEffects](https://github.com/JackDesBwa/threejs-StereoscopicEffects) - A broader set of stereoscopic effects for three.js.
+- [StereoWebViewer](https://github.com/JackDesBwa/StereoWebViewer) - Renders one side-by-side image into parallel, cross, anaglyph or interleaved output in a browser. Its author has since abandoned it in favour of threejs-StereoscopicEffects below, so read it as a compact reference rather than a maintained tool.
+- [threejs-StereoscopicEffects](https://github.com/JackDesBwa/threejs-StereoscopicEffects) - A broader set of stereoscopic effects for three.js, and the maintained successor to the viewer above. Stereopix uses it, which is how its interleaved modes came to be exercised in the field.
 - [PhereoRoll3D](https://github.com/JackDesBwa/PhereoRoll3D) - Qt client for the Phereo stereo-photo community, and a readable reference implementation of Dubois anaglyph.
-- [PhotoRoll3D](https://github.com/JackDesBwa/PhotoRoll3D) - Work in progress to generalise that viewer to more online sources.
+- [PhotoRoll3D](https://github.com/JackDesBwa/PhotoRoll3D) - A rewrite of that viewer intended to reach more online sources. Its author reports it frozen, with no plan to resume, so treat it as an architecture sketch rather than something to build on.
 
 ## Servers and delivery
 
@@ -559,7 +562,7 @@ The cheapest immersion trick of all: extend the picture past the edges of the sc
 - [The Stereoscopic Society](https://www.stereoscopicsociety.org.uk/) - Founded in London in 1893, the oldest stereoscopic society in the world and still meeting.
 - [STEREO CLUB Tokyo](http://www.stereoclub.jp/) - The Tokyo stereo-photography club, founded in 1996 and still holding seasonal meetings. It hosted the International Stereoscopic Union's 24th world congress at Tsukuba in 2023, the first held in Japan, and its [chronology of stereo photography in Japan](https://isu2023.stereoclub.jp/index_stereojapan_j.html), in Japanese, records a far older society: the Japan Binocular Photography Society (日本双眼寫眞會), founded in 1923 at the urging of Hayao Yoshikawa and Shūsuke Satō.
 - [Stereo World](https://www.stereoworld.org) - The National Stereoscopic Association's magazine, continuous since 1974.
-- [Phereo](https://phereo.com) - Stereo-photo community whose archive is historically important. Its API has been unreliable; treat it as an archive rather than a live service.
+- [Phereo](https://phereo.com) - Stereo-photo community whose archive is historically important, still holding more than 200,000 images. It lost the images published between roughly January 2019 and October 2022; the loss has since stopped, but some functions such as search no longer work, so treat it as an archive rather than a live service.
 **Reddit stereo communities.** [r/CrossView](https://www.reddit.com/r/CrossView/), [r/ParallelView](https://www.reddit.com/r/ParallelView/), [r/Anaglyph](https://www.reddit.com/r/Anaglyph/) and [r/wigglegrams](https://www.reddit.com/r/wigglegrams/) are the most active day-to-day stereo photography communities on the web, each with a fixed convention for the pair it displays.
 
 ## Preservation
