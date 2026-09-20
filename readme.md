@@ -353,6 +353,37 @@ So this is not depth estimation and it is not reconstruction. It is a person rea
 
 The convention outlived its own justification. Modern games in the genre render in 3D and keep the camera exactly where it was, because an elevated fixed vantage turned out to be the right way to command a dozen units and read a floor plan, quite apart from what the hardware could afford. It is the one place in this list where a depth technique survived on ergonomics after the technical reason for it disappeared.
 
+### Emulators that can output stereo
+
+This is here as preservation rather than as a survey of emulation, which is its own
+argument and not this list's. The point is narrower: a good deal of stereoscopic work
+was published on hardware that is now dead, scarce or degrading, and for some of it
+these are the only surviving ways to see it in stereo at all. The Virtual Boy is the
+clearest case, an entire library that is stereoscopic by design and unviewable without
+either a working 1995 unit or one of the tools below.
+
+Two different things get called the same name here, though, and the difference is the
+one this whole section turns on: whether the stereo already exists or has to be made.
+
+**Where the console really had stereo, the emulator is preserving it.** The data is in
+the ROM because the original hardware drove two eyes, so the only question is how to
+get it back out to a modern display.
+
+- [Mednafen / Beetle VB](https://mednafen.github.io/documentation/vb.html) - The Virtual Boy emulator, also the standard libretro core. Seven output modes: anaglyph in six colour pairings, CyberScope, side by side, vertical and horizontal line interlaced, and either eye alone. Side by side is described exactly as you would hope: "the left-eye image is displayed on the left, and the right-eye image is displayed on the right". Feed that to a 3D television and a console built as a visor for one face becomes something a room can watch, which the hardware never allowed.
+- [Azahar](https://github.com/azahar-emu/azahar) - The 3DS emulator that absorbed Lime3DS after Citra's shutdown. Its [3D rendering option](https://github.com/azahar-emu/azahar/pull/2339) offers side by side, full side by side, anaglyph, interlaced, reverse interlaced and Cardboard, with an intensity factor, for games that used the console's own depth slider.
+- [Dega](https://github.com/Plombo/dega) - A Master System emulator that turns the [SegaScope 3-D Glasses](https://en.wikipedia.org/wiki/Sega_3D_Glasses) signal into anaglyph: it "will take the original flickering glasses effect used on some games and merge the images into a Red/Blue image". Worth knowing that this was done once, in 2004, and the rest of the Master System emulators never copied it.
+- [MAME](https://github.com/mamedev/mame) - Reproduces the SegaScope glasses at driver level, with a binocular hack that can emit either lens or both. A community layout that would present it as half side-by-side for a 3D television has been [open and unmerged since 2018](https://github.com/mamedev/mame/issues/3492).
+- [RPCS3](https://github.com/RPCS3/rpcs3) - Reproduces the PlayStation 3's own stereoscopic mode, [added in 2020](https://github.com/RPCS3/rpcs3/pull/7657), currently anaglyph only. A request for side-by-side output to a 3D television is [open](https://github.com/RPCS3/rpcs3/issues/13059).
+
+**Where the console never had stereo, the emulator is making it**, and it can only do that because the game is a 3D scene. This is the driver era again, aimed at a console.
+
+- [Dolphin](https://github.com/dolphin-emu/dolphin) - Renders the GameCube and Wii scene twice from two virtual cameras with adjustable depth and convergence, and outputs side by side, top and bottom, or quad-buffered "HDMI 3D". Neither console shipped any stereo capability; the geometry is simply there to be asked twice.
+- [PPSSPP VR](https://github.com/hrydgard/ppsspp/pull/15901) - The same move for the PSP, re-rendering its geometry from two viewpoints with head tracking, in a fork rather than the mainline build.
+
+**The gaps are worth recording too**, because this is a field where absence is usually nobody's decision. The Famicom 3D System, Nintendo's own shutter-glasses accessory, appears to be emulated nowhere at all; the [request against Nestopia](https://github.com/0ldsk00l/nestopia/issues/155) has sat open since 2015. Genesis Plus GX does not implement SegaScope and halves the frame rate instead. A stereo patch for PCSX2 was [written and never merged](https://github.com/pcsx2/pcsx2/issues/1461).
+
+One practical note for anyone trying this on a 3D television: every mode above produces correctly packed stereo and none of them tells the set what it is sending. The television will show a side-by-side pair as two flat images until 3D is switched on by hand, because over HDMI the layout is announced in an InfoFrame that emulators do not emit and desktop operating systems do not expose. The pixels are right and the signalling is missing, which is the same shape as the frame-packing problem described further up this list.
+
 ## Capture
 
 A stereo pair is shot before it is stored or shown. The hardware falls into two kinds: a twin-lens body that does both eyes at once, built as a still camera or as a camcorder, and two ordinary cameras fixed together in a rig.
