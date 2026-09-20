@@ -339,7 +339,7 @@ The same twin lenses aimed at motion. Every maker claimed a "world's first" with
 
 - [Sony HDR-TD10](https://www.sony.jp/products/overseas/contents/pickup/english/110324_promotion/TD10_Web/index.html) - "Double Full HD 3D" (2011): twin G Lenses, two Exmor R sensors and two BIONZ processors recording full resolution per eye.
 - [Panasonic HDC-SDT750](https://www.prnewswire.com/news-releases/panasonic-unveils-the-worlds-first-3d-consumer-camcorder-complete-with-a-3d-conversion-lens1-99433594.html) - The first 3D consumer camcorder (2010), via a detachable 3D conversion lens on a 3MOS body.
-- [JVC GS-TD1](https://manual3.jvckenwood.com/c1dw/lyt2327-011pt/GBLESYeclxmstk.html) - Twin-lens Full HD 3D (2011) on the FALCONBRID engine, recording a full-resolution "LR Independent" format and side-by-side for AVCHD 3D compatibility.
+- [JVC GS-TD1](https://manual3.jvckenwood.com/c1dw/lyt2327-002en/GBLESYeclxmstk.html) - Twin-lens Full HD 3D (2011) on the FALCONBRID engine, recording a full-resolution "LR Independent" format and side-by-side for AVCHD 3D compatibility.
 
 The **Sony Bloggie 3D (MHS-FS3)** belongs here too, the pocket end of the same wave, recording 1080p 3D side-by-side; no stable manufacturer page survives to link to. The line between stills and motion never really held either: the still Fujifilm W3 also shot 720p 3D video, and every camcorder here shot 2D stills.
 
