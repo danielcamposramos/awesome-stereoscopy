@@ -343,6 +343,14 @@ Then the floor tilted. [Wolfenstein 3D](https://en.wikipedia.org/wiki/Wolfenstei
 
 **Which is what made the driver era above possible.** Once a game keeps its world as geometry and hands it to a standard API, something outside the game can ask for the same scene from a second viewpoint. A raycaster cannot be asked that question, because there is no scene to re-render, only a wall distance per screen column. The stereo drivers arrived when they did because that is when there was finally something to render twice.
 
+And the loop closes, because someone went back and gave those games the dimension they never had.
+
+- [3dSen](https://geodstudio.net/) - Geod Studio's NES emulator, ten years in the making and out of Steam Early Access in 2025, which plays the flat library as 3D voxel dioramas you can move a camera around, with lighting and cast shadows in worlds that never had either. [3dSen PC](https://store.steampowered.com/app/1147940/3dSen_PC/) and a VR edition, the latter with a mixed-reality mode on Quest. Over a hundred titles, plus community-made profiles.
+
+The method is the interesting part, and the developer is honest about it. The emulator samples the PPU's output and divides it into 8x8 tiles automatically, but what turns those tiles into volume is a per-game profile: static rules saying "this tile is a wall, that tile is a backdrop, this sprite is a cylinder", plus runtime scripts for the cases the rules cannot cover. Every supported game is, in his words, painstakingly handmade, a few days for a simple one and weeks or months for *Super Mario Bros. 3*.
+
+So this is not depth estimation and it is not reconstruction. It is a person reading a game's own internal logic and writing down the spatial intent that was always encoded in it, because a designer who places a wall tile means a wall. The flat era compressed a three-dimensional idea into two dimensions using the techniques above, and this decompresses it by hand. Once that volume exists, stereo is free, which is why a VR edition exists at all and why this belongs in a list about depth rather than in one about emulation.
+
 The convention outlived its own justification. Modern games in the genre render in 3D and keep the camera exactly where it was, because an elevated fixed vantage turned out to be the right way to command a dozen units and read a floor plan, quite apart from what the hardware could afford. It is the one place in this list where a depth technique survived on ergonomics after the technical reason for it disappeared.
 
 ## Capture
