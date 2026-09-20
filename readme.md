@@ -380,6 +380,30 @@ get it back out to a modern display.
 - [Dolphin](https://github.com/dolphin-emu/dolphin) - Produces both eyes for the GameCube and Wii, neither of which shipped any stereo capability, and its implementation is the clearest worked example in this list. A geometry shader amplifies every primitive into a two-layer array in a single pass rather than drawing the scene twice, then shifts each eye horizontally in clip space by an amount proportional to depth, `f.pos.x += hoffset * (f.pos.w - convergence)`, a formula its source credits to Nvidia's 3D Vision Automatic guide. The two controls are exactly the two that matter anywhere: depth, described in the program as "the separation distance between the virtual cameras", and convergence, "the distance at which virtual objects will appear to be in front of the screen". Output as side by side, top and bottom, anaglyph with a Dubois matrix, scanline-interleaved for passive displays, or quad-buffered. Worth knowing that the geometry shader is a hard requirement, so the macOS Metal backend cannot do stereo at all, and that quad-buffer output is in practice OpenGL only.
 - [PPSSPP VR](https://github.com/hrydgard/ppsspp/pull/15901) - The same move for the PSP, re-rendering its geometry from two viewpoints with head tracking, in a fork rather than the mainline build.
 
+**Why some consoles can have this and others cannot** is a hardware question, not a
+question of effort, and it is worth stating because the same feature request keeps
+being made and refused without the reason surviving anywhere findable.
+
+The GameCube has a fixed-function transform unit with addressable matrix-load commands
+in its graphics command stream, so an emulator can see the projection before anything
+is drawn and perturb it. That is why Dolphin can offer stereo as a checkbox that works
+across the whole library.
+
+The PlayStation 2 cannot be treated that way. Its Graphics Synthesizer is a rasterizer
+that receives vertices already transformed, perspective-divided and clipped: PCSX2's
+own vertex structure carries no matrix and its position field is raw screen-space fixed
+point. The projection happens earlier, in VU1 microcode, which is *the game's own
+program*, executed by the emulator as a general vector coprocessor with no knowledge of
+what any of it means. There is no camera for an emulator to find, because by the time
+the emulator is involved the camera has already been applied by code it cannot
+interpret.
+
+So on a PS2 emulator the routes are per-game reverse engineering of each title's own
+vector memory, in the spirit of the per-game widescreen patches such projects already
+carry, or shader injection from outside the emulator entirely. Both were tried; neither
+is a general feature. One scene and two cameras remains the right description of stereo
+rendering, and it needs a camera to exist in a place the renderer can reach.
+
 **The gaps are worth recording too**, and the reasons given for them are not what you might expect. The Famicom 3D System, Nintendo's own shutter-glasses accessory, appears to be emulated nowhere; the [Nestopia request](https://github.com/0ldsk00l/nestopia/issues/155) was closed in 2016, and when it resurfaced the maintainer explained that doing it properly "would require a Vulkan renderer with multi-viewport capability", which is a rendering-architecture problem rather than a display one. Genesis Plus GX does not implement SegaScope and halves the frame rate instead. The long-running [PCSX2 request](https://github.com/pcsx2/pcsx2/issues/1461) ran from 2016 to 2022 and turned largely on what the stereo driver of the day required, including that Direct3D 11 titles could not be made to work in windowed mode at all.
 
 One practical note for anyone trying this on a 3D television: every mode above produces correctly packed stereo and none of them tells the set what it is sending. The television will show a side-by-side pair as two flat images until 3D is switched on by hand, because over HDMI the layout is announced in an InfoFrame that emulators do not emit and desktop operating systems do not expose. The pixels are right and the signalling is missing, which is the same shape as the frame-packing problem described further up this list.
