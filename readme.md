@@ -529,6 +529,7 @@ The Linux lineage is equally short and recoverable. Mainline's HDMI stereoscopy 
 - [OBS SBS scripts](https://github.com/JackDesBwa/OBS_SBS_scripts) - Lua scripts for handling side-by-side sources inside OBS, for anyone streaming or recording in stereo.
 - [ExifTool](https://exiftool.org) - Reads and writes the MPO structure, and is the practical way to check whether a file is really a stereo pair.
 - [sony-bravia-linux tools](https://github.com/danielcamposramos/sony-bravia-linux/tree/main/tools) - Losslessly injects the frame-packing SEI into existing H.264 files, converts anaglyph back to side-by-side, writes MPO, and indexes a library by stereo format.
+- [HDMI 1.4 3D driver patches](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/upstream/community-hdmi-3d-patches.md) - Hardware-verified kernel patches that un-prune the stereo modes a 3D TV already declares in its own EDID: a six-line `stereo_allowed` opt-in installable on NVIDIA's kernel-open 615.71.09, and an amdgpu backport pair (VSIF emission plus frame-packing scanout) for 7.0-era trees. Written to be applied today, in parallel with the upstream series rather than instead of it; nouveau needs no patch and serves as the control.
 
 ## Players and viewers
 
