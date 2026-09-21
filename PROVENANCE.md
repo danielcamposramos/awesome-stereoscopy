@@ -13,6 +13,7 @@ All partners were reached through the **Claude CLI** or the **Codex CLI**:
 - **Ollama cloud models**
   - **DeepSeek v4 pro**
   - **GLM 5.3**
+  - **Kimi K3**
 
 That is the full list so far. Other partners will be added here as they
 join.
