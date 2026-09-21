@@ -156,7 +156,7 @@ Consumer 3D came and went twice. In parks it simply ran, for decades, because th
 
 ### Television and home video
 
-The asymmetry here is the part worth noticing. Cinema 3D continued while consumer 3D was withdrawn, and the withdrawal has dates. The broadcasters went first: DirecTV stopped its 3D programming in 2012, ESPN in 2013, and the BBC ended its 3D shows the same year, citing a "lack of public appetite". Then the manufacturers: Vizio stopped making 3D sets in 2014, Samsung in March 2016, Panasonic after it, and in January 2017 the last two holdouts, Sony and LG, [dropped 3D support entirely](https://www.smh.com.au/technology/its-official-3d-tv-is-dead-20170127-gtznpi.html) — the report at the time concluding that "the cinema will soon, once again, be the only place for 3D films". It was right, and 3D screenings are still routine in multiplexes today. The explanation usually given is commercial rather than technical, since a cinema ticket, an IMAX screen or a theme-park attraction can carry a surcharge and a living room cannot. Worth noting too, from [The Verge at CES 2013](https://www.theverge.com/2013/1/7/3848856/sony-ces-2013-4k-oled-prototypes-to-flagship-xperia-phones), that Sony had tried to own every link of the chain for 3D — content creation, distribution and playback — before running exactly the same play for 4K, which is the one that stuck. Whatever the reason, the effect on owners was the same: hardware that kept its panel and lost its ecosystem, which is why several entries in this list are about recovering formats rather than buying them.
+The asymmetry here is the part worth noticing. Cinema 3D continued while consumer 3D was withdrawn, and the withdrawal has dates. The broadcasters went first: DirecTV stopped its 3D programming in 2012, ESPN in 2013, and the BBC ended its 3D shows the same year, citing a "lack of public appetite". Then the manufacturers: Vizio stopped making 3D sets in 2014, Samsung in March 2016, Panasonic after it, and in January 2017 the last two holdouts, Sony and LG, [dropped 3D support entirely](https://www.smh.com.au/technology/its-official-3d-tv-is-dead-20170127-gtznpi.html) — the report at the time concluding that "the cinema will soon, once again, be the only place for 3D films". It was right, and 3D screenings are still routine in multiplexes today. The explanation usually given is commercial rather than technical, since a cinema ticket, an IMAX screen or a theme-park attraction can carry a surcharge and a living room cannot. That incentive is on the record: [Regal lists a 3D surcharge](https://www.regmovies.com/help/tickets-and-cancellations), while [IMAX tells investors](https://www.sec.gov/Archives/edgar/data/921582/000092158225000037/imax_10kx932691xars24.pdf) that exhibitors charge premium prices and that the resulting incremental box office benefits exhibitors and studios. Worth noting too, from [The Verge at CES 2013](https://www.theverge.com/2013/1/7/3848856/sony-ces-2013-4k-oled-prototypes-to-flagship-xperia-phones), that Sony had tried to own every link of the chain for 3D — content creation, distribution and playback — before running exactly the same play for 4K, which is the one that stuck. Whatever the reason, the effect on owners was the same: hardware that kept its panel and lost its ecosystem, which is why several entries in this list are about recovering formats rather than buying them.
 
 - [3D television](https://en.wikipedia.org/wiki/3D_television) - The 2010-2013 consumer wave, the ramp-up after *Avatar*, and the withdrawal that followed.
 - Multiview Video Coding - The MVC extension that carried Blu-ray 3D, and the reason a 3D disc is not simply two files.
@@ -471,10 +471,41 @@ The same apparatus that shows a film can rebuild the faculty itself, which is th
 - [CIPA standards](https://www.cipa.jp/e/std/std-sec.html) - Publishes DC-007, the Multi-Picture Format that defines MPO.
 - [DVB specifications](https://dvb.org/specifications/) - The frame-compatible and service-compatible 3DTV specifications used by broadcasters.
 - [MPEG](https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group) - The video-coding body behind 2D-plus-depth (MPEG-C Part 3). Multiview Video Coding (MVC) and MV-HEVC were joint work with ITU-T's VCEG, through the JVT and JCT-3V teams.
-- [Blu-ray 3D](https://en.wikipedia.org/wiki/Blu-ray_3D) - The Blu-ray Disc Association's delivery spec for the 3D disc era.
+- [Blu-ray 3D](https://en.wikipedia.org/wiki/Blu-ray_3D) - The Blu-ray Disc Association's delivery spec for the 3D disc era. In a [2009 announcement](https://us.blu-raydisc.com/wp-content/uploads/sites/2/2019/09/20090904-IFA-BDA-Press-Release.pdf) the Association said its specification would require 1080p for each eye and called Blu-ray the ideal packaged-media platform for 3D home entertainment. Its successor then severed that path: the Association's own [Ultra HD Blu-ray FAQ](https://us.blu-raydisc.com/blog/fandq/ultra-hd-blu-rays-available-3d/) says simply that the 4K format does not support 3D content. Owners had to choose the old 1080p 3D edition or the new 4K 2D edition; the home format never offered both advances together.
 - [HDMI Forum](https://en.wikipedia.org/wiki/HDMI_Forum) - Custodian of the HDMI specification from 1.4b onward, founded in 2011. The 3D signalling that tells a set which packing is coming down the cable is older: HDMI 1.4 (2009) and 1.4a (2010) were issued by HDMI Licensing for the founding companies, before the Forum existed.
 - [SMPTE](https://en.wikipedia.org/wiki/SMPTE) - The cinema and broadcast engineering body behind the professional 3D standards.
 - [3D Consortium](https://www.nttdata.com/global/ja/news/release/2003/030400/) - Founded in March 2003 by Itochu, NTT Data, Sanyo, Sharp and Sony, with some seventy member organisations at launch, to develop and spread 3D display hardware and widen the distribution of 3D content: the Japanese industry organising around stereo six years before *Avatar*. The founding announcement is in Japanese.
+
+### Every HDMI 1.4 stereo structure
+
+HDMI does not define “3D mode” as one packing. Its Vendor-Specific InfoFrame assigns a four-bit `3D_Structure` code to eight layouts. The [Linux HDMI definitions](https://github.com/torvalds/linux/blob/master/include/linux/hdmi.h) preserve the complete wire-level list, and the [DRM mode API](https://github.com/torvalds/linux/blob/master/include/drm/drm_modes.h) describes their framebuffer meaning:
+
+| HDMI code | structure | what crosses the link |
+|---:|---|---|
+| 0 | frame packing | two complete eye frames with the format-defined blanking space between them |
+| 1 | field alternative | left and right views in alternating fields |
+| 2 | line alternative | left and right views on alternating lines |
+| 3 | side-by-side full | two complete eye frames horizontally adjacent |
+| 4 | L + depth | one conventional image plus a depth map from which another view can be synthesized |
+| 5 | L + depth + graphics + graphics-depth | image and depth plus a separately depth-positioned graphics layer |
+| 6 | top-and-bottom | both views split across the upper and lower parts of one frame |
+| 8 | side-by-side half | both views split across the left and right parts, with defined horizontal subsampling |
+
+Code 7 and codes 9–15 are reserved. “Full” and “half” describe spatial sampling, not frame rate: a 60 Hz half-SBS frame still contains sixty synchronized eye pairs per second.
+
+HDMI 1.4a also defines a baseline set every 3D implementation can recognize. The [mainline Linux EDID parser](https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/drm_edid.c) carries that mandatory table directly:
+
+| base timing | mandatory stereo packing |
+|---|---|
+| 1920×1080p at 23.976/24 Hz | frame packing; top-and-bottom |
+| 1920×1080i at 50 Hz | side-by-side half |
+| 1920×1080i at 59.94/60 Hz | side-by-side half |
+| 1280×720p at 50 Hz | frame packing; top-and-bottom |
+| 1280×720p at 59.94/60 Hz | frame packing; top-and-bottom |
+
+That table is the interoperability floor, not the ceiling. A sink's HDMI Vendor-Specific Data Block can attach structures to additional video timings, which is why real sets may advertise combinations such as 1080p60 SBS-half, 1080p30 frame packing or 720p24 frame packing. There is therefore no honest universal list of every resolution/layout pair: the complete answer is the eight structures above, the mandatory baseline, and then the per-display EDID. HDMI Licensing's [1.4a announcement](https://www.hdmi.org/announce/detail/84) confirms that the revision added mandatory broadcast formats and top-and-bottom, while the public [HDMI 1.4 feature archive](https://www.hdmi.org/download/savefile?bucket=hdmi-web-public&fileKey=Specifications%2F1dot4_feature_archive.pdf) describes dual-stream 1080p and warns that manufacturers need not implement every optional feature.
+
+There is also a Linux gap hiding in that distinction. Mainline defines and can serialize all eight structures into the HDMI InfoFrame, but its EDID mode-creation paths currently instantiate only frame packing, top-and-bottom and side-by-side half. Field alternative, line alternative, full-SBS and both depth structures are represented in the API yet ignored when parsing the sink's optional 3D structure map. That deserves a separate compatibility audit rather than assuming an absent DRM mode means an incapable television.
 
 ## Tools
 
@@ -531,6 +562,10 @@ So the format questions answer themselves.
 **Side-by-side or over-under?** Side-by-side halves horizontal resolution; over-under halves vertical. On a passive panel that is already throwing away half the rows, over-under costs you less that you had not already lost. On an active-shutter set both are unsqueezed identically, so the choice is mostly about what your broadcaster or ripper picked.
 
 **Full or half?** "Frame compatible" (half) exists so a 3D picture fits down a pipe built for 2D: same bitrate, same infrastructure, half the resolution per eye. Full frame packing needs a link that knows about 3D, which is what HDMI 1.4 added and what Blu-ray 3D uses with MVC.
+
+**Does side-by-side halve the frame rate?** No. A 1920×1080 half-SBS output at 60 Hz carries sixty complete left/right pairs each second, so both eyes can receive sixty new temporal samples; each view instead loses half its horizontal pixels and is stretched from 960×1080. Technical full-SBS would carry two full 1920×1080 views in a 3840×1080 frame and needs a sink and link that advertise enough bandwidth. For HDMI 1.4-era televisions the useful gaming trade is often 1280×720 frame packing at 60 pairs per second, which preserves every 720p pixel in both eyes, while 1920×1080 frame packing at 24 pairs per second preserves cinema resolution and cadence but feels visibly slower in an interactive application. Linux names these as different DRM stereo layouts rather than treating “3D” as one mode.
+
+**What if a display only offers 24p stereo?** Then 24 eye pairs per second is its limit. That is useful for film and visibly poor for a responsive game or tracked application; software cannot compose sixty genuinely new presentations through a sink mode that accepts twenty-four. A useful compatibility list should therefore print both the per-eye resolution and stereo-pair rate instead of awarding one vague “3D capable” badge. The owner can then choose the available compromise with an explanation of why that particular display feels slow.
 
 **Why is my half-width file stretched?** Because half-SBS is [anamorphic](https://en.wikipedia.org/wiki/Anamorphic_format): the display is expected to know it must stretch each half back to full width. If nothing tells it — the exact failure this list keeps returning to — you get two squashed pictures side by side instead of one 3D image.
 
