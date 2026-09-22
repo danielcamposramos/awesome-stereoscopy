@@ -23,6 +23,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [Communities and archives](#communities-and-archives)
 - [Preservation](#preservation)
 - [Adjacent fields](#adjacent-fields)
+- [In fiction](#in-fiction)
 - [Related lists](#related-lists)
 - [Known gaps](#known-gaps)
 
@@ -109,6 +110,7 @@ Most of this list is stereo as entertainment. It has also, since before cinema, 
 - [Captain EO](https://en.wikipedia.org/wiki/Captain_EO) ([Japanese article](https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%86%E3%83%B3EO)) - 1986, seventeen minutes, 70mm 3-D: directed by Francis Ford Coppola, executive-produced by George Lucas, starring Michael Jackson, built by Disney as a park attraction, a gathering of those four names that never happened again, and at an officially unreleased cost — estimates run $17–30 million for seventeen minutes, $23.7 million being the usual quote, some $70 million in 2025 dollars — the most expensive film ever made per minute when it premiered; the later holder of that record is T2-3D a park generation on (its entry and the per-minute math are below). The gathering itself was Jackson's doing: he insisted the era's top names join, Spielberg or Lucas — Spielberg was committed, Lucas agreed and brought Coppola. The money was Disney's all-in parks budget plus a Kodak share after a Frank Wells renegotiation, fought over by Lucas and Katzenberg as it roughly doubled — no production history has Jackson paying; what he paid was attention: the scarier Supreme Leader and the finale kept apart from the plot were his calls over Coppola's, and with Coppola already on Peggy Sue Got Married, Jackson and Rusty Lemorande did the reshooting and recutting themselves. It ran at the Disney parks from 1986, returned in 2010 after fan campaigns following Jackson's death, and played for the last time anywhere at Epcot on 6 December 2015. The best argument on record that stereo 3D was never only a gimmick, with [sourced production notes](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/judging-by-the-cover.md) for the chaos behind it; its park chapter is [below](#theme-parks-where-3d-never-stopped).
 - [4D film](https://en.wikipedia.org/wiki/4D_film) - Stereo projection plus effects in the room: motion seats, water, air, scent. The venue format that outlived every consumer 3D wave, because the experience cannot be taken home. The "5D" and "6D" booths in shopping centres are the same thing with a larger number on the sign, and the count has no technical meaning.
 - [IMAX](https://en.wikipedia.org/wiki/IMAX) - Where large-format stereo projection was kept working continuously between the revivals.
+- [Terminator 2 in 3D](https://variety.com/2017/artisans/production/james-cameron-terminator-3d-1202535947/) - The 2017 conversion of James Cameron's 1991 film. Its colours were [re-timed from scratch](https://whatculture.com/film/terminator-2-3d-review-6-ups-3-downs?page=2): the image was brightened to make up for the light the glasses absorb, and the trailers' grade leaned visibly cyan. Converted 3D is a colour problem as much as a depth problem.
 
 ### World stereo cinema
 
@@ -751,6 +753,14 @@ Stereo sound is not a pun on this list's subject. It is the same idea in another
 - [Binaural recording](https://en.wikipedia.org/wiki/Binaural_recording) - Two microphones in the ears of a dummy head: a two-camera rig built for ears. Because the head is really there, the head shadow and the timing and level differences between the ears are recorded rather than simulated, which is exactly the argument for shooting a stereo pair instead of synthesising one.
 - [Sound localization](https://en.wikipedia.org/wiki/Sound_localization) - Interaural time and level differences, computed in the brainstem: the ears' counterpart to binocular disparity. The two senses divide the work, since the eyes cover a fraction of the world and fail in darkness, while localisation works in every direction at once.
 - [Head-related transfer function](https://en.wikipedia.org/wiki/Head-related_transfer_function) - How one particular head and pair of ears filter the sound arriving at them. It differs from person to person, which is why binaural audio suits some listeners better than others — the audio counterpart of interpupillary distance, and of the fact that some viewers cannot fuse a stereo pair at all.
+
+## In fiction
+
+Stories about depth, and what they got right. The fuller fiction threads live in [awesome-vr](https://github.com/danielcamposramos/awesome-vr#in-fiction) and [awesome-ar](https://github.com/danielcamposramos/awesome-ar#in-fiction).
+
+- [Pygmalion's Spectacles](https://www.gutenberg.org/ebooks/22893) - Stanley G. Weinbaum's 1935 story of spectacles that put the wearer inside a film. A stereoscope that tells a story you stand in is what a headset became.
+- [Back to the Future Part II](https://en.wikipedia.org/wiki/Back_to_the_Future_Part_II) - The 1989 film's "Jaws 19" shark, a joke on the real 1983 [Jaws 3-D](#cinema-and-hollywood). Depth that leaves the screen is exactly what a stereo pair fakes, for one seat at a time.
+- [Star Wars](https://en.wikipedia.org/wiki/Holography_in_fiction) - Leia's 1977 message, depth visible from every side with no glasses. The real routes to that are holography and light fields (see [Related lists](#related-lists)), not two views.
 
 ## Related lists
 
