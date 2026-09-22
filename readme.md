@@ -467,6 +467,7 @@ The same apparatus that shows a film can rebuild the faculty itself, which is th
 
 ## Standards and specifications
 
+- [Stereoscopy standards index](standards.md) - Pinned official editions and primary-source links for video, container and display signalling, with the frame-packing persistence rules separated from encoder cadence and hardware observations.
 - [ITU-T H.264](https://www.itu.int/rec/T-REC-H.264) - Annex D defines the `frame_packing_arrangement` SEI, including the type codes for checkerboard, column-interleaved, row-interleaved, side-by-side, top-bottom and temporal interleaving.
 - [Matroska element specification](https://www.matroska.org/technical/elements.html) - Defines `StereoMode`, the container-level 3D flag and its value table.
 - [CIPA standards](https://www.cipa.jp/e/std/std-sec.html) - Publishes DC-007, the Multi-Picture Format that defines MPO.
