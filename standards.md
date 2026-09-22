@@ -132,3 +132,10 @@ materials. ETSI and HDMI documents have their own terms. This CC0 repository
 therefore hosts the index, interoperable facts and links—not unlicensed copies
 of standards PDFs. A document can be added locally only when its licence or
 written permission allows redistribution under compatible terms.
+
+For download-integrity provenance, these are the SHA-256 hashes of the official
+PDFs retrieved for clause verification on 2026-09-21:
+
+- H.264 (01/2012): `44107ff68c172de90a4a234c58c68ed18f915f92cbce1df07aea8a756a4f5913`
+- H.265 (04/2013): `0b9de482de3f901e7f6fa2192bfae30c01a96b7b5651f166ff67249b7d186c68`
+- H.274 (08/2020): `0175fcadd60c922004033806f46c609a0e72bd7d43e05b51c702fc0bf24490e3`
