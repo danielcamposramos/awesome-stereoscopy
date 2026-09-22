@@ -764,6 +764,10 @@ Stereo sound is not a pun on this list's subject. It is the same idea in another
 - [awesome-holography](https://github.com/bchao1/awesome-holography) - Holographic displays, the end of the road this list keeps walking towards.
 - [awesome-OpenSourcePhotography](https://github.com/ibaaj/awesome-OpenSourcePhotography) - Open-source photography tooling generally, for the parts of a stereo workflow that are simply photography.
 - [awesome-ffmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg) - Tooling around the one program most of this list's conversions actually run on.
+- [awesome-NeRF](https://github.com/awesome-NeRF/awesome-NeRF) - Neural radiance field papers, the other main route to synthesizing a second view.
+- [awesome-light-fields](https://github.com/JoanCharmant/awesome-light-fields) - Light field capture, rendering and displays, the step beyond two views; dormant since 2016, kept for its history.
+- [awesome-volumetric-filmmaking](https://github.com/SimileSystems/awesome-volumetric-filmmaking) - Volumetric video capture and playback; dormant since 2018, still a useful map of the field.
+- [awesome-digital-preservation](https://github.com/digipres/awesome-digital-preservation) - Digital preservation practice and tools, for keeping discontinued platforms, formats and their content usable.
 
 ## Known gaps
 
