@@ -22,8 +22,11 @@ message is a separate implementation decision.
 
 - [Recommendation family](https://www.itu.int/rec/T-REC-H.264)
 - [Pinned August 2024 edition](https://www.itu.int/rec/T-REC-H.264-202408-S/en)
+- [January 2012 edition used for clause-level verification](https://www.itu.int/rec/T-REC-H.264-201201-S/en)
 
-Annex D defines Supplemental Enhancement Information. The
+Annex D defines Supplemental Enhancement Information. In the verified 2012
+edition, clauses D.1.25 and D.2.25 define the frame-packing-arrangement syntax
+and semantics. The
 `frame_packing_arrangement` message carries the packing type, view order,
 quincunx flag, cancellation state and
 `frame_packing_arrangement_repetition_period`. A repetition period of zero is
@@ -40,8 +43,10 @@ Search terms inside the recommendation:
 
 - [Recommendation family](https://www.itu.int/rec/T-REC-H.265)
 - [Pinned July 2024 edition](https://www.itu.int/rec/T-REC-H.265-202407-S/en)
+- [April 2013 edition used for clause-level verification](https://www.itu.int/rec/T-REC-H.265-201304-S/en)
 
-HEVC's frame-packing message uses
+In the verified 2013 edition, clauses D.2.16 and D.3.16 define the syntax and
+semantics. HEVC's frame-packing message uses
 `frame_packing_arrangement_persistence_flag` rather than H.264's repetition
 period. A clear flag limits the arrangement to the current picture; a set flag
 retains it according to the message's persistence semantics until it is
@@ -56,12 +61,16 @@ Search terms inside the recommendation:
 
 - [Recommendation family](https://www.itu.int/rec/T-REC-H.274)
 - [Pinned September 2023 edition](https://www.itu.int/rec/T-REC-H.274-202309-S/en)
+- [August 2020 edition used for clause-level verification](https://www.itu.int/rec/T-REC-H.274-202008-S/en)
 
 H.274 defines codec-independent versatile SEI messages used with newer video
 coding systems, including VVC. Its frame-packing syntax likewise carries a
-persistence flag. A decoder implementation that shares H.264/H.265/H.274 SEI
-code must still preserve the scalar frame-packing state across that codec's own
-frame/thread contexts.
+persistence flag. In the verified 2020 edition, clauses 8.6.1 and 8.6.2 define
+the syntax and semantics: zero is current-picture-only, one persists in output
+order until a new coded-layer video sequence, end of bitstream, or a later
+applicable frame-packing message. A decoder implementation that shares
+H.264/H.265/H.274 SEI code must still preserve the scalar frame-packing state
+across that codec's own frame/thread contexts.
 
 ## Broadcast and delivery profiles
 
