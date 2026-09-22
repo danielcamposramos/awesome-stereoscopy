@@ -117,6 +117,19 @@ field/line alternatives, full and half side-by-side, top-and-bottom and depth
 structures. Capability exposure through EDID/DRM and actual scanout/infoframe
 generation are separate driver responsibilities.
 
+### DisplayPort and DVI
+
+- [DisplayPort FAQ, VESA](https://www.displayport.org/faq/)
+- [Linux DisplayPort stereo field definitions](https://github.com/torvalds/linux/blob/master/include/drm/display/drm_dp.h)
+- [DVI 1.0, DDWG, April 1999 (archived copy)](https://glenwing.github.io/docs/DVI-1.0.pdf)
+
+DisplayPort carries stereo natively: VESA's FAQ states that the protocol
+transmits left- and right-eye display data, and the Linux header defines the
+stereo field of the Main Stream Attribute (no 3D, right eye, left eye). DVI has
+no stereo signalling of its own. A DVI output driving an HDMI sink through a
+passive adapter carries HDMI's 3D InfoFrame only because the sink declares
+HDMI in its EDID, and the same holds for a DP++ output in TMDS mode.
+
 ### HDR over HDMI (deep-colour container and static metadata)
 
 - [HDMI 2.0a release announcement, HDMI Forum, April 2015](https://hdmiforum.org/hdmi-forum-inc-release-2-0a-specification/)
@@ -145,7 +158,11 @@ amdgpu's pipeline is wired in open code, where colour/HDR-adjacent defects
 such as [CTA-mode quantization range](https://lkml.iu.edu/2609.1/08639.html)
 and [swapped gamma transfer functions](https://lore.gitlab.freedesktop.org/drm-ai-reviews/20260311211837.2482799-1-alex.hung@amd.com/)
 can be reviewed and fixed publicly. A [source audit of nouveau 7.3-rc4](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/research/nouveau-hdr-gap-2026-09-22.md)
-finds no HDR metadata connector property or DRM InfoFrame emission path.
+finds no HDR metadata connector property or DRM InfoFrame emission path;
+its [HDMI Deep Color series](https://lore.kernel.org/dri-devel/20260922215317.611388-1-Capitain_Jack@yahoo.com/)
+and [colour-format follow-on](https://lore.kernel.org/dri-devel/20260922215336.612239-1-Capitain_Jack@yahoo.com/)
+were since measured on a stereo-capable sink, 12-bpc links and 3D together,
+and submitted.
 The proprietary NVIDIA stack exposes the property through open glue but
 hands output policy to closed NVKMS; [the measured 10-vs-12-bit deep-colour
 narrowing and related HDR reports](https://github.com/NVIDIA/open-gpu-kernel-modules/issues/1384)
