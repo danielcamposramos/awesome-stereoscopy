@@ -117,6 +117,26 @@ field/line alternatives, full and half side-by-side, top-and-bottom and depth
 structures. Capability exposure through EDID/DRM and actual scanout/infoframe
 generation are separate driver responsibilities.
 
+### HDR over HDMI (deep-colour container and static metadata)
+
+- [HDMI 2.0a release announcement, HDMI Forum, April 2015](https://hdmiforum.org/hdmi-forum-inc-release-2-0a-specification/)
+- [CTA-861.3-A HDR Static Metadata Extensions, official page](https://shop.cta.tech/products/cta-861-3)
+- [CTA-hosted free preview of the 2015 edition](https://standards.cta.tech/kwspub/published_docs/CEA-861.3-Preview.pdf)
+- [ITU-R BT.2100 recommendation family](https://www.itu.int/rec/R-REC-BT.2100/en)
+- [Pinned in-force edition BT.2100-3, February 2025](https://www.itu.int/rec/R-REC-BT.2100-3-202502-I/en)
+- [Linux DRM HDR metadata uapi definition](https://github.com/torvalds/linux/blob/master/include/uapi/drm/drm_mode.h)
+
+HDR is the colour-depth-domain neighbour of the stereo signalling indexed
+above and rides the same EDID blocks and InfoFrame machinery. HDMI 2.0a
+added HDR transport to the link by referencing CEA-861.3; CTA-861.3-A
+defines the HDR Static Metadata Data Block in EDID and the Dynamic Range
+and Mastering InfoFrame on the wire; BT.2100 pins the 10- and 12-bit
+PQ/HLG image parameters. The classic HDR10 wire transport carries 10-bit
+samples in a 12-bit YCbCr 4:2:2 container, so a link layer that clips wire
+depth or mis-parses capability blocks gates HDR from below. The CTA
+standard is member-priced, so the official CTA-hosted preview is the link
+usable for direct citation.
+
 ## Implementations useful for cross-checking
 
 - [x264](https://code.videolan.org/videolan/x264) - H.264 encoder implementation that writes the frame-packing-arrangement SEI for `--frame-packing`; its physical repetition cadence is implementation behaviour.
