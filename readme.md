@@ -756,6 +756,8 @@ Stereo sound is not a pun on this list's subject. It is the same idea in another
 
 - [awesome-vr](https://github.com/danielcamposramos/awesome-vr) - Virtual reality as its own subject: headsets, the open runtimes that keep them working, standards, comfort and accessibility, and the platforms that were switched off. A headset is a stereoscope you wear, and this is where that thread continues.
 - [awesome-ar](https://github.com/danielcamposramos/awesome-ar) - Augmented reality: see-through optics, the SLAM and visual-inertial tracking that decide where the room is, the SDKs and the standards.
+- [awesome-linux-hdr](https://github.com/danielcamposramos/awesome-linux-hdr) - HDR and deep colour on Linux, from specification to photons. The EDID and InfoFrame machinery that signals 3D also signals colour depth and HDR, and both share one HDMI link budget.
+- [From one bit to HDR](https://github.com/danielcamposramos/awesome-linux-hdr/blob/main/colour-depth-explained.md) - Colour depth explained, from 2 colours to 281 trillion: why each step happened, the caveats, and how HDR differs from simply more bits.
 - [awesome-webxr](https://github.com/msub2/awesome-webxr) - The browser side of both, maintained separately.
 - [awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision) - Where the other meaning of "stereo" lives: matching, calibration and depth from two views as a research field.
 - [awesome-3D-gaussian-splatting](https://github.com/MrNeRF/awesome-3D-gaussian-splatting) - The current literature on splatting and view synthesis, which is where the second eye increasingly comes from.
