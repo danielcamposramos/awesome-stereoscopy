@@ -137,6 +137,21 @@ depth or mis-parses capability blocks gates HDR from below. The CTA
 standard is member-priced, so the official CTA-hosted preview is the link
 usable for direct citation.
 
+Driver note (September 2026 source survey): HDR support across Linux GPU
+drivers is uneven, and the location of a defect determines who can repair
+it. i915 is the reference path — [the DRM HDR metadata layer originated
+there](https://lists.freedesktop.org/archives/dri-devel/2019-March/211334.html).
+amdgpu's pipeline is wired in open code, where colour/HDR-adjacent defects
+such as [CTA-mode quantization range](https://lkml.iu.edu/2609.1/08639.html)
+and [swapped gamma transfer functions](https://lore.gitlab.freedesktop.org/drm-ai-reviews/20260311211837.2482799-1-alex.hung@amd.com/)
+can be reviewed and fixed publicly. A [source audit of nouveau 7.3-rc4](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/research/nouveau-hdr-gap-2026-09-22.md)
+finds no HDR metadata connector property or DRM InfoFrame emission path.
+The proprietary NVIDIA stack exposes the property through open glue but
+hands output policy to closed NVKMS; [the measured 10-vs-12-bit deep-colour
+narrowing and related HDR reports](https://github.com/NVIDIA/open-gpu-kernel-modules/issues/1384)
+therefore require NVIDIA's participation. What is repairable is what can be
+read.
+
 ## Implementations useful for cross-checking
 
 - [x264](https://code.videolan.org/videolan/x264) - H.264 encoder implementation that writes the frame-packing-arrangement SEI for `--frame-packing`; its physical repetition cadence is implementation behaviour.
