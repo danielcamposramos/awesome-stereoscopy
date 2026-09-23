@@ -27,6 +27,8 @@ join.
 
 ## On slop
 
+Adapted from the owner's comments on the [Consumer Rights Wiki AI usage policy talk page](https://consumerrights.wiki/w/Consumer_Rights_Wiki_talk:AI_usage_policy) (20 September 2026).
+
 Slop is not a property of a tool.
 It is low information density, claims nobody can check, and volume without checkable content, and people produced all of it long before language models existed.
 
