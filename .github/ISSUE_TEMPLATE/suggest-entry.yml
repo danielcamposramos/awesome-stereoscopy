@@ -1,0 +1,29 @@
+name: Suggest an entry
+description: Propose something for the list without opening a pull request yourself.
+labels: [suggestion]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      description: The publisher's or project's own page, not a copy or a summary.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What it is
+      description: One or two factual sentences. Dates help for historical entries. No marketing language.
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Which section it belongs in
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I opened the link myself and it matches what I described.
+          required: true

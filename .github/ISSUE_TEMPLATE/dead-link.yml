@@ -1,0 +1,26 @@
+name: Report a dead or changed link
+description: A link no longer loads, redirects somewhere else, or no longer matches its description.
+labels: [dead-link]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Link
+    validations:
+      required: true
+  - type: dropdown
+    id: what
+    attributes:
+      label: What happens when you open it
+      options:
+        - Does not load (DNS, certificate, timeout)
+        - Loads, but redirects to an unrelated page
+        - Loads, but the content no longer matches the description
+        - Blocked for automated tools only, opens fine in a browser
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Replacement or archive link, if you found one
+      description: A Wayback Machine snapshot or the new official location. Please open it yourself before suggesting it.

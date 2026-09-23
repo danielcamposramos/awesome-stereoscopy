@@ -1,0 +1,37 @@
+name: PR checks
+on:
+  pull_request:
+    paths: ['**.md']
+permissions:
+  contents: read
+jobs:
+  lint:
+    # awesome-lint on readme.md; fails only if the PR adds errors over the base branch.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Compare lint error counts
+        run: |
+          count() { npx -y awesome-lint readme.md 2>&1 | tee /dev/stderr | sed -n 's/^ *\([0-9]\+\) errors\?$/\1/p' | tail -1; }
+          head=$(count); head=${head:-0}
+          git checkout -q ${{ github.event.pull_request.base.sha }}
+          base=$(count); base=${base:-0}
+          echo "base=$base head=$head"
+          [ "$head" -le "$base" ] || { echo "::error::This PR adds $((head-base)) awesome-lint error(s)"; exit 1; }
+  links:
+    # Checks only the links in files this PR changed.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Changed markdown files
+        id: files
+        run: echo "list=$(git diff --name-only --diff-filter=AM ${{ github.event.pull_request.base.sha }} HEAD -- '*.md' | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
+      - uses: lycheeverse/lychee-action@v2
+        if: steps.files.outputs.list != ''
+        with:
+          args: --no-progress --max-concurrency 4 --accept 200..=299,403,429 ${{ steps.files.outputs.list }}
+          fail: true

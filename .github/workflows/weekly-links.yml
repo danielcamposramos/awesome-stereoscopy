@@ -1,0 +1,27 @@
+name: Weekly link scan
+on:
+  schedule:
+    - cron: '17 6 * * 1'   # Mondays 06:17 UTC
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # 403/429 are usually bot-walls, not dead pages; a human checks those by hand.
+          args: --no-progress --max-concurrency 4 --accept 200..=299,403,429 './**/*.md'
+          output: ./lychee/out.md
+          fail: false
+      - name: Open an issue listing failures
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Weekly link scan found failures
+          content-filepath: ./lychee/out.md
+          labels: dead-link

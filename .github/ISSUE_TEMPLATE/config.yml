@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contribution guidelines
+    url: https://github.com/danielcamposramos/awesome-stereoscopy/blob/main/contributing.md
+    about: Read these first. One logical change per pull request.
