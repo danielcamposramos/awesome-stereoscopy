@@ -537,7 +537,7 @@ The Linux lineage is equally short and recoverable. Mainline's HDMI stereoscopy 
 
 ## Players and viewers
 
-- [mpv](https://mpv.io) - Scriptable player with `stereo3d` filtering.
+- [mpv](https://mpv.io) - Scriptable player with `stereo3d` filtering. Since September 2026 its development branch also detects the layout signalled in the stream itself, the H.264/HEVC frame-packing SEI or the MP4 `st3d` box ([PR #18490](https://github.com/mpv-player/mpv/pull/18490)).
 - [Kodi](https://github.com/xbmc/xbmc) - Media centre with stereoscopic display modes; derives the stereo mode from the stream's own metadata.
 - [Bino](https://bino3d.org) - Dedicated 3D video player, strong on multi-display and projection setups.
 - [sView](https://www.sview.ru/en/) - Stereoscopic image and video viewer for desktop and mobile, with many output modes.
