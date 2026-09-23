@@ -13,6 +13,6 @@ It is plain Markdown on purpose, so it is not tied to any one assistant:
 - **Anything else, including a local model:** paste it at the top of the conversation.
 - **No assistant at all:** it works as a human checklist.
 
-The maintainer's position on AI assistance is in [PROVENANCE.md](../PROVENANCE.md#on-slop). A sibling skill for the Consumer Rights Wiki lives in [sony-bravia-linux/crwiki-ai-skill](https://github.com/danielcamposramos/sony-bravia-linux/tree/main/crwiki-ai-skill).
+Daniel's position on AI assistance is in [PROVENANCE.md](../PROVENANCE.md#on-slop). A sibling skill for the Consumer Rights Wiki lives in [sony-bravia-linux/crwiki-ai-skill](https://github.com/danielcamposramos/sony-bravia-linux/tree/main/crwiki-ai-skill).
 
 CC0, like the rest of this repository. Corrections are welcome as pull requests, especially from anyone who knows exactly which rule was missing.

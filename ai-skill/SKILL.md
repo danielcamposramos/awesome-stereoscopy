@@ -22,7 +22,7 @@ Everything below is a rule. Rules are followed when someone is watching. This pa
 - **Own the error first.** When you find your own mistake, name it before anyone else does, and name it specifically.
 - **Protect the list from your own output.** You are the last check before a stranger reads it and believes it.
 
-**On the tool question.** Software settled this argument once already, over the word *hacker*: the capability is neutral, the conduct is what we judge. The same holds here. What separates good use of these tools from bad is not the model. It is whether the person behind it verified, understood and owned what they published. The maintainer's position is written in [PROVENANCE.md](https://github.com/danielcamposramos/awesome-stereoscopy/blob/main/PROVENANCE.md#on-slop): we judge the artefact, not the author. Linus Torvalds works the same way: his AI-assisted drm/xe fix, [818bebeb63dd](https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c), was a stubborn human directing, a verified result and an honest disclosure in the commit itself.
+**On the tool question.** Software settled this argument once already, over the word *hacker*: the capability is neutral, the conduct is what we judge. The same holds here. What separates good use of these tools from bad is not the model. It is whether the person behind it verified, understood and owned what they published. Daniel's position is written in [PROVENANCE.md](https://github.com/danielcamposramos/awesome-stereoscopy/blob/main/PROVENANCE.md#on-slop): we judge the artefact, not the author. Linus Torvalds works the same way: his AI-assisted drm/xe fix, [818bebeb63dd](https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c), was a stubborn human directing, a verified result and an honest disclosure in the commit itself.
 
 ---
 
@@ -51,7 +51,7 @@ Stereoscopy as a medium: presenting a different image to each eye, and everythin
 
 ## The pull-request checklist
 
-The template asks you to confirm: every added link opened by hand and read, publisher pages rather than copies, one entry per line, factual descriptions, honest labels, and whether AI assistance was used. Branch `main` is protected: a pull request needs the maintainer's review and a passing lint check.
+The template asks you to confirm: every added link opened by hand and read, publisher pages rather than copies, one entry per line, factual descriptions, honest labels, and whether AI assistance was used. Branch `main` is protected: a pull request needs Daniel's review and a passing lint check.
 
 ---
 
@@ -68,12 +68,12 @@ These are not from the contribution guide. They are what it takes to satisfy it.
 1. **Open every link and read the page.** Not the title, not a search snippet, not a summary.
 2. **Check content, not status codes.** A block often arrives as HTTP 200 with a denial page in the body. A dead link often arrives as HTTP 200 after a silent redirect to a home page. Read what came back.
 3. **A challenge word inside a page script is not a block.** Some pages carry "captcha" or "challenge" text in their JavaScript and load fine. Decide by the visible title and body, not by a grep.
-4. **If a site blocks automated access, stop.** Do not change the user agent, do not retry with other headers, do not route around it. Record the URL and hand it to the maintainer to open in a browser. Circumventing an access control is not a research technique, whatever the goal.
+4. **If a site blocks automated access, stop.** Do not change the user agent, do not retry with other headers, do not route around it. Record the URL and hand it to Daniel to open in a browser. Circumventing an access control is not a research technique, whatever the goal.
 5. **A dead link gets one more chance: the Wayback Machine.** If an archived snapshot shows the genuine page, link the snapshot and say so. If not, drop the entry. Check what the snapshot actually contains: an archived domain can hold an unrelated site from a later owner.
 6. **Link the publisher, not a copy.** A paper links to its publisher or DOI page, even when only a third-party PDF is reachable. Mark paywalled sources as paywalled.
 7. **Verify identifiers against the page they point to.** A standard's number and its catalogue URL must match. A plausible URL from a model or a search can point at a different document entirely.
 8. **Extract URLs with care.** URLs can contain parentheses and percent-encoding. A naive regex cuts them and produces a link that fails for reasons that have nothing to do with the site.
-9. **Pace your requests.** Search and wiki APIs rate-limit rapid calls. Space them out and back off when refused; hammering a service gets the maintainer's address blocked.
+9. **Pace your requests.** Search and wiki APIs rate-limit rapid calls. Space them out and back off when refused; hammering a service gets your address blocked.
 
 ## Writing entries
 
