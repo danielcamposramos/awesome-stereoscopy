@@ -538,7 +538,7 @@ The Linux lineage is equally short and recoverable. Mainline's HDMI stereoscopy 
 ## Players and viewers
 
 - [mpv](https://mpv.io) - Scriptable player with `stereo3d` filtering. Since September 2026 its development branch also detects the layout signalled in the stream itself, the H.264/HEVC frame-packing SEI or the MP4 `st3d` box ([PR #18490](https://github.com/mpv-player/mpv/pull/18490)).
-- [VLC with the 3D fix](https://github.com/danielcamposramos/vlc) - Fork of VLC, which describes itself as "focused on playing everything". Upstream VLC has discarded the H.264 frame-packing SEI since 2017 (commit 89347c3e2d), so video that signals its 3D layout the standard way plays and converts as flat 2D. This fork detects the SEI and keeps it through transcoding.
+- [VLC with the 3D fix](https://github.com/danielcamposramos/vlc) - Fork of VLC, which describes itself as "focused on playing everything". Upstream VLC has discarded the H.264 frame-packing SEI since 2017 (commit 89347c3e2d), so video that signals its 3D layout the standard way plays and converts as flat 2D. This fork detects the SEI and keeps it through transcoding; tested [builds](https://github.com/danielcamposramos/vlc/releases/tag/3.0.24-3d1) for Windows and Debian.
 - [Kodi](https://github.com/xbmc/xbmc) - Media centre with stereoscopic display modes; derives the stereo mode from the stream's own metadata.
 - [Bino](https://bino3d.org) - Dedicated 3D video player, strong on multi-display and projection setups.
 - [sView](https://www.sview.ru/en/) - Stereoscopic image and video viewer for desktop and mobile, with many output modes.
