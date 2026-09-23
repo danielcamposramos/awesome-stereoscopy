@@ -63,3 +63,5 @@ He kept pushing through 24 debug patches and 18 boots, verified the result, and 
 The lists of "signs of AI writing" that many projects publish are accurate about what they list, and we use them as a checklist against our own drafts.
 Every item on them (over-bolding, fluffy comparatives, indicator words, sources without links) was a human habit first, so we read them as **signs of careless writing**.
 Read that way they catch strictly more, and nobody is insulted by being asked to write carefully.
+
+**For AI assistants and the people using them:** [ai-skill/SKILL.md](ai-skill/SKILL.md) turns this section into operating rules for this repository. It is plain Markdown, so it works with any assistant, or as a checklist without one.

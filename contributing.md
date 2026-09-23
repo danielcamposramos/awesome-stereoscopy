@@ -20,3 +20,7 @@ Stereoscopy as a medium: presenting a different image to each eye, and everythin
 - Say what a thing *is*, not how good it is. No marketing language.
 - If a project is abandoned or a service is unreliable, say so plainly in the description. An honest note is more useful than an omission, and readers will find out anyway.
 - Historical entries should carry a date, because in this subject the date usually explains the format.
+
+## Using an AI assistant
+
+Load [ai-skill/SKILL.md](ai-skill/SKILL.md) first. It carries these rules plus the verification discipline behind every entry, and it works with any assistant. Assistance is welcome and never held against you; see [PROVENANCE.md](PROVENANCE.md#on-slop).

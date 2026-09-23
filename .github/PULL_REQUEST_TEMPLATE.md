@@ -10,7 +10,7 @@
 - [ ] The description says what it *is*, not how good it is. Historical entries carry a date.
 - [ ] Abandoned, paywalled or unreliable sources are labelled as such.
 
-**AI assistance** (see [PROVENANCE.md](https://github.com/danielcamposramos/awesome-stereoscopy/blob/main/PROVENANCE.md#on-slop); disclosure is never held against you):
+**AI assistance** (see [PROVENANCE.md](https://github.com/danielcamposramos/awesome-stereoscopy/blob/main/PROVENANCE.md#on-slop); disclosure is never held against you; assistants can load [ai-skill/SKILL.md](https://github.com/danielcamposramos/awesome-stereoscopy/blob/main/ai-skill/SKILL.md)):
 
 - [ ] None
 - [ ] Used, and I checked every link and claim myself. Tool or model:
