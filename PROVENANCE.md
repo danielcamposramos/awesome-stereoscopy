@@ -54,6 +54,12 @@ Disclosure here is simple and non-punitive.
 Saying "AI assisted, sources checked by me" must never cost a contributor more than saying nothing.
 Disclosure lands on the people who were already careful, so it lets a reviewer calibrate how hard to look, but it never replaces looking.
 
+The same standard holds at the root of the whole ecosystem.
+On 21 August 2026 Linus Torvalds committed a one-line drm/xe fix, [818bebeb63dd](https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c), found with an AI "doing much of the grunt-work".
+The AI called the bug "impossible and unsolvable" more than once.
+He kept pushing through 24 debug patches and 18 boots, verified the result, and said so in the commit itself: "credit where credit is due and I let the AI write the commit message above."
+**A stubborn human directing, a verified result, and an honest disclosure.** That is the whole method, and it is ours.
+
 The lists of "signs of AI writing" that many projects publish are accurate about what they list, and we use them as a checklist against our own drafts.
 Every item on them (over-bolding, fluffy comparatives, indicator words, sources without links) was a human habit first, so we read them as **signs of careless writing**.
 Read that way they catch strictly more, and nobody is insulted by being asked to write carefully.
