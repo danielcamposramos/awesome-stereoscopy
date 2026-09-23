@@ -75,6 +75,29 @@ We test before we claim.
 When a build of ours did not do what we expected, we did not publish it; we held it back and measured it, and nothing ships until it does what we say.
 When a reviewer caught a claim of ours that went beyond what we had verified, we corrected it in the same thread and credited them.
 
+**What the record shows.**
+Nobody's code gets in untouched, and that is the point of review.
+On 23 September 2026 we counted the last 300 merge requests merged into VLC: 297 of them (99%) received human review comments before merging, and the other three were release fast-tracks by core developers.
+(Query: `code.videolan.org/api/v4/projects/videolan%2Fvlc/merge_requests?state=merged`, field `user_notes_count`; comments include approvals as well as corrections.)
+Our own record in the same weeks:
+- HandBrake [#8100](https://github.com/HandBrake/HandBrake/pull/8100) and UMS [#6330](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/6330) were merged as submitted, with no changes.
+- MKVToolNix [!6311](https://codeberg.org/mbunkus/mkvtoolnix/pulls/6311) was merged after review.
+- mpv [#18490](https://github.com/mpv-player/mpv/pull/18490) drew an objection to AI use; once we explained the language barrier and our disclosure, the lead maintainer reviewed the code, asked for changes, took our answer over, ran it through CI on every platform and merged it.
+
+It worked because we discussed in the issues first, and kept updating the code as we found more caveats and as reviewers showed us points of view we had not considered.
+
+**Where we went wrong, and corrected.**
+Our campaign was about 3D signalling, never HDR.
+Our sets accept YCbCr as well as RGB, so our nouveau work carried colour formats along with deep colour and 3D, and we packed it into two series and shared them.
+That was the wrong venue and the wrong format: another developer was already writing the same features by hand.
+We withdrew both series, offered them as a proof of concept, and now contribute to that developer's own branch with a small fix and hardware test results on two TVs.
+
+**VLC.**
+VLC labelled our merge request `AI::Slop` and blocked the account the same day.
+The label now reads `AI::Generated`, so the first word no longer appears on their tracker; we recorded it when it did.
+We did the open-source thing: we forked VLC, fixed the bug, and published tested builds.
+The same day, mpv merged the same principle through its lead maintainer's review.
+
 When a reviewer gates on the tool instead of the diff, we ask the project's lead maintainer for a technical review, once, politely, in the thread.
 We do not argue about the tool.
 **Judge the diff.**
