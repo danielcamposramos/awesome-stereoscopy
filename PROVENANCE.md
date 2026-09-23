@@ -60,6 +60,25 @@ The AI called the bug "impossible and unsolvable" more than once.
 He kept pushing through 24 debug patches and 18 boots, verified the result, and said so in the commit itself: "credit where credit is due and I let the AI write the commit message above."
 **A stubborn human directing, a verified result, and an honest disclosure.** That is the whole method, and it is ours.
 
+**Careless review is slop too.**
+Slop is not only careless writing.
+A review that judges the author instead of the diff has the same properties: little effort, confident claims, nothing verified.
+Searching someone's history takes longer than reading their patch, and tells you less about it.
+
+We saw both kinds in the same week.
+A maintainer who does not use AI read our patch, asked for changes, and merged it with the AI disclosure in the commit.
+Another project's lead maintainer rewrote our commits to his project's rules, kept us as authors, and landed them.
+Elsewhere, a reviewer read the code, found two real problems, and they were fixed the same day; the patch was then labelled slop without any of its code being discussed.
+
+**The standard we ask for is the one we hold ourselves to.**
+We test before we claim.
+When a build of ours did not do what we expected, we did not publish it; we held it back and measured it, and nothing ships until it does what we say.
+When a reviewer caught a claim of ours that went beyond what we had verified, we corrected it in the same thread and credited them.
+
+When a reviewer gates on the tool instead of the diff, we ask the project's lead maintainer for a technical review, once, politely, in the thread.
+We do not argue about the tool.
+**Judge the diff.**
+
 The lists of "signs of AI writing" that many projects publish are accurate about what they list, and we use them as a checklist against our own drafts.
 Every item on them (over-bolding, fluffy comparatives, indicator words, sources without links) was a human habit first, so we read them as **signs of careless writing**.
 Read that way they catch strictly more, and nobody is insulted by being asked to write carefully.
