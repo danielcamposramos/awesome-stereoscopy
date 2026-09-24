@@ -537,6 +537,8 @@ The Linux lineage is equally short and recoverable. Mainline's HDMI stereoscopy 
 
 ## Players and viewers
 
+**Our pick: mpv.** It detects the 3D layout signalled in the stream in its own upstream code ([PR #18490](https://github.com/mpv-player/mpv/pull/18490), merged 23 September 2026), so no patched fork is needed; until the next release (the latest, v0.41.0, predates it), that means a development build from that date on. Our VLC fork below is for people who rely on VLC. mpv is also the maintainer's personal choice.
+
 - [mpv](https://mpv.io) - Scriptable player with `stereo3d` filtering. Since September 2026 its development branch also detects the layout signalled in the stream itself, the H.264/HEVC frame-packing SEI or the MP4 `st3d` box ([PR #18490](https://github.com/mpv-player/mpv/pull/18490)).
 - [VLC with the 3D fix](https://github.com/danielcamposramos/vlc) - Fork of VLC, which describes itself as "focused on playing everything". Upstream VLC has discarded the H.264 frame-packing SEI since 2017 (commit 89347c3e2d), so video that signals its 3D layout the standard way plays and converts as flat 2D. This fork detects the SEI and keeps it through transcoding; tested [builds](https://github.com/danielcamposramos/vlc/releases/tag/3.0.24-3d1) for Windows and Debian.
 - [Kodi](https://github.com/xbmc/xbmc) - Media centre with stereoscopic display modes; derives the stereo mode from the stream's own metadata.
