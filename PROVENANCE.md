@@ -1,7 +1,7 @@
 # Provenance
 
 This work was developed with AI partners — coding agents that work
-alongside the owner, who directs the work and verifies every claim and
+alongside Daniel Campos Ramos, who directs the work and verifies every claim and
 result. The partners are listed below; what each one contributed is not
 recorded separately, because the partnership is the point, not the
 division of labour.
@@ -27,7 +27,7 @@ join.
 
 ## On slop
 
-Adapted from the owner's comments on the [Consumer Rights Wiki AI usage policy talk page](https://consumerrights.wiki/w/Consumer_Rights_Wiki_talk:AI_usage_policy) (20 September 2026).
+Adapted from Daniel's comments on the [Consumer Rights Wiki AI usage policy talk page](https://consumerrights.wiki/w/Consumer_Rights_Wiki_talk:AI_usage_policy) (20 September 2026).
 
 Slop is not a property of a tool.
 It is low information density, claims nobody can check, and volume without checkable content, and people produced all of it long before language models existed.
