@@ -173,6 +173,40 @@ read.
 - [x264](https://code.videolan.org/videolan/x264) - H.264 encoder implementation that writes the frame-packing-arrangement SEI for `--frame-packing`; its physical repetition cadence is implementation behaviour.
 - [FFmpeg](https://code.ffmpeg.org/FFmpeg/FFmpeg) - Shared H.264/H.265/VVC SEI parsing and `AV_FRAME_DATA_STEREO3D` export used by players and analysis tools.
 - [Linux DRM](https://github.com/torvalds/linux/tree/master/drivers/gpu/drm) - Mode discovery, validation, scanout and HDMI infoframe paths used to audit open-driver stereo support.
+- [NVIDIA Video Codec SDK (NVENC)](https://developer.download.nvidia.com/assets/cuda/files/NvEncodeAPI_v.6.0.pdf) - The hardware H.264 encoder can write the frame-packing-arrangement SEI itself. NVIDIA's own reference manual documents `NV_ENC_STEREO_PACKING_MODE` (checkerboard, column- or row-interleave, side-by-side, top-bottom, frame-sequential) as the value `NV_ENC_CONFIG_H264::stereoMode` sets, "to be signalled in frame packing arrangement SEI"; the current header, mirrored in [FFmpeg's nv-codec-headers](https://github.com/FFmpeg/nv-codec-headers/blob/master/include/ffnvcodec/nvEncodeAPI.h), adds the companion bit `outputFramePackingSEI`, "set to 1 to enable writing of frame packing arrangement SEI messages to bitstream". FFmpeg's own `h264_nvenc`/`hevc_nvenc` wrappers set neither field yet, so this capability goes unused by the encoder FFmpeg users actually run.
+
+## Streaming manifest signalling
+
+### ISO/IEC 23009-1 (MPEG-DASH) `FramePacking` descriptor
+
+- [DASH-IF IOP Part 7: Video, v5.0.0 (2022-05)](https://dashif.org/docs/IOP-Guidelines/DASH-IF-IOP-Part7-v5.0.0.pdf)
+
+ISO/IEC 23009-1 clause 5.8.5.3 defines a `FramePacking` descriptor for an
+Adaptation Set or Representation, carrying a `@schemeIdUri` and a `@value`.
+Two codec-specific `@schemeIdUri` forms exist for backward compatibility —
+`urn:mpeg:dash:14496:10:frame_packing_arrangement_type:2011` for H.264
+content and `urn:mpeg:dash:13818:1:stereo_video_format_type:2011` for
+MPEG-2 content — both taking the value defined for `VideoFramePackingType`
+in the CICP registry, ISO/IEC 23090-1. DASH-IF's own interoperability
+guidelines recommend using that CICP scheme directly instead,
+`urn:mpeg:mpegB:cicp:VideoFramePackingType`, rather than either legacy
+form. ISO/IEC 23009-1 itself is paywalled at ISO; the citation above is
+DASH-IF's freely readable interoperability guideline, which names the
+clause and all three schemeIdUri values.
+
+## Still-image container signalling
+
+### MPO stereo attribute tags (CIPA DC-007)
+
+CIPA's Multi-Picture Format standard — DC-007, currently at edition
+DC-007-Translation-2026 (see [CIPA standards](https://www.cipa.jp/e/std/std-sec.html)
+in the main list, where the PDF sits behind a disclaimer page rather than
+a direct link) — carries recommended stereo attribute tags beyond the two
+JPEG images themselves. Table 8 of the standard recommends, for Disparity
+images: Convergence Angle, tag `0xB205`, type SRATIONAL, in degrees; and
+Baseline Length, tag `0xB206`, type RATIONAL, in metres. Recorded here so a
+writer or reader of MPO files knows what to look for, separately from the
+verification of the two-image index itself.
 
 ## Why the documents are linked, not mirrored
 

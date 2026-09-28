@@ -77,8 +77,8 @@ When a reviewer caught a claim of ours that went beyond what we had verified, we
 
 **What the record shows.**
 Nobody's code gets in untouched, and that is the point of review.
-On 23 September 2026 we counted the last 300 merge requests merged into VLC: 297 of them (99%) received human review comments before merging, and the other three were release fast-tracks by core developers.
-(Query: `code.videolan.org/api/v4/projects/videolan%2Fvlc/merge_requests?state=merged`, field `user_notes_count`; comments include approvals as well as corrections.)
+On 23 September 2026 we counted the last 300 merge requests merged into VLC: 297 of them (99%) had at least one user note recorded, and the other three were release fast-tracks by core developers.
+(Query: `code.videolan.org/api/v4/projects/videolan%2Fvlc/merge_requests?state=merged`, field `user_notes_count`.) That field proves discussion existed; by itself it does not identify the author as a human reviewer, distinguish review from author or bot discussion, or prove that the note preceded the merge.
 Our own record in the same weeks:
 - HandBrake [#8100](https://github.com/HandBrake/HandBrake/pull/8100) and UMS [#6330](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/6330) were merged as submitted, with no changes.
 - MKVToolNix [!6311](https://codeberg.org/mbunkus/mkvtoolnix/pulls/6311) was merged after review.
