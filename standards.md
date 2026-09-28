@@ -134,7 +134,6 @@ HDMI in its EDID, and the same holds for a DP++ output in TMDS mode.
 
 - [HDMI 2.0a release announcement, HDMI Forum, April 2015](https://hdmiforum.org/hdmi-forum-inc-release-2-0a-specification/)
 - [CTA-861.3-A HDR Static Metadata Extensions, official page](https://shop.cta.tech/products/cta-861-3)
-- [CTA-hosted free preview of the 2015 edition](https://standards.cta.tech/kwspub/published_docs/CEA-861.3-Preview.pdf)
 - [ITU-R BT.2100 recommendation family](https://www.itu.int/rec/R-REC-BT.2100/en)
 - [Pinned in-force edition BT.2100-3, February 2025](https://www.itu.int/rec/R-REC-BT.2100-3-202502-I/en)
 - [Linux DRM HDR metadata uapi definition](https://github.com/torvalds/linux/blob/master/include/uapi/drm/drm_mode.h)
