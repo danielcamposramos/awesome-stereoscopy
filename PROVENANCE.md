@@ -21,10 +21,20 @@ evidence. Daniel remains the named observer for sink behaviour; this list
 stores only semantic hashes and authority expectations for canonical claims
 in `sony-bravia-linux`.
 
+The four deep-dive guides under `docs/` (anaglyph matrices, frame packing and
+HDMI timings, stereo camera geometry, the VR-to-3D display pipeline) were
+Daniel's requests, drafted by **Gemini inside Google Jules** with their ASCII
+and Mermaid diagrams. Claude checked every figure and formula against its
+source before merge (FFmpeg's `vf_stereo3d.c`, Linux's `drivers/video/hdmi.c`
+and `drm_modes.c`, the cited papers) and corrected what did not match: the
+Dubois coefficients, the InfoFrame byte values, the grouping of the HDMI
+structures, the parallax-budget formula and the projection shift.
+
 The partner roster is:
 
 - **Claude** models (Anthropic)
 - **OpenAI Codex** models
+- **Gemini inside Google Jules**
 - **Ollama cloud models**
   - **DeepSeek v4 pro**
   - **GLM 5.3**
