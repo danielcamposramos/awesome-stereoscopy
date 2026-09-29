@@ -3,6 +3,8 @@
 > Stereoscopic 3D: the formats, the standards, the software that speaks them, and the 190 years behind them.
 
 Stereoscopy is older than the photograph. Charles Wheatstone described the stereoscope in 1838, the year *before* photography was announced publicly, and every 3D format since has been one more way of getting a different picture to each eye. This list collects what that history produced and what still works: the encodings, the specifications that define them, the tools that read and write them, and the communities keeping the material alive.
+*The arithmetic and signal layouts behind the entries (anaglyph matrices, frame packing and HDMI timings, camera geometry, VR to a 3D display) are drawn out in [the deep dives](docs/README.md).*
+
 *AI was leveraged as a partner in the development of this work — [more information here](PROVENANCE.md).*
 
 ## Contents
