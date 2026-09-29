@@ -1,0 +1,16 @@
+name: Federated Evidence Ledger
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: danielcamposramos/sony-bravia-linux/.github/actions/verify-signal-pointers@fbd29a51d923ad541ef95f6499cc1e8f00106e31

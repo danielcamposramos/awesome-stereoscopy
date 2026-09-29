@@ -13,6 +13,14 @@ and **OpenAI Codex** performed the independent decoder-lifetime review,
 threading audit, regression-test construction and standards/provenance pass.
 Daniel directed the work and verified the claims and measured results.
 
+The federated Signal Ledger was designed through the real ACIG/MVCIC partner
+chain (Kimi K3, GLM, DeepSeek, Nemotron and Gemma completed; Qwen's lane
+returned HTTP 410), implemented by OpenAI Codex, and adversarially reviewed by
+another Codex partner. Those reviews are design provenance, not physical
+evidence. Daniel remains the named observer for sink behaviour; this list
+stores only semantic hashes and authority expectations for canonical claims
+in `sony-bravia-linux`.
+
 The partner roster is:
 
 - **Claude** models (Anthropic)

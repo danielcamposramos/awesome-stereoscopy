@@ -1,0 +1,15 @@
+schema = 1
+federation = "awesome-stereoscopy"
+view = "docs/reference/evidence-ledger/pointers.md"
+
+[[pointers]]
+path = "pointers/as-sbl-3d-0001.toml"
+sha256 = "67d7028e195d097770ed4d7390caca1bec29c118f39700b6e2ce7f6b84e9caa1"
+
+[[pointers]]
+path = "pointers/as-sbl-3d-0002.toml"
+sha256 = "82fb9d9c6acc319df085f677d3afb8a0046c707e24d70c17c75d085fd4e9600d"
+
+[[pointers]]
+path = "pointers/as-sbl-dc-0001.toml"
+sha256 = "047e8448bd14f076a1e21b386c2c4599780126ab63a3914ad8e3f31f77b8dc4c"

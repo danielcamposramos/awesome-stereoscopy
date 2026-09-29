@@ -27,6 +27,14 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [Related lists](#related-lists)
 - [Known gaps](#known-gaps)
 
+## Evidence ledger
+
+- [Federated Signal Ledger](docs/reference/evidence-ledger/pointers.md) -
+  Machine-checked pointers to the canonical run-34 matrix and Daniel's
+  physical observation that every accepted mode displayed properly,
+  including the BRAVIA OSD reporting 12-bit and 3D together. The original
+  photographs and machine log remain in `sony-bravia-linux`.
+
 ## History
 
 Two centuries in five movements. The formats in the next section only make sense in this order.

@@ -1,0 +1,10 @@
+schema = 1
+id = "AS-SBL-DC-0001"
+purpose = "Ground the HDMI General Control Packet Deep Color fields used by the combined 3D-plus-12-bpc result."
+upstream_repository = "danielcamposramos/sony-bravia-linux"
+upstream_ref = "main"
+upstream_manifest = "data/evidence-ledger/ledger.toml"
+claim_id = "SBL-DC-0001"
+claim_sha256 = "f9623140c60d9eb72a4f8640e50dd8e557d298f15e4600e6f943e5a024dc0c10"
+expected_reason = "SUPPORTED"
+accept_superseded = false

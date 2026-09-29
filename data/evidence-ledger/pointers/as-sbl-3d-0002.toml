@@ -1,0 +1,10 @@
+schema = 1
+id = "AS-SBL-3D-0002"
+purpose = "Bind Daniel's observation that every accepted run-34 mode displayed, including 3D at 12 bpc."
+upstream_repository = "danielcamposramos/sony-bravia-linux"
+upstream_ref = "main"
+upstream_manifest = "data/evidence-ledger/ledger.toml"
+claim_id = "SBL-3D-0002"
+claim_sha256 = "b44b1d12e4b9cbcd66671de450cf8cd2c45f86afd6802d6bb6bb4050b3c947d7"
+expected_reason = "SUPPORTED"
+accept_superseded = false

@@ -1,0 +1,10 @@
+schema = 1
+id = "AS-SBL-3D-0001"
+purpose = "Bind the run-34 22-step DRM/KMS matrix spanning RGB/YCbCr, deep colour and stereoscopic output modes."
+upstream_repository = "danielcamposramos/sony-bravia-linux"
+upstream_ref = "main"
+upstream_manifest = "data/evidence-ledger/ledger.toml"
+claim_id = "SBL-3D-0001"
+claim_sha256 = "696fb2d66f1bb7347a3af49586d0cc6e0a45ed6454b69ac2f4b74fa7df1c2706"
+expected_reason = "SUPPORTED"
+accept_superseded = false
