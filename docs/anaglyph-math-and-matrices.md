@@ -72,26 +72,26 @@ Eric Dubois (2001) formulated anaglyph creation as a least-squares projection pr
 
 ### 3.1 Mathematical Model
 
-Given the spectral response functions of the display $P_r(\lambda), P_g(\lambda), P_b(\lambda)$ and filter transmissivities $F_l(\lambda), F_r(\lambda)$, the Dubois transformation applies $3 \times 3$ linear transform matrices $A_L$ and $A_R$ to linear RGB input vectors:
+Given the spectral response functions of the display $P_r(\lambda), P_g(\lambda), P_b(\lambda)$ and filter transmissivities $F_l(\lambda), F_r(\lambda)$, the Dubois transformation applies $3 \times 3$ linear transform matrices $A_L$ and $A_R$ to linear RGB input vectors (Dubois derives them in linear light, so an exact implementation converts the stored gamma-encoded values to linear first and back after):
 
 $$
 \mathbf{C}_{\text{out}} = A_L \mathbf{C}_L + A_R \mathbf{C}_R
 $$
 
-### 3.2 Standard Dubois Red/Cyan Conversion Matrices (sRGB)
+### 3.2 FFmpeg's Dubois Red/Cyan Matrices (`stereo3d=...:arcd`)
 
-Standard FFmpeg `stereo3d=al:arcd` uses the Dubois transformation matrices optimized for sRGB displays and standard red/cyan filters:
+The coefficients below are FFmpeg's, from `libavfilter/vf_stereo3d.c` (`ANAGLYPH_RC_DUBOIS`, stored as integers over 65536, shown to three decimals). FFmpeg applies them directly to the stored 8-bit values, without converting to linear light first.
 
 ```
 Left Eye Matrix (A_L):
-[  0.437  0.449  0.164 ]
-[ -0.062 -0.062 -0.024 ]
-[ -0.048 -0.050 -0.017 ]
+[  0.456   0.500   0.176 ]
+[ -0.040  -0.038  -0.016 ]
+[ -0.015  -0.021  -0.005 ]
 
 Right Eye Matrix (A_R):
-[ -0.011 -0.032 -0.007 ]
-[  0.377  0.761  0.009 ]
-[ -0.026 -0.093  1.234 ]
+[ -0.043  -0.088  -0.002 ]
+[  0.378   0.734  -0.018 ]
+[ -0.072  -0.113   1.226 ]
 ```
 
 ```
@@ -116,27 +116,23 @@ Right Eye Matrix (A_R):
 
 ## 4. Display Phosphor & Spectral Emission Adjustments
 
-Anaglyph filters perform differently depending on whether the display is a CRT phosphor, LCD LED backlight, or OLED panel.
+Dubois's method takes two measured inputs: the spectra of the display's three primaries and the transmission of the glasses' two filters. A matrix fitted to one display and one pair of glasses leaks more on another, which is why anaglyph tools ship separate matrices for different display types (a CRT's phosphors and a modern LCD's or OLED's primaries differ) and different glasses.
 
 ```
-+------------------+---------------------------------------------------------+
-| Display Type     | Spectral Emission Characteristics                       |
-+------------------+---------------------------------------------------------+
-| CRT Phosphors    | Broad, continuous spectral emission across RGB bands.    |
-| LED-Backlit LCD  | Narrow blue peak with broad phosphor green/red peak.    |
-| OLED             | Highly saturated, narrow-band RGB emission spikes.      |
-+------------------+---------------------------------------------------------+
+  Display primaries P_r, P_g, P_b (lambda)      Glasses filters F_l, F_r (lambda)
+                   |                                        |
+                   +------------------+---------------------+
+                                      |
+                        Least-squares projection (Dubois)
+                                      |
+                        Matrices A_L, A_R for that pair
 ```
 
 ```mermaid
 graph LR
-    A[Display Technology] --> B[CRT: Continuous Broad Spectrum]
-    A --> C[LCD: LED Backlight + Color Filters]
-    A --> D[OLED: Narrow RGB Spectral Spikes]
-
-    B --> E[Requires High Crosstalk Compensation Matrix]
-    C --> F[Standard Dubois Matrix Optimized for sRGB]
-    D --> G[Custom Matrix Needed to Prevent Cyan Leakage]
+    P[Display primaries: measured spectra] --> F[Least-squares projection]
+    G[Glasses filters: measured transmission] --> F
+    F --> M[Matrices A_L and A_R for that display and those glasses]
 ```
 
 ### 4.1 FFmpeg Dubois Filter Variants
@@ -156,6 +152,6 @@ ffmpeg -i input_sbs.mp4 -vf "stereo3d=sbs2l:arcd" -c:v libx264 anaglyph_dubois.m
 
 ## References
 
-- Dubois, Eric. *"A projection method to generate anaglyph images."* IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2001.
-- Woods, Andrew, and Rourke, T. *"Ghosting in Anaglyphic Stereoscopic Images."* Centre for Marine Science and Technology, Curtin University, 2004.
-- FFmpeg libavfilter `vf_stereo3d.c` implementation.
+- Dubois, Eric. *"A projection method to generate anaglyph stereo images."* IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2001.
+- Woods, Andrew J., and Rourke, Tegan. *"Ghosting in anaglyphic stereoscopic images."* Proceedings of SPIE 5291, Stereoscopic Displays and Virtual Reality Systems XI, 2004.
+- FFmpeg, [`libavfilter/vf_stereo3d.c`](https://github.com/FFmpeg/FFmpeg/blob/master/libavfilter/vf_stereo3d.c) (`ANAGLYPH_RC_DUBOIS`, `ana_convert`).

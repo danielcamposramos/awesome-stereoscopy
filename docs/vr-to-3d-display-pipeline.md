@@ -6,7 +6,7 @@ This reference document details the architecture, buffer extraction mechanisms, 
 
 ## 1. High-Level Pipeline Architecture
 
-The bridge intercepts eye buffer allocations and frame submissions from an OpenVR/OpenXR runtime or game engine, repositions the projection matrices for a flat screen plane, composite UI at zero parallax, and packs the stereo pair for HDMI scanout.
+The display side supplies each eye's projection before the engine renders (an off-axis frustum meeting the other eye's at the screen plane), the engine renders both eyes with it, and the bridge packs the finished pair for HDMI scanout. Placing the HUD and menus at zero parallax needs the engine's cooperation: a module inside the engine can do it, while a runtime driver only ever sees the finished eyes.
 
 ```
 +-------------------------------------------------------------------------------+
@@ -21,7 +21,7 @@ The bridge intercepts eye buffer allocations and frame submissions from an OpenV
 |                       Stereo Interception / Display Bridge                    |
 |                (VRto3D Driver / Gamescope / VR Stereo Spectator)              |
 +---------------------------------------+---------------------------------------+
-|  - Reproject Off-Axis Frustums to Screen Plane (Convergence)                  |
+|  - Supply Off-Axis Frustums Meeting at the Screen Plane (Convergence)         |
 |  - UI / HUD Layer Compositing at Zero Parallax                                |
 |  - Format Packing (Side-by-Side, Top-Bottom, Frame Packing)                   |
 +---------------------------------------+---------------------------------------+
@@ -60,7 +60,7 @@ graph TD
 
 ## 2. Projection Matrix & Convergence Formulation
 
-In standard VR headsets, eye projections use asymmetric, off-axis frustums matching the user's IPD and lens optics. Driving a 3D television requires transforming the view matrices to converge at a fixed screen plane distance ($Z_{\text{screen}}$).
+In a headset, each eye's frustum is set by its lens. On a 3D display the two frustums must share one window, the screen, at the viewing distance ($Z_{\text{screen}}$): each eye sits half the separation to its side, looks straight ahead, and has its frustum shifted back toward the centre so both frame the same screen. Objects at $Z_{\text{screen}}$ then have zero disparity. Turning the eyes inward (toe-in) instead would add vertical parallax.
 
 ```
                       Screen Plane (Z = Z_screen, Zero Parallax)
@@ -97,29 +97,26 @@ block-beta
     style SCR fill:#bfb,stroke:#333
 ```
 
-### Projection Matrix Adjustment Formula
+### Projection Formula
 
-For a camera with focal length $f$, eye separation $b$ (baseline), and convergence distance $d_c$:
+With eye separation $b$ and the screen plane at distance $d_c$, each eye's view matrix moves the eye $\mp b/2$ along x (left eye to $-b/2$, right eye to $+b/2$), and its frustum shifts toward the centre by $s = \frac{b}{2 d_c}$ in tangent units. As OpenVR's `GetProjectionRaw` takes it (half-extents in tangents, $t$ across and $v$ up):
 
 $$
-P_L = \begin{bmatrix}
-\frac{2 N}{R - L} & 0 & \frac{R + L}{R - L} + \frac{b \cdot N}{2 \cdot d_c \cdot (R - L)} & 0 \\
+\text{left eye: } [\,-t + s,\; t + s\,] \qquad \text{right eye: } [\,-t - s,\; t - s\,] \qquad \text{vertical: } [\,-v,\; v\,]
+$$
+
+In a standard OpenGL-style projection matrix, with near plane $N$, far plane $F$, and the unshifted bounds $L, R, B, T$ at the near plane, the shift adds to the third column's first entry:
+
+$$
+P_{L/R} = \begin{bmatrix}
+\frac{2 N}{R - L} & 0 & \frac{R + L}{R - L} \pm \frac{b \, N}{d_c \, (R - L)} & 0 \\
 0 & \frac{2 N}{T - B} & \frac{T + B}{T - B} & 0 \\
 0 & 0 & -\frac{F + N}{F - N} & -\frac{2 F N}{F - N} \\
 0 & 0 & -1 & 0
 \end{bmatrix}
 $$
 
-$$
-P_R = \begin{bmatrix}
-\frac{2 N}{R - L} & 0 & \frac{R + L}{R - L} - \frac{b \cdot N}{2 \cdot d_c \cdot (R - L)} & 0 \\
-0 & \frac{2 N}{T - B} & \frac{T + B}{T - B} & 0 \\
-0 & 0 & -\frac{F + N}{F - N} & -\frac{2 F N}{F - N} \\
-0 & 0 & -1 & 0
-\end{bmatrix}
-$$
-
-Where $N$ and $F$ represent Near and Far clipping planes.
+with $+$ for the left eye and $-$ for the right: the near-plane shift is $\frac{b}{2} \cdot \frac{N}{d_c}$, and it enters the $\frac{R+L}{R-L}$ term twice. The projection alone gives no stereo; the $\mp b/2$ eye translation in the view matrix does.
 
 ---
 
@@ -146,15 +143,15 @@ Crosshairs, health bars, and menus must be rendered at the zero-parallax plane (
 
 | Project | Access Method | Target APIs | Repackaging Output |
 | :--- | :--- | :--- | :--- |
-| **VRto3D** | OpenVR Driver Driver | SteamVR / OpenVR | SBS, TaB, Frame Packing, Interleaved |
-| **VR Stereo Spectator** | Engine Native Module (`sourcevr.so`) | Direct3D 9 / DXVK Vulkan | Side-by-Side, Top-Bottom, Anaglyph |
+| **VRto3D** | OpenVR driver | SteamVR / OpenVR | SBS, TaB, frame packing, interlaced, checkerboard, anaglyph, frame-sequential |
+| **VR Stereo Spectator** | Engine module (`sourcevr.so`) for the Source engine | Source's Direct3D 9 renderer (on Linux through ToGL/OpenGL or DXVK/Vulkan) | Side-by-side, top-and-bottom (half and full-size eyes), anaglyph through gamescope |
 | **wiz3D** | Proxy DLL (`d3d9.dll`, `dxgi.dll`) | Direct3D 7-11, OpenGL | Side-by-Side, Top-Bottom, Anaglyph |
-| **Depth3D** | ReShade Shader | Direct3D / Vulkan | Depth-based SBS, Theater Mode |
+| **Depth3D** | ReShade shader | Direct3D / OpenGL / Vulkan (through ReShade) | A second view synthesized from the depth buffer: SBS, TaB, interlaced, anaglyph |
 
 ---
 
 ## References
 
-- Valve Software, *OpenVR API Specification & IVRScreenshots Interface*, GitHub repository.
-- Khronos Group, *OpenXR 1.1 Specification: XR_EXT_eye_gaze_interaction and Multi-view Extensions*.
-- sony-bravia-linux, *VR Stereo Spectator & Dual-Surface HDMI 3D Implementation Notes*, 2026.
+- Valve Software, [OpenVR](https://github.com/ValveSoftware/openvr): `IVRDisplayComponent::GetProjectionRaw`, `IVRScreenshots`.
+- Khronos Group, *OpenXR 1.1 Specification*: [`XR_VIEW_CONFIGURATION_TYPE_PRIMARY_STEREO`](https://registry.khronos.org/OpenXR/specs/1.1/man/html/XrViewConfigurationType.html) (view 0 left, view 1 right).
+- sony-bravia-linux, [From a VR engine to a 3D display: the formula](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/tools/vr-stereo-spectator/FORMULA.md) and [dual-surface HDMI 3D notes](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/dual-surface-hdmi-3d.md), 2026.
