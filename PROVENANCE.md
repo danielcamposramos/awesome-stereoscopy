@@ -25,6 +25,7 @@ The partner roster is:
 
 - **Claude** models (Anthropic)
 - **OpenAI Codex** models
+- **Gemini inside Google Jules**
 - **Ollama cloud models**
   - **DeepSeek v4 pro**
   - **GLM 5.3**

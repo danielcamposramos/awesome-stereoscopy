@@ -106,6 +106,8 @@ the other. A player must also define precedence when both exist and disagree.
 
 ### HDMI 1.4-era stereoscopic structures
 
+Detailed raster visualisations, VSIF packet layouts, and signal timings are documented in the [Visual Guide to Stereo Frame Packing and HDMI Signal Timings](docs/frame-packing-and-hdmi-timings.md).
+
 - [HDMI 1.4 feature archive](https://www.hdmi.org/download/savefile?bucket=hdmi-web-public&fileKey=Specifications%2F1dot4_feature_archive.pdf)
 - [HDMI 1.4a announcement](https://www.hdmi.org/announce/detail/84)
 - [Linux HDMI wire definitions](https://github.com/torvalds/linux/blob/master/include/linux/hdmi.h)
