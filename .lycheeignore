@@ -5,3 +5,6 @@
 ^https?://(www\.)?cipa\.jp/
 # resets the checker's connection; the page loads
 ^https?://(www\.)?hdtvsolutions\.com/
+^https?://asterweb\.jpl\.nasa\.gov/
+# times out in the automated checker; the page loads in browser
+^https?://eprints\.rclis\.org/
