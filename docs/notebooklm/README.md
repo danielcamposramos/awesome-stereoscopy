@@ -7,8 +7,9 @@ reviewed source is not a retroactive correction of an existing recording.
 
 - [Artifact corrections](artifact-corrections.md): the specific errors found
   in the downloaded deck, graphics, narration and table.
-- [Deep Research prompt](deep-research-prompt.md): paste into the notebook's
-  source-discovery research workflow; return the report and bibliography for review.
+- [Six topic-specific Deep Research prompts](deep-research-prompt.md): each is
+  one standalone line under 3,000 characters, with initial brief and deliverables;
+  run separately and return each report and bibliography for review.
 - [Studio regeneration prompt](studio-regeneration-prompt.md): use after
   importing reviewed sources and accepted primary references.
 - [Reviewed folded-optics primer](../../data/notebooklm/folded-optics-reviewed.md):
