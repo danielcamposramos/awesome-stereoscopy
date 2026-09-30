@@ -2,6 +2,9 @@
 
 This reference document details the video timing structures, framebuffer layouts, and wire-level transmission formats defined by HDMI 1.4a/1.4b and CTA-861 for stereoscopic 3D delivery. It provides both universal ASCII/Unicode diagrams and enhanced Mermaid diagrams.
 
+For the separate interaction between these stereo timings, bits per component,
+chroma formats and link rate, see [Stereo 3D plus Deep Color on HDMI](stereo-deep-colour-link-budget.md).
+
 ---
 
 ## 1. Overview of HDMI 1.4 Stereoscopic Structures
@@ -149,9 +152,13 @@ block-beta
     style bottom fill:#8fd,stroke:#333
 ```
 
-### 3.3 Line Alternative & Column Interleaving
+### 3.3 Line Alternative
 
 Line alternative (Code 2) carries the left and right eyes on alternating lines. It is a signal structure, not to be confused with a passive (film-patterned retarder) panel's own row interleaving, which the display performs internally from whatever structure arrives.
+
+Column interleaving is not an HDMI `3D_Structure`. It is
+`frame_packing_arrangement_type` 1 in the H.264 SEI vocabulary—an example of
+two standards using different format lists that must not be merged.
 
 ```
    Scanline 0: [ L L L L L L L L L L L L L L L L ] (Left Eye)
@@ -164,7 +171,7 @@ Line alternative (Code 2) carries the left and right eyes on alternating lines. 
 
 ## 4. HDMI Vendor-Specific InfoFrame (VSIF) Signalling
 
-A display switches itself into 3D when it receives an HDMI Vendor-Specific InfoFrame (VSIF) whose PB4 announces a 3D format. The layout below is the one Linux packs (`hdmi_vendor_infoframe_pack_only()` in `drivers/video/hdmi.c`):
+An HDMI sink is told to interpret a compatible video timing as 3D by a Vendor-Specific InfoFrame (VSIF) whose PB4 announces a 3D format. Whether it switches automatically still depends on the sink, the timing and its advertised capabilities. The layout below is the one Linux packs (`hdmi_vendor_infoframe_pack_only()` in `drivers/video/hdmi.c`):
 
 ```
 +-------------------------------------------------------------------------------+
@@ -189,7 +196,7 @@ A display switches itself into 3D when it receives an HDMI Vendor-Specific InfoF
 sequenceDiagram
     autonumber
     participant GPU as Graphics Driver / GPU
-    participant Cable as HDMI Cable (TMDS/FRL)
+    participant Cable as HDMI Link (TMDS for HDMI 1.4)
     participant Sink as 3D Display / TV
 
     GPU->>Sink: Read EDID (check HDMI VSDB 3D capabilities)
@@ -202,7 +209,7 @@ sequenceDiagram
 
 ---
 
-## 5. Summary Table of Signal Parameters
+## 5. Common Signal Examples
 
 | Mode | HDMI Code | Horizontal Active | Vertical Active | Vertical Blanking / Gap | Frame Rate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -210,6 +217,10 @@ sequenceDiagram
 | 720p Frame Packing | 0 | 1280 px | 1470 lines | 30 lines gap (VTOTAL 1500) | 50 / 59.94 / 60 Hz |
 | Side-by-Side Half | 8 | 1920 px | 1080 lines | Standard VBLANK | 50 / 59.94 / 60 Hz |
 | Top-and-Bottom | 6 | 1920 px | 1080 lines | Standard VBLANK | 24 / 50 / 60 Hz |
+
+These are common CTA/HDMI examples, not a universal promise that every sink
+accepts every row. The mandatory HDMI 1.4a baseline and any additional
+combinations declared by the sink's EDID decide the actual mode set.
 
 ---
 

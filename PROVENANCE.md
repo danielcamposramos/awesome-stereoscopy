@@ -30,6 +30,28 @@ and `drm_modes.c`, the cited papers) and corrected what did not match: the
 Dubois coefficients, the InfoFrame byte values, the grouping of the HDMI
 structures, the parallax-budget formula and the projection shift.
 
+**OpenAI Codex** performed the next source-level pass: it separated HDMI line
+alternative from H.264 column interleaving, tightened the sink-switch and
+camera-baseline boundaries, clarified camera-pose versus view-matrix offsets,
+and authored the fifth guide connecting stereo timing, Deep Color, chroma,
+GCP/AVI/VSIF packets and TMDS character-rate math to the machine-checked
+and human-observed run-34 evidence.
+
+Daniel also assembled the public NotebookLM collection *Spatial Computing,
+Stereoscopic Optics & VR Systems Reference*. OpenAI Codex and partner agents
+audited its 14 public artefacts, preserved their map under `docs/`, and marked
+the places where generated synthesis must be checked against its primary
+sources before entering a technical guide.
+
+The local Studio-export pass inspected the downloaded 25-page deck and three
+infographics, reviewed text/table companions and sampled video frames; it did
+not listen to the entire podcast. OpenAI Codex authored separate reviewed source
+inputs, terminology-corrected transcript derivatives and regeneration/research
+prompts without overwriting the originals. Daniel compressed the podcast to a
+mono MP3 and reports no audible difference; that observation is not a claim of
+lossless encoding. [The review kit](docs/notebooklm/README.md) records scope,
+remaining source gaps and the scoped artifact licence.
+
 The partner roster is:
 
 - **Claude** models (Anthropic)

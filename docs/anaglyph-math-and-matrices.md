@@ -1,4 +1,4 @@
-# Anaglyph Color Mathematics, Dubois Optimization, and Display Phosphor Matching
+# Anaglyph Color Mathematics, Dubois Optimization, and Display Spectrum Matching
 
 This reference document details the color conversion mathematics, channel crosstalk reduction techniques, Dubois least-squares matrix optimization, and display phosphor/emission adjustments used in anaglyph stereoscopy.
 
@@ -52,7 +52,7 @@ graph TD
 
 ### 2.1 Naive Anaglyph Matrix (Simple Channel Copy)
 
-The simplest red/cyan multiplexing copies the Red channel from the Left Eye image and Green/Blue channels from the Right Eye image:
+The simplest red/cyan multiplexing copies the red channel from the left-eye image and the green/blue channels from the right-eye image. This is the red-left/cyan-right convention used in the matrix below; swapping the glasses or choosing a cyan-left/red-right output swaps the eye assignment.
 
 ```
 [ R_out ]   [ 1.0  0.0  0.0 ] [ R_left  ]   [ 0.0  0.0  0.0 ] [ R_right ]
@@ -114,7 +114,7 @@ Right Eye Matrix (A_R):
 
 ---
 
-## 4. Display Phosphor & Spectral Emission Adjustments
+## 4. Display Primary and Filter Spectrum Matching
 
 Dubois's method takes two measured inputs: the spectra of the display's three primaries and the transmission of the glasses' two filters. A matrix fitted to one display and one pair of glasses leaks more on another, which is why anaglyph tools ship separate matrices for different display types (a CRT's phosphors and a modern LCD's or OLED's primaries differ) and different glasses.
 

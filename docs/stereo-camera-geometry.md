@@ -48,6 +48,10 @@ graph TD
 
 Parallax ($p$) is the distance between corresponding points of the left and right eye images on the display screen.
 
+The positive/negative naming below is the common cinema convention. Some
+computer-vision texts reverse the signs, so equations and interchange formats
+should define their convention rather than relying on the words alone.
+
 ```
 1. ZERO PARALLAX (Screen Plane)
    Left Eye Ray  \
@@ -98,6 +102,10 @@ $$
 Where:
 - $B$ = Camera baseline (distance between lens centers)
 - $D_{\text{near}}$ = Distance from camera to nearest subject in scene
+
+This is a starting heuristic, not a comfort or safety test. Screen size,
+viewing distance, focal length and the far limit of the scene all affect the
+displayed parallax; the budget calculation below is the stronger check.
 
 ### 3.2 Parallax Budget: From the Scene's Depth Range to a Baseline
 
@@ -166,7 +174,7 @@ graph TD
 
 | Rig Type | Baseline Range | Distortions | Typical Usage |
 | :--- | :--- | :--- | :--- |
-| Side-by-Side Bar | $> 65\text{ mm}$ | Mild Hyperstereo | Landscapes, Distant subjects |
+| Side-by-Side Bar | Limited by camera/lens body width; may be below, near or above 65 mm | Hyperstereo only when the chosen baseline is large for the scene | General work; larger baselines for distant subjects |
 | Beam-Splitter | $0 - 65\text{ mm}$ | Reflection polarization mismatch | Close-ups, Close dialogue |
 | Toe-In Rig | Variable | Keystone (Vertical Parallax) | Needs keystone correction; a parallel rig with HIT avoids it |
 

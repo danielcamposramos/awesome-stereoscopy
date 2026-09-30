@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-30",
+  "notebook_title": "Spatial Computing, Stereoscopic Optics & VR Systems Reference",
+  "notebook_url": "https://notebook.google.com/notebook/6001af04-d8fd-4867-935f-809b85cf6ea8",
+  "provenance": {
+    "curator": "Daniel Campos Ramos / EchoSystems AI Studios",
+    "initial_generation": "Google NotebookLM",
+    "editorial_review": "OpenAI Codex and partner agents",
+    "transcription_provider": "not established",
+    "original_prompt_and_model_version": "not established",
+    "numbered_source_bibliography_mapping": "not recovered"
+  },
+  "review_scope": {
+    "pdf_pages_inspected": 25,
+    "infographics_inspected": 3,
+    "entire_podcast_listened_to": false,
+    "video_frames": "sampled",
+    "original_media_modified": false,
+    "public_copy_byte_identity_verified": false,
+    "csv_records_retained": 117,
+    "privacy": "No obvious secrets/GPS found in inspected exports; not an exhaustive per-frame guarantee"
+  },
+  "original_assets": [
+    {
+      "filename": "Anaglyph Mathematics & Spectral Multiplexing Manual.md",
+      "bytes": 12175,
+      "sha256": "764a148535042b24e0d39a924c260201fc35606e52fa7f278e5d3006ae7c0eb5",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "Architectural_Modalities_of_Stereoscopic_Autostereoscopic_a.pdf",
+      "bytes": 34631033,
+      "sha256": "6bd651b6fb94d0b47470c67d9f0e00a12eca3bc29171e90fb55128fbfd7ad793",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "Stereo 3D Formats, Standards, and Hardware Components - Table 1.csv",
+      "bytes": 29326,
+      "sha256": "23c479721b1b9ed0446e9e5bed4e955d90bedfbb64a1a223bb055ac46e9b531d",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "Stereoscopic_Systems_and_Optics_Diagram.png",
+      "bytes": 5605756,
+      "sha256": "36a2d741ec5c7e61b3782d80fe3c4058be1bb3c41424b79de06e3b8f7f069de2",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "The_Biological_Blueprint__Synthesizing_Human_Depth_Perception.json",
+      "bytes": 11516,
+      "sha256": "9db6db7df0eabbb684d2c6100423816771dfd644103d27f96a3a6fef68804dfa",
+      "published_in_git": false,
+      "role": "user-transcript"
+    },
+    {
+      "filename": "The_Biological_Blueprint__Synthesizing_Human_Depth_Perception.md",
+      "bytes": 8832,
+      "sha256": "54a78b9603a18065e78457c66940768a7a696b7884dfc47d9b6f57e4672f4624",
+      "published_in_git": false,
+      "role": "user-transcript"
+    },
+    {
+      "filename": "The_Biological_Blueprint__Synthesizing_Human_Depth_Perception.mp4",
+      "bytes": 66356217,
+      "sha256": "9bfd13e68901a5f6a893b12fefbe40eb7b6ef9fc1894f197eaa0c7fa2ce96577",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "The_Biological_Blueprint__Synthesizing_Human_Depth_Perception.srt",
+      "bytes": 8997,
+      "sha256": "20ad36074cc5e09731b63fab9a10d1065b1c70aa6d86513bf2178f32a59c18ec",
+      "published_in_git": false,
+      "role": "user-transcript"
+    },
+    {
+      "filename": "Time_as_Space__Inside_the_SteamVR_Lighthouse_and_Motion_Smoothi.json",
+      "bytes": 13975,
+      "sha256": "5cce9a5cd8f7234b9e1ece79e25b84c2691624133bf6701dea34f1673356ab50",
+      "published_in_git": false,
+      "role": "user-transcript"
+    },
+    {
+      "filename": "Time_as_Space__Inside_the_SteamVR_Lighthouse_and_Motion_Smoothi.md",
+      "bytes": 10527,
+      "sha256": "7200e6480942b5d9113fb6cbc660086a99d4dc3bdcf43703e1684bf56a64ae37",
+      "published_in_git": false,
+      "role": "user-transcript"
+    },
+    {
+      "filename": "Time_as_Space__Inside_the_SteamVR_Lighthouse_and_Motion_Smoothi.mp4",
+      "bytes": 84675132,
+      "sha256": "86d2a4d415489ca601c9612408dbc0124912e5464815435c748931a8d52f36f9",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "Time_as_Space__Inside_the_SteamVR_Lighthouse_and_Motion_Smoothi.srt",
+      "bytes": 10762,
+      "sha256": "b0031a8d856a2cc1ee4841a6bf6b345f84fd64cf9b352bf8e19b69cd86ccb858",
+      "published_in_git": false,
+      "role": "user-transcript"
+    },
+    {
+      "filename": "VR_Optical_Efficiency_Comparison.png",
+      "bytes": 4623342,
+      "sha256": "058d851d43f60ef9cc1b52949ac820c90381d89f62c66fae6a049d1aaa422767",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "Vergence-Accommodation_Conflict_Explained.png",
+      "bytes": 5151541,
+      "sha256": "4de6a34dbaf89328f3905ccffc75c774479ed6485799d73a29ea7227af35cbd3",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "Why_Your_Brain_Fights_Virtual_Reality-mono.mp3",
+      "bytes": 30713968,
+      "sha256": "a770a9059508f213b4e14334fd0604b049843016b7c8f07b6b9c1f6845f6ab63",
+      "published_in_git": false,
+      "role": "user-compressed-audio",
+      "derived_from": "Why_Your_Brain_Fights_Virtual_Reality.m4a"
+    },
+    {
+      "filename": "Why_Your_Brain_Fights_Virtual_Reality.json",
+      "bytes": 122315,
+      "sha256": "f50228c1f0aa00396c0a8a93aae146f8176b35ab974f31b3b88af6c063da7007",
+      "published_in_git": false,
+      "role": "user-transcript"
+    },
+    {
+      "filename": "Why_Your_Brain_Fights_Virtual_Reality.m4a",
+      "bytes": 120093249,
+      "sha256": "30af436e4b8cfae5411c18ed0c8498278459e0a71e0bfc78178e57cad6cbd04d",
+      "published_in_git": false,
+      "role": "NotebookLM-export"
+    },
+    {
+      "filename": "Why_Your_Brain_Fights_Virtual_Reality.md",
+      "bytes": 86723,
+      "sha256": "410d914a7c87f4aa06cbac79d18239e2749562780fdbc3fd1a2ffd691b447d2e",
+      "published_in_git": false,
+      "role": "user-transcript"
+    },
+    {
+      "filename": "Why_Your_Brain_Fights_Virtual_Reality.srt",
+      "bytes": 90363,
+      "sha256": "2f973d25cabe15f5e40664032fbefcdfebd9b668913bb075655f1167a493235a",
+      "published_in_git": false,
+      "role": "user-transcript"
+    }
+  ],
+  "public_reviewed_inputs": [
+    {
+      "filename": "folded-optics-reviewed.md",
+      "bytes": 4416,
+      "sha256": "98e683c22eaffe1570418c753141792575e3ddad9dc42f4d0dc4be66d5fddf14"
+    },
+    {
+      "filename": "stereo-components-reviewed.csv",
+      "bytes": 33474,
+      "sha256": "c1dc9fb3701b23da4745c2149eb6a331a40d40a35c5616402ae6e6e810e089fe"
+    }
+  ],
+  "private_terminology_derivatives": [
+    {
+      "filename": "The_Biological_Blueprint__Synthesizing_Human_Depth_Perception-terminology-reviewed.json",
+      "bytes": 11759,
+      "sha256": "96a0691cfd65167429bc250d6d568f72176cd128e04e77a9dbbb926e70eaa42d"
+    },
+    {
+      "filename": "The_Biological_Blueprint__Synthesizing_Human_Depth_Perception-terminology-reviewed.md",
+      "bytes": 8833,
+      "sha256": "ab4197f8c5e149a1c547fac1493508d2243b4b9c3230dc4e726e5ace7d1da1cb"
+    },
+    {
+      "filename": "The_Biological_Blueprint__Synthesizing_Human_Depth_Perception-terminology-reviewed.srt",
+      "bytes": 8998,
+      "sha256": "966c2ec1c51ba8bb48d8e7410d86263afb33a7e7e183903e7c4a40a353e37361"
+    },
+    {
+      "filename": "Time_as_Space__Inside_the_SteamVR_Lighthouse_and_Motion_Smoothi-terminology-reviewed.json",
+      "bytes": 14218,
+      "sha256": "fffd81d780dd87ac0ec9630bb365093b6a433206f3feec7b0c0c23936dd9a089"
+    },
+    {
+      "filename": "Time_as_Space__Inside_the_SteamVR_Lighthouse_and_Motion_Smoothi-terminology-reviewed.md",
+      "bytes": 10528,
+      "sha256": "ed2f0b0054fbc7c774d4d7a09cfb0f0522bdb9e5ad49e6f8fd5b2cc097d92e4c"
+    },
+    {
+      "filename": "Time_as_Space__Inside_the_SteamVR_Lighthouse_and_Motion_Smoothi-terminology-reviewed.srt",
+      "bytes": 10763,
+      "sha256": "cffd36efbd41ddb1e447ed17cd7c0f5f6794411e75591e3f62e502d652f9ca2c"
+    },
+    {
+      "filename": "Why_Your_Brain_Fights_Virtual_Reality-terminology-reviewed.json",
+      "bytes": 122556,
+      "sha256": "95fbbfc655c5bc1dfb437b9ff1eb62dbf5f8fb608c4f138a032f033efcdd844b"
+    },
+    {
+      "filename": "Why_Your_Brain_Fights_Virtual_Reality-terminology-reviewed.md",
+      "bytes": 86722,
+      "sha256": "b1cb35eb9aeedabaef0251d29a185f34a606a8478ff29bf5187d43d2d8f3da1b"
+    },
+    {
+      "filename": "Why_Your_Brain_Fights_Virtual_Reality-terminology-reviewed.srt",
+      "bytes": 90362,
+      "sha256": "0d87a2ad3fa90a027280d26acb2faed996a3caeb5ac65a0e3b42788dbdbdf5ec"
+    }
+  ],
+  "audio_comparison": {
+    "duration_seconds_approx": 3731.447,
+    "m4a_bytes": 120093249,
+    "mono_mp3_bytes": 30713968,
+    "listening_observation": "Daniel reports no audible difference",
+    "lossless_equivalence_claimed": false
+  }
+}

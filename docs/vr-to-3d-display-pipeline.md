@@ -99,7 +99,7 @@ block-beta
 
 ### Projection Formula
 
-With eye separation $b$ and the screen plane at distance $d_c$, each eye's view matrix moves the eye $\mp b/2$ along x (left eye to $-b/2$, right eye to $+b/2$), and its frustum shifts toward the centre by $s = \frac{b}{2 d_c}$ in tangent units. As OpenVR's `GetProjectionRaw` takes it (half-extents in tangents, $t$ across and $v$ up):
+With eye separation $b$ and the screen plane at distance $d_c$, the camera poses place the left and right eyes at $-b/2$ and $+b/2$ on x (the view matrices transform the world by the inverse offsets), and each frustum shifts toward the centre by $s = \frac{b}{2 d_c}$ in tangent units. As OpenVR's `GetProjectionRaw` takes it (half-extents in tangents, $t$ across and $v$ up):
 
 $$
 \text{left eye: } [\,-t + s,\; t + s\,] \qquad \text{right eye: } [\,-t - s,\; t - s\,] \qquad \text{vertical: } [\,-v,\; v\,]
