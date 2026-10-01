@@ -764,6 +764,16 @@ The cheapest immersion trick of all: extend the picture past the edges of the sc
 - [Phereo](https://phereo.com) - Stereo-photo community whose archive is historically important, still holding more than 200,000 images. It lost the images published between roughly January 2019 and October 2022; the loss has since stopped, but some functions such as search no longer work, so treat it as an archive rather than a live service.
 **Reddit stereo communities.** [r/CrossView](https://www.reddit.com/r/CrossView/), [r/ParallelView](https://www.reddit.com/r/ParallelView/), [r/Anaglyph](https://www.reddit.com/r/Anaglyph/) and [r/wigglegrams](https://www.reddit.com/r/wigglegrams/) are the most active day-to-day stereo photography communities on the web, each with a fixed convention for the pair it displays.
 
+### Conferences and festivals
+
+Where the field meets in person, from the academic conference to the societies' festivals and the industry's own shows.
+
+- [Stereoscopic Displays and Applications](http://www.stereoscopic.org/) - The academic conference of the field, held every year since 1990 within the Electronic Imaging symposium and organised by IS&T (jointly with SPIE until 2015). More than 1,100 technical papers have been published through it ([Wikipedia](https://en.wikipedia.org/wiki/Stereoscopic_Displays_and_Applications)).
+- [3D-Con](https://3d-con.com/) - The National Stereoscopic Association's annual convention, held each summer in a different city; the 52nd is in Albuquerque in July 2026.
+- [ISU World Congress](https://isu3d.org/events/) - The International Stereoscopic Union's world congress. The 24th was held at Tsukuba in 2023, the first in Japan, and the 26th is set for La Chaux-de-Fonds, Switzerland, in August 2027.
+- [3D-Foto- & Filmfestival der DGS](https://stereoskopie.org/) - The yearly festival of the Deutsche Gesellschaft für Stereoskopie, founded in Berlin on 28 December 1927 and about 500 members strong ([German Wikipedia](https://de.wikipedia.org/wiki/Deutsche_Gesellschaft_f%C3%BCr_Stereoskopie)). Its congresses began in 1998 at Oberstdorf; the 2026 festival is in Unna in June.
+- [S3D Today & S3D-Expo](https://www.channelpartner.de/article/3892889/die-wichtigsten-3d-darstellungstechniken.html) - An international stereo-3D industry conference and exhibition organised by Lutz Möhr of the Munich-area consultancy DNS Consult / 3D-CC; its fourth edition was held in mid-July 2010. Its own website is gone and little of it is archived, so the trade press of the time is the record, in German.
+
 ## Preservation
 
 - [sony-bravia-linux](https://github.com/danielcamposramos/sony-bravia-linux) - The project this list grew out of. It documents why correctly authored 3D files play flat on hardware that supports them: the in-stream frame-packing SEI that displays act on and almost nothing wrote. Measurements on real sets, fixes taken upstream across the whole encode, remux, serve and play chain, tools that repair existing files losslessly, and the same research published in eleven languages so owners can find it in their own.
@@ -850,6 +860,8 @@ Stated openly, because a curated list that hides its blind spots is worse than o
 **Sanskrit sources.** Whether older Sanskrit texts discuss binocular depth directly is still open. Nothing citable was found, and a claim that cannot be sourced does not belong here, so the space is left open rather than filled.
 
 **Pre-1900 publishing** now has a [continental section](#the-continental-trade) covering France, Germany, Italy and Spain alongside the British, American and Japanese firms. No publisher from Austria, Switzerland, Belgium, the Netherlands, Scandinavia or the Russian Empire has yet been found with a citable source, and the thousands of smaller firms that shipped cards are still unrepresented.
+
+**S3D Today & S3D-Expo** is known here through one 2010 trade article: its fourth edition, organiser and month. The years, venues and programmes of the other editions are still unsourced, and its organiser's own account is the next source to ask for.
 
 Several entries describe things that are defunct or unreliable. That is deliberate, but it means some links will rot; reports are welcome.
 
