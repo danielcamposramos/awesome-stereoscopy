@@ -264,6 +264,8 @@ Ready-made frames and instructions: [NASA's STEREO mission classroom page](https
 
 One honest correction to the assumption that DIY is always the cheap path: in India, ready-made paper anaglyph glasses [sell for about ₹20 each](https://www.tronicsindia.in/anaglyph-red-cyan-3d-glasses.html), roughly a quarter of a US dollar, while Lee gel is stocked mainly in trade quantities. Where glasses are that cheap, building your own is about access and immediacy rather than money — and about being able to equip a classroom tonight.
 
+Ready-made glasses are that cheap almost everywhere, so having no 3D hardware is no longer a reason not to look: a [search for "red cyan 3d glasses" on AliExpress](https://www.aliexpress.com/w/wholesale-red-cyan-3d-glasses.html) opens in the visitor's own country and shows whatever is on sale that day, paper and plastic frames alike. Search for red/cyan, not red/blue, and check that the left lens is the red one.
+
 [Infitec](https://en.wikipedia.org/wiki/Infitec) - The professional descendant of the idea: narrow interference filters splitting each primary rather than whole channels, used by Dolby 3D. Full colour, expensive glasses.
 
 [Complementary colours](https://en.wikipedia.org/wiki/Complementary_colors) - Why any of it works, and why the pairs are always opposites.
