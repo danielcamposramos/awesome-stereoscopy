@@ -121,6 +121,7 @@ On 23 September 2026 we counted the last 300 merge requests merged into VLC: 297
 (Query: `code.videolan.org/api/v4/projects/videolan%2Fvlc/merge_requests?state=merged`, field `user_notes_count`.) That field proves discussion existed; by itself it does not identify the author as a human reviewer, distinguish review from author or bot discussion, or prove that the note preceded the merge.
 Our own record in the same weeks:
 - HandBrake [#8100](https://github.com/HandBrake/HandBrake/pull/8100) and UMS [#6330](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/6330) were merged as submitted, with no changes.
+- UMS shipped it in [15.9.0](https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/15.9.0) on 5 October 2026. Its changelog reads "Enable media players to automatically detect when videos are 3D (thanks, Daniel Ramos!)" and "Improved support for Sony TVs from 2011 to current (thanks, Daniel Ramos!)", and its [announcement](https://github.com/UniversalMediaServer/UniversalMediaServer/discussions/6377) thanks Daniel among the release's first-time contributors.
 - MKVToolNix [!6311](https://codeberg.org/mbunkus/mkvtoolnix/pulls/6311) was merged after review.
 - mpv [#18490](https://github.com/mpv-player/mpv/pull/18490) drew an objection to AI use; once we explained the language barrier and our disclosure, the lead maintainer reviewed the code, asked for changes, took our answer over, ran it through CI on every platform and merged it.
 

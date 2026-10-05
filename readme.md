@@ -629,7 +629,7 @@ A compositing desktop draws every window off screen and assembles the screen its
 - [Serviio](https://serviio.org) - DLNA server with per-renderer profiles, able to serve or transcode per device.
 - [Jellyfin](https://jellyfin.org) - Free software media server, with 3D handling under active development.
 - [Gerbera](https://gerbera.io) - Lightweight UPnP server with transcoding profiles.
-- [Universal Media Server](https://www.universalmediaserver.com) - DLNA server with an extensive renderer-configuration collection.
+- [Universal Media Server](https://www.universalmediaserver.com) - DLNA server with an extensive renderer-configuration collection. Since 15.9.0 its H.264 transcodes carry the frame packing SEI, so a 3D television detects 3D video on its own.
 - [ReadyMedia (MiniDLNA)](https://sourceforge.net/projects/minidlna/) - Minimal DLNA server that serves files untouched, which is often exactly what a 3D file needs.
 
 ## Displays decide the format
