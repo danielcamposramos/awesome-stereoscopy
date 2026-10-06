@@ -917,6 +917,8 @@ Stated openly, because a curated list that hides its blind spots is worse than o
 
 **The record is still Western-leaning, though less than it was.** [World stereo cinema](#world-stereo-cinema) now runs from the Soviet Union and Japan through Mexico, Argentina, China, Korea, India and Brazil, and [Beyond Europe and North America](#beyond-europe-and-north-america) carries stereo photography in Brazil, Iran, Lebanon and Japan. Still missing: anything citable from Southeast Asia or sub-Saharan Africa, the Chinese 3D wave of the 1980s (so far documented only on sites that cannot be cited), and nineteenth-century stereo photography by Indian practitioners. Contributions in any language are wanted; cite what you can.
 
+**AI and robotics** are barely covered. A second view is how many robots measure depth, how operators and surgeons see through the machines they steer, and a source of depth that AI systems learn from; beyond the depth-estimation and generated-view entries in [Depth, and making the second view](#depth-and-making-the-second-view), this list has not explored them yet.
+
 **Mexico's first 3D film** is an open question. Rosa Elena Cabiedes' *El Reportero TD* (1953) may predate *El Corazón y la Espada*, but it is known here only through a citation of the FIAF *Journal of Film Preservation*; nothing else about the film or its director was found online.
 
 **Japanese coverage** now reaches the stereo societies, the broadcast era and 1950s cinema. Two holes remain: no NHK network 3D broadcast trial, as distinct from its laboratory research, has been found with a source, and the 1923 society is known only through a later chronology.
