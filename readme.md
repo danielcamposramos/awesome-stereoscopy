@@ -19,6 +19,7 @@ Stereoscopy is older than the photograph. Charles Wheatstone described the stere
 - [Tools](#tools)
 - [Players and viewers](#players-and-viewers)
 - [The desktop in stereo](#the-desktop-in-stereo)
+- [The web in stereo](#the-web-in-stereo)
 - [Servers and delivery](#servers-and-delivery)
 - [Displays decide the format](#displays-decide-the-format)
 - [Displays and devices](#displays-and-devices)
@@ -623,6 +624,16 @@ A compositing desktop draws every window off screen and assembles the screen its
 
 - [KWin stereo 3D](https://invent.kde.org/danielcamposramos/kwin/-/blob/stereo3d/STEREO3D.md) - A KWin branch for Sparky Stereo OS, 2026. The display's HDMI 3D modes are chosen in the display settings and the flat desktop is drawn into both eyes, tested on two Sony 3D televisions with amdgpu, NVIDIA's open modules and nouveau; stereo windows marked by a window rule are tested on amdgpu. In its design every program hands over full side by side and every output is a filter at the end. Programs declaring their own stereo, and virtual 3D modes for ordinary screens (anaglyph, interleaved, checkerboard), are in progress.
 - [xrdesktop](https://gitlab.freedesktop.org/xrdesktop/xrdesktop) - Collabora's library for XR interaction with traditional desktop compositors: the same desktop windows placed in a headset instead of on a 3D television.
+
+## The web in stereo
+
+**The web can say "this picture holds two views" only inside a headset.** WebXR can show a video as stereo in an immersive session; outside one, no HTML attribute, CSS property or media API says that a video, an image or a canvas holds two views, so a browser decodes a stereo stream and ignores its frame packing. W3C took the question up twice, and both efforts stopped.
+
+- [Stereoscopic 3D Web Task Force](https://www.w3.org/2011/webtv/wiki/3dweb) - W3C's Web and TV Interest Group, 2012, moderated from LG Electronics with KDDI and W3C staff. Its use cases were stereo photo galleries, stereo video on demand, stereo games, and "a web-based (HTML and CSS) user interface that is rendered in stereoscopic 3D on a 3D display"; its two requirements, minimal extensions and graceful degradation to 2D, still hold.
+- [Extensions for Stereoscopic 3D Support](https://www.w3.org/2011/webtv/3dweb/3dweb_proposal_121130.html) - The task force's editor's draft of 30 November 2012, by Soonbo Han and Dong-Young Lee of LG Electronics: the CSS properties `stereo-content`, `stereo-render-option`, `stereo-size-type`, `stereo-order-type` and `perspective-baseline`, a `3d-display` media type and a display API. It opens with "Even though stereo 3D devices are widely available and the number of stereo 3D contents increases, no web standards support them yet." None of the properties entered CSS; W3C's index of CSS properties has no stereo property in October 2026.
+- [Stereoscopic 3D Web Community Group](https://www.w3.org/community/stereoweb/) - The follow-up, co-chaired from LG Electronics, with researchers studying how people perceive stereoscopic web pages. Its posts run from October 2013 to July 2014, [its mailing list](https://lists.w3.org/Archives/Public/public-stereoweb/) holds three messages from 2016 to 2019, and W3C closed it on 7 April 2023. One post records a 3D television switching itself into 3D for a side-by-side web page, "since there is no indication from the webpage that tells the TV it is displaying 'stereoscopic content'".
+- [WebXR Layers API](https://www.w3.org/TR/webxrlayers-1/) - W3C Working Draft whose `XRLayerLayout` has `"stereo-left-right"` and `"stereo-top-bottom"`, including layers made from an HTML video element: the web's only standard stereo vocabulary today, and it applies only in an immersive session.
+- [Stereo 3D on Linux and the Web: Established Specifications, Adopted in Pieces](https://www.w3.org/publications/spec-generator/?type=respec&url=https://raw.githubusercontent.com/w3c-cg/pm-kr/main/reports/source/stereo-3d-adoption-report.html) - A discussion draft of the W3C PM-KR Community Group, October 2026: the specifications that exist, who reads the signal on Linux and on the web, how the work stopped each time it was started (including the two W3C efforts above), and five proposals for what a browser would need, built on the 2012 requirements. Disclosure: Daniel, who maintains this list, chairs the group and wrote the draft.
 
 ## Servers and delivery
 
