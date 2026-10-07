@@ -10,3 +10,6 @@
 ^https?://eprints\.rclis\.org/
 # refuses the checker's request (error, no status); the page loads in a browser (Daniel, 2026-10-07)
 ^https?://(www\.)?globenewswire\.com/
+# time out from GitHub's runners (twice on 2026-10-07); both load in under two seconds from elsewhere, checked by script the same day
+^https?://bugs\.kde\.org/
+^https?://(www\.)?sview\.ru/
