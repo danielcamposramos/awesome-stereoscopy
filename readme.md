@@ -606,6 +606,11 @@ The Linux lineage is equally short and recoverable. Mainline's HDMI stereoscopy 
 - [Nvidia Quadro windowed stereo](https://developer.download.nvidia.cn/GPU_Programming_Guide/GPU_Programming_Guide.pdf) - Nvidia's GPU Programming Guide records that OpenGL quad-buffered stereo works in windowed mode; the chapter entered the guide in July 2004. The matching [Quadro workstation guide](https://download.nvidia.com/Windows/61.76/61.76_Quadro_Release_60_Graphics_Display_Property_Users_Guide..pdf) says its stereo pixel formats organize memory so stereoscopic and monoscopic applications can run simultaneously. Nvidia's 2003 consumer game driver was still fullscreen-only, so workstation OpenGL and consumer injection were distinct branches.
 - [DirectDraw stereo surface pairs](https://learn.microsoft.com/en-us/windows/win32/api/ddraw/ns-ddraw-ddscaps2) - Microsoft's `DDSCAPS2_STEREOSURFACELEFT` flag paired a left-eye surface with every right-eye surface in a primary flip chain. It is the Windows-era API evidence for applications submitting two synchronized views before automatic game wrappers became the familiar model.
 
+### Desktops drawn in 3D, 2004 to 2012
+
+- [Project Looking Glass](https://en.wikipedia.org/wiki/Project_Looking_Glass) - Sun Microsystems' 3D desktop for Linux, Solaris and Windows, written on Java 3D: windows as objects in a 3D room, turned and stacked in depth. Its last release was 1.0.1 in January 2007; a stereo version for TDVision's headset was announced that May. Depth in the desktop's own scene, not the programs' stereo.
+- [The Compiz anaglyph plugin](https://drjohnvkampen.wordpress.com/2008/07/27/linux-elyssa-anaglyphic-3d-desktop/) - A contributor's experimental plugin for Compiz Fusion, 2008 to 2012, that drew the whole desktop as a red and cyan anaglyph, the rotating cube included. Installed by hand on Linux Mint and Ubuntu ([a 2010 guide](http://mattbless.blogspot.com/2010/12/real-3d-anaglyph-in-linux-with-compiz.html)), never shipped by default, anaglyph only.
+
 ### When compositing arrived, 2014 to 2023
 
 A compositing desktop draws every window off screen and assembles the screen itself, so a window's right-eye buffer was lost unless the compositor knew to carry it through.
@@ -623,8 +628,18 @@ A compositing desktop draws every window off screen and assembles the screen its
 
 **One stereo window is enough.** HDMI 3D applies to the whole output, but every window does not need two different views. A compositor can keep left-eye and right-eye desktop canvases, duplicate ordinary windows and UI into both at screen depth, and place a stereo application's two buffers at the same logical window rectangle, one per canvas. It then packs the two completed canvases once for the television. The same contract serves a game or XR runtime supplying two rendered eye surfaces and a video player whose decoder found H.264/H.265 frame-packing SEI or container stereo metadata. The Linux work is a way to pair two buffers as one stereo surface, a persistent stereo-intent signal, and the HDMI output backend.
 
-- [KWin stereo 3D](https://invent.kde.org/danielcamposramos/kwin/-/blob/stereo3d/STEREO3D.md) - A KWin branch for Sparky Stereo OS, 2026. The display's HDMI 3D modes are chosen in the display settings and the flat desktop is drawn into both eyes, tested on two Sony 3D televisions with amdgpu, NVIDIA's open modules and nouveau; stereo windows marked by a window rule are tested on amdgpu. In its design every program hands over full side by side and every output is a filter at the end. Programs declaring their own stereo, and virtual 3D modes for ordinary screens (anaglyph, interleaved, checkerboard), are in progress.
+- [KWin stereo 3D](https://invent.kde.org/danielcamposramos/kwin/-/blob/stereo3d/STEREO3D.md) - A KWin branch for Sparky Stereo OS, 2026. The display's HDMI 3D modes are chosen in the display settings and the flat desktop is drawn into both eyes, tested on two Sony 3D televisions with amdgpu, NVIDIA's open modules and nouveau; stereo windows marked by a window rule are tested on amdgpu. In its design every program hands over full side by side and every output is a filter at the end. Programs declaring their own stereo work on X11 (OpenGL quad-buffer through Mesa, video through the players: Bino, Kubrick, Krita and Haruna tested), and are in progress on Wayland; virtual 3D modes for ordinary screens (anaglyph, interleaved, checkerboard) are in progress.
 - [xrdesktop](https://gitlab.freedesktop.org/xrdesktop/xrdesktop) - Collabora's library for XR interaction with traditional desktop compositors: the same desktop windows placed in a headset instead of on a 3D television.
+
+### The desktop in a headset, 2018 to 2026
+
+The other way to bring a desktop into stereo: flat windows placed as panels in a 3D space that a headset shows. The windows keep their flat pictures; the space around them is what is stereo.
+
+- [Safespaces](https://arcan-fe.com/2018/03/29/safespaces-an-open-source-vr-desktop/) - A VR desktop for the Arcan display server, 2018, through OpenHMD; side by side and over-and-under video play in 3D inside the headset.
+- [wxrd](https://www.collabora.com/news-and-blog/news-and-events/wxrd-a-standalone-wayland-compositor-for-xrdesktop.html) - Collabora's standalone Wayland compositor for xrdesktop, 2021, on OpenXR and Monado.
+- [Simula](https://github.com/SimulaVR/Simula) - A VR window manager for Linux on the Godot engine, for SteamVR headsets.
+- [Stardust XR](https://github.com/StardustXR) - A display server for VR and AR headsets on Linux, where 2D windows and 3D programs share one space.
+- [KWin VR Mode](https://invent.kde.org/plasma/kwin/-/merge_requests/8671) - A draft plugin, opened in January 2026, that turns KWin into a 3D desktop for AR glasses and headsets through Qt Quick 3D XR and an OpenXR runtime, with head-gaze control.
 
 ## The web in stereo
 
