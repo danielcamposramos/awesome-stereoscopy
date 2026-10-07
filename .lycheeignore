@@ -13,3 +13,5 @@
 # time out from GitHub's runners (twice on 2026-10-07); both load in under two seconds from elsewhere, checked by script the same day
 ^https?://bugs\.kde\.org/
 ^https?://(www\.)?sview\.ru/
+# times out from GitHub's runners (twice on 2026-10-07); loads from elsewhere in about five seconds, checked by script the same day
+^https?://(www\.)?digitalreviews\.net/
