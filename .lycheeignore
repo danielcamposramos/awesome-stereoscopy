@@ -8,3 +8,5 @@
 ^https?://asterweb\.jpl\.nasa\.gov/
 # times out in the automated checker; the page loads in browser
 ^https?://eprints\.rclis\.org/
+# refuses the checker's request (error, no status); the page loads in a browser (Daniel, 2026-10-07)
+^https?://(www\.)?globenewswire\.com/
