@@ -234,6 +234,7 @@ A rendered game is already a stereo source, which is why this era happened at al
 - [Pulfrich effect](https://en.wikipedia.org/wiki/Pulfrich_effect) - Depth from a delay in one eye, which produced a whole genre of cheap 3D broadcasts.
 - [Autostereogram](https://en.wikipedia.org/wiki/Autostereogram) - The *Magic Eye* branch: stereo with no device at all.
 - [Wiggle stereoscopy](https://en.wikipedia.org/wiki/Wiggle_stereoscopy) - Animation as a stereo display, needing neither glasses nor a special screen.
+- [Apparent sharpness of 3D video when one eye's view is more blurry](https://pmc.ncbi.nlm.nih.gov/articles/PMC3859560/) - Robinson, Jain, Scott, MacLeod and Nguyen, i-Perception, 2013: in stereo video blurred for one eye, the fused picture always looked significantly sharper than the blurrier view. A blur meant to be seen, such as a background blur, therefore belongs in both eyes; the authors used the same effect the other way, to send one eye with less detail and save bandwidth.
 
 ## How stereo is stored
 
@@ -476,15 +477,22 @@ The same twin lenses aimed at motion. Every maker claimed a "world's first" with
 
 The **Sony Bloggie 3D (MHS-FS3)** belongs here too, the pocket end of the same wave, recording 1080p 3D side-by-side; no stable manufacturer page survives to link to. The line between stills and motion never really held either: the still Fujifilm W3 also shot 720p 3D video, and every camcorder here shot 2D stills.
 
+### Webcams
+
+The same twin lenses in a webcam, for calls and live capture. A webcam built for stereo keeps both eyes on one clock, which two ordinary webcams side by side cannot promise.
+
+- [Minoru 3D Webcam](https://en.wikipedia.org/wiki/Minoru_3D_Webcam) - Two VGA cameras about eye distance apart in one body, from Promotion and Display Technology of Salford (January 2009), sold as the "world's first consumer 3D-webcam"; it showed the pair as anaglyph or side by side.
+- [ELP synchronous dual-lens USB camera](https://web.archive.org/web/20261007150117/https://www.elpcctv.com/elp-4mp-3840x1080p-60fps-synchronous-dual-lens-usb-camera-module-with-no-distortion-85-degree-lens-p-406.html) - A current 80 × 16.5 mm module (ELP-USB3D1080P02-V83; the link is the archived page of 7 October 2026): two synchronized 1080p images side by side in one 3840 × 1080 picture at 60 fps, as a standard UVC device on Linux, Windows, macOS and Android, with nine lens options on the same board, from 65° to a 187° by 122° fisheye pair that is wider than the 180° VR180 video covers across.
+
 ### Two identical cameras in a rig
 
 The oldest method needs no 3D hardware at all: two identical ordinary cameras, synchronized, each becoming one eye. The two files are combined into side-by-side or top-bottom in post — the same frame-compatible packing the displays section describes.
 
 **Side-by-side bar rig.** Two cameras bolted to a plate about an [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) apart (roughly 63 mm). Camera body width forces the lenses a little wider than the eyes, so hand-held bar rigs lean toward mild **hyperstereo** — exaggerated depth that suits landscapes and hates close-ups.
 
-**Over-under rig.** Two cameras stacked with one inverted, the lenses brought near-coaxial; one stream is flipped in post. The compact answer when the pair has to stay narrow.
+**Why not one above the other.** Depth comes from the horizontal difference between the two views ([binocular disparity](https://en.wikipedia.org/wiki/Binocular_disparity)), because the eyes sit side by side. Two cameras stacked one over the other differ up and down instead, and that pair carries no usable depth, whatever packing it is stored in later. The rig that does put one camera above the other is the beam splitter below, where the lenses still end up side by side optically.
 
-**Beam-splitter rig.** A semi-silvered [beam splitter](https://en.wikipedia.org/wiki/Beam_splitter) at 45°, one camera shooting through it and the other the reflection, which is how 3D films bring the lenses down to near-zero spacing for close work.
+**Beam-splitter rig.** A semi-silvered [beam splitter](https://en.wikipedia.org/wiki/Beam_splitter) at 45°, one camera shooting through it and the other the reflection, which is how 3D films bring the lenses down to near-zero spacing for close work. A CMOS camera aimed down at the mirror is mounted upside down, so that both sensors scan in the same direction ([Tim Dashwood's beginner's guide](https://www.dvinfo.net/article/acquisition/stereoscopic/a-beginners-guide-to-shooting-stereoscopic-3d.html), 2010).
 
 **Sync is the hard part.** Genlock or a sync cable where the cameras have one; otherwise a clapper or an audio spike to align the streams in post. Mismatched exposure, focus or rolling shutter between the two eyes ruins a rig shot far more than the spacing does. For baseline calculation formulas, convergence geometry, and parallax budget limits, see the [Stereo Camera Geometry & Parallax Guide](docs/stereo-camera-geometry.md).
 
