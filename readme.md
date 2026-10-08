@@ -457,6 +457,14 @@ rendering, and it needs a camera to exist in a place the renderer can reach.
 
 One practical note for anyone trying this on a 3D television: every mode above produces correctly packed stereo and none of them tells the set what it is sending. The television will show a side-by-side pair as two flat images until 3D is switched on by hand, because over HDMI the layout is announced in an InfoFrame that emulators do not emit and desktop operating systems do not expose. The pixels are right and the signalling is missing, which is the same shape as the frame-packing problem described further up this list.
 
+### Source ports that draw their own stereo
+
+Some games outlived their platforms because their source was released and their communities kept building on it. The source ports that grew from those releases added what the originals never had, stereo among them, and they run on today's systems with the game files the player owns.
+
+- [DXX-Rebirth](https://github.com/dxx-rebirth/dxx-rebirth) - *Descent* (1995) and *Descent II* (1996) on today's systems, built on Parallax's source release; the contributors' code is GPLv3 with an exception for the original Parallax licence, which forbids commercial use. Stereo is built in by default on Linux with desktop OpenGL: `-gl_stereo` for quad-buffered stereo, and `-gl_stereoview` 1 to 4 for above/below, side by side at full or half height, and above/below with a sync gap between the eyes. Debian packages it as `d1x-rebirth` and `d2x-rebirth`.
+- [D2X-XL](https://www.descent2.de/) - Dietfrid Mali's enhanced *Descent* and *Descent II*, with stereo for anaglyph glasses, NVIDIA's shutter glasses through quad buffering, side by side at 1080p for 3D televisions, and the early Oculus Rift, with its lens warp and an eye distance from 54 to 72 mm. Its last release is 1.18.77; [Arne de Bruijn's tree](https://github.com/arbruijn/d2x-xl) keeps it building in 2026.
+- [ioquake3](https://github.com/ioquake/ioq3) - The community engine for *Quake III Arena*, GPL-2.0, with quad-buffered stereo (`r_stereoEnabled`) and its own anaglyph modes (`r_anaglyphMode`); [OpenArena](https://en.wikipedia.org/wiki/OpenArena) runs on it with free game data.
+
 ## Capture
 
 A stereo pair is shot before it is stored or shown. The hardware falls into two kinds: a twin-lens body that does both eyes at once, built as a still camera or as a camcorder, and two ordinary cameras fixed together in a rig.
