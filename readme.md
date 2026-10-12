@@ -1,4 +1,4 @@
-# Awesome Stereoscopy [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Stereoscopy [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23308061.svg)](https://doi.org/10.5281/zenodo.23308061)
 
 > Stereoscopic 3D: the formats, the standards, the software that speaks them, and the 190 years behind them.
 
