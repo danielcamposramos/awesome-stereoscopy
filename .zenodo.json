@@ -1,0 +1,25 @@
+{
+  "title": "awesome-stereoscopy: curated resources for stereoscopic 3D",
+  "description": "Curated resources for stereoscopic 3D: formats, standards, tools, players, servers, displays, headsets, and 190 years of history, from Wheatstone's 1838 stereoscope to spatial video. Every entry is checked against its source.",
+  "creators": [
+    {
+      "name": "Ramos, Daniel Campos",
+      "orcid": "0009-0001-4546-8673"
+    }
+  ],
+  "license": "cc0-1.0",
+  "upload_type": "publication",
+  "publication_type": "other",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "stereoscopy",
+    "stereoscopic 3D",
+    "3D video",
+    "frame packing",
+    "HDMI 3D",
+    "anaglyph",
+    "spatial video",
+    "history of stereoscopy"
+  ]
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this list, please cite it as below."
+type: dataset
+title: "awesome-stereoscopy: curated resources for stereoscopic 3D"
+abstract: "Curated resources for stereoscopic 3D: formats, standards, tools, players, servers, displays, headsets, and 190 years of history, from Wheatstone's 1838 stereoscope to spatial video. Every entry is checked against its source."
+authors:
+  - family-names: "Ramos"
+    given-names: "Daniel Campos"
+    orcid: "https://orcid.org/0009-0001-4546-8673"
+license: CC0-1.0
+repository-code: "https://github.com/danielcamposramos/awesome-stereoscopy"
+keywords:
+  - "stereoscopy"
+  - "stereoscopic 3D"
+  - "3D video"
+  - "frame packing"
+  - "HDMI 3D"
+  - "anaglyph"
+  - "spatial video"
+  - "history of stereoscopy"
