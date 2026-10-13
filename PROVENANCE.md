@@ -124,6 +124,7 @@ Our own record in the same weeks:
 - UMS shipped it in [15.9.0](https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/15.9.0) on 5 October 2026. Its changelog reads "Enable media players to automatically detect when videos are 3D (thanks, Daniel Ramos!)" and "Improved support for Sony TVs from 2011 to current (thanks, Daniel Ramos!)", and its [announcement](https://github.com/UniversalMediaServer/UniversalMediaServer/discussions/6377) thanks Daniel among the release's first-time contributors.
 - MKVToolNix [!6311](https://codeberg.org/mbunkus/mkvtoolnix/pulls/6311) was merged after review.
 - mpv [#18490](https://github.com/mpv-player/mpv/pull/18490) drew an objection to AI use; once we explained the language barrier and our disclosure, the lead maintainer reviewed the code, asked for changes, took our answer over, ran it through CI on every platform and merged it.
+- Since then: Qt Multimedia (8 October), Bino (9 October), spice-gtk (10 October), the HEVC half of MKVToolNix (11 October), PeerTube and wiz3D (13 October), each after its maintainer read the change; PeerTube's maintainer reshaped ours into his transcoding profile before merging it, and wiz3D's rebuilt it with MSVC on both architectures. The full list, with links, is [Merged outside Sparky Stereo](https://github.com/Sparky-OS/sparky-stereo-os/blob/main/docs/upstream-merges.md).
 
 It worked because we discussed in the issues first, and kept updating the code as we found more caveats and as reviewers showed us points of view we had not considered.
 
