@@ -147,6 +147,13 @@ CIPA's Multi-Picture Format standard: DC-007, currently at edition DC-007-Transl
 Table 8 of the standard recommends, for Disparity images: Convergence Angle, tag `0xB205`, type SRATIONAL, in degrees; and Baseline Length, tag `0xB206`, type RATIONAL, in metres.
 Recorded here so a writer or reader of MPO files knows what to look for, separately from the verification of the two-image index itself.
 
+### SVGStereo (a mark for SVG, which has none of its own)
+
+SVG has no stereo field, so Sparky Stereo OS defines one: [SVGStereo](https://github.com/Sparky-OS/svgstereo), version 0.2 (14 October 2026), CC0.
+One namespaced attribute on the root `svg` element, `svgstereo:layout`, names the packing; its values map one to one onto Matroska `StereoMode` ([RFC 9559](https://www.rfc-editor.org/rfc/rfc9559)) and the H.264 and H.265 `frame_packing_arrangement_type` (Table D-8).
+Version 0.2 covers animated drawings (SVG 1.1 Second Edition, chapter 19): one timeline for both views, the layout fixed while the drawing plays, and nothing crossing the boundary between the views.
+Renderers that do not read it draw the file as before, because SVG lets elements carry attributes from other namespaces ([SVG 1.1, section 23.1](https://www.w3.org/TR/SVG11/extend.html#ForeignNamespaces)).
+
 ## Why the documents are linked, not mirrored
 
 ITU marks the selected recommendations as freely available for download, but its [copyright notice](https://www.itu.int/en/Pages/copyright.aspx) says ITU holds copyright and asks users to request permission before reproducing its materials.
