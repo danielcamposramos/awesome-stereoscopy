@@ -292,6 +292,7 @@ Every stereoscopic file answers one question: where is the second eye?
 The answers, in rough order of age:
 
 - [Anaglyph 3D](https://en.wikipedia.org/wiki/Anaglyph_3D) - Both eyes multiplexed into colour channels, 1853 onwards. Lossy and universal: it plays on anything, including paper, and it survives being printed, photocopied or posted anywhere. The autostereogram above survives the same treatment, and needs no filters to do it; anaglyph's advantage is that it works on any image rather than only on images built for the trick.
+- [SVGStereo](https://github.com/Sparky-OS/svgstereo) - A proposed mark for SVG drawings that hold a stereo pair: one `layout` attribute in its own namespace on the root element, with values tied to RFC 9559 `StereoMode` and H.264/H.265 Table D-8. Renderers that do not read it ignore it (SVG 1.1 Second Edition, section 23.1). Proposed in 2026; disclosure: Daniel, who maintains this list, wrote it.
 
 ### Anaglyph colour codes
 
@@ -423,6 +424,8 @@ That single idea connects a games console accessory, a phone's front camera, the
 
 - [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) and [Depth Anything 3](https://github.com/ByteDance-Seed/Depth-Anything-3) - Current monocular depth foundation models, and the most practical way today to derive a depth map from an ordinary photograph or frame.
 - [MiDaS](https://github.com/isl-org/MiDaS) - The robust monocular depth estimator that established the approach.
+- [Holopix50k](https://github.com/LeiaInc/holopix50k) - 49,368 stereo pairs posted by users of Leia's Holopix platform, published at a CVPR 2020 workshop as in-the-wild material for stereo matching and depth learning. Non-commercial use only, and each poster keeps the copyright of their photos.
+- [The Lion King 3D: in-depth with Disney](https://www.fxguide.com/fxfeatured/the-lion-king-3d-in-depth-with-disney/) - fxguide, 2011. Robert Neuman's team rebuilt about 1,200 shots from Disney's CAPS archives and gave each moment its depth by a "depth score": the peak of the action got the most depth that was comfortable, quiet exposition the least that still looked good.
 
 These matter to this list for one reason: a view plus a depth map can be warped into a stereo pair.
 That is what 2D-to-3D conversion has always been, whether done by hand in a post house, in real time by a television's "simulated 3D" mode, or by a model on a laptop.
@@ -755,6 +758,7 @@ That 2017 work is why stock nouveau drives a 2011 BRAVIA in full-resolution fram
 - [sony-bravia-linux tools](https://github.com/danielcamposramos/sony-bravia-linux/tree/main/tools) - Losslessly injects the frame-packing SEI into existing H.264 files, converts anaglyph back to side-by-side, writes MPO, and indexes a library by stereo format.
 - [HDMI 1.4 3D driver patches](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/upstream/community-hdmi-3d-patches.md) - Hardware-verified kernel patches that un-prune the stereo modes a 3D TV already declares in its own EDID: a six-line `stereo_allowed` opt-in installable on NVIDIA's kernel-open 615.71.09, and an amdgpu backport pair (VSIF emission plus frame-packing scanout) for 7.0-era trees. Written to be applied today, in parallel with the upstream series rather than instead of it; nouveau needs no patch and serves as the control.
 - [Kernel development for old AMD GPUs](https://indico.freedesktop.org/event/12/contributions/545/) - Timur Kristóf (Valve) at XDC 2026 ([slides](https://indico.freedesktop.org/event/12/contributions/545/attachments/380/545/xdc2026_kernel_dev_old_amd_gpus.pdf)): GCN 1.0 and 1.1 Radeons, the Radeon HD 7000 and R9 200 generations sold alongside the 3D televisions, now default to amdgpu and its DC display code instead of the old radeon driver, which lacked atomic modesetting and HDR. HDMI work done in DC, including stereo, now reaches those cards.
+- [Fluster](https://github.com/fluendo/fluster) - Fluendo's decoder conformance framework (LGPL-3.0). Its suites include the JCT-VC 3D-HEVC and MV-HEVC conformance bitstreams, so a decoder's multiview support can be checked against the standard's own vectors, through FFmpeg, GStreamer or the reference decoders.
 
 ## Players and viewers
 
@@ -766,6 +770,7 @@ Our VLC fork below is for people who rely on VLC. mpv is also the maintainer's p
 - [VLC with the 3D fix](https://github.com/Sparky-OS/vlc) - Fork of VLC, which describes itself as "focused on playing everything". Upstream VLC has discarded the H.264 frame-packing SEI since 2017 (commit 89347c3e2d), so video that signals its 3D layout the standard way plays and converts as flat 2D. This fork detects the SEI and keeps it through transcoding; tested [builds](https://github.com/Sparky-OS/vlc/releases/tag/3.0.24-3d1) for Windows and Debian.
 - [Kodi](https://github.com/xbmc/xbmc) - Media centre with stereoscopic display modes; derives the stereo mode from the stream's own metadata.
 - [Bino](https://bino3d.org) - Dedicated 3D video player, strong on multi-display and projection setups.
+- [OpenRV](https://github.com/AcademySoftwareFoundation/OpenRV) - The open-source release of RV, the film industry's review player, now kept by the Academy Software Foundation. It plays the first two layers of a source as a stereo pair, in anaglyph, luminance anaglyph, side by side, mirrored side by side, DLP checkerboard, scanline interleaved or quad-buffered output ([user manual, chapter 12](https://aswf-openrv.readthedocs.io/en/latest/rv-manuals/rv-user-manual/rv-user-manual-chapter-twelve.html)).
 - [sView](https://www.sview.ru/en/) - Stereoscopic image and video viewer for desktop and mobile, with many output modes.
 - [Stereoscopic Player](https://www.3dtv.at) - Long-standing Windows player covering most stereo layouts.
 - [StereoWebViewer](https://github.com/JackDesBwa/StereoWebViewer) - Renders one side-by-side image into parallel, cross, anaglyph or interleaved output in a browser. Its author has since abandoned it in favour of threejs-StereoscopicEffects below, so read it as a compact reference rather than a maintained tool.
@@ -838,6 +843,9 @@ Disclosure: Daniel, who maintains this list, leads this work.
 - [Spectacle, stereo branch](https://invent.kde.org/danielcamposramos/spectacle/-/tree/stereo3d) - A screenshot of a stereo desktop saved side by side, as JPS or MPO.
 - [KImageFormats, stereo branch](https://invent.kde.org/danielcamposramos/kimageformats/-/tree/stereo3d) - JPS and MPO read and written for every Qt and KDE program.
 - [KScreen, stereo branch](https://invent.kde.org/danielcamposramos/kscreen/-/tree/stereo3d-6.7) - A display's HDMI 3D modes listed with its other modes and labelled, never chosen automatically, through a [stereo libkscreen](https://invent.kde.org/danielcamposramos/libkscreen/-/tree/stereo3d-6.7).
+- [Dolphin, stereo branch](https://invent.kde.org/danielcamposramos/dolphin/-/tree/stereo3d) - Stereo pictures and videos previewed in 3D: thumbnails, the hover tooltip and the information panel, through thumbnailers that keep both views ([KIO](https://invent.kde.org/danielcamposramos/kio/-/tree/stereo3d), [kio-extras](https://invent.kde.org/danielcamposramos/kio-extras/-/tree/stereo3d), [ffmpegthumbs](https://invent.kde.org/danielcamposramos/ffmpegthumbs/-/tree/stereo3d)). On a 2D screen the view is pixel-identical to Dolphin's own.
+- [KIconThemes, stereo branch](https://invent.kde.org/danielcamposramos/kiconthemes/-/tree/stereo3d) - Icon themes that ship a pair for each icon (`X-StereoDirectories`), drawn per eye on a stereo screen and as the plain icon on a 2D one.
+- [stereo-layer](https://github.com/Sparky-OS/stereo-layer) - The shared library behind these programs' pictures and videos: the file's own mark first, then the user's choice, then the picture's shape; a widget layer and a QML item that hand the desktop one full side-by-side declaration.
 
 ### The desktop in a headset, 2018 to 2026
 
@@ -861,6 +869,7 @@ W3C took the question up twice, and both efforts stopped.
 - [Stereoscopic 3D Web Community Group](https://www.w3.org/community/stereoweb/) - The follow-up, co-chaired from LG Electronics, with researchers studying how people perceive stereoscopic web pages. Its posts run from October 2013 to July 2014, [its mailing list](https://lists.w3.org/Archives/Public/public-stereoweb/) holds three messages from 2016 to 2019, and W3C closed it on 7 April 2023. One post records a 3D television switching itself into 3D for a side-by-side web page, "since there is no indication from the webpage that tells the TV it is displaying 'stereoscopic content'".
 - [WebXR Layers API](https://www.w3.org/TR/webxrlayers-1/) - W3C Working Draft whose `XRLayerLayout` has `"stereo-left-right"` and `"stereo-top-bottom"`, including layers made from an HTML video element: the web's only standard stereo vocabulary today, and it applies only in an immersive session.
 - [Stereo 3D on Linux and the Web: Established Specifications, Adopted in Pieces](https://www.w3.org/publications/spec-generator/?type=respec&url=https://raw.githubusercontent.com/w3c-cg/pm-kr/main/reports/source/stereo-3d-adoption-report.html) - A discussion draft of the W3C PM-KR Community Group, October 2026: the specifications that exist, who reads the signal on Linux and on the web, how the work stopped each time it was started (including the two W3C efforts above), and five proposals for what a browser would need, built on the 2012 requirements. Disclosure: Daniel, who maintains this list, chairs the group and wrote the draft.
+- [Waterfox, stereo branch](https://github.com/Sparky-OS/waterfox/tree/stereo3d) - A browser build that reads a web video's stereo mark (the frame packing SEI, Matroska `StereoMode`, the MP4 `st3d` box, then the user's choice) and hands the video to the desktop as full side by side, and that offers WebXR immersive sessions on a flat 3D screen with no headset. Disclosure: Daniel, who maintains this list, leads this work.
 
 ## Servers and delivery
 
@@ -988,6 +997,8 @@ Projectors that take 3D Blu-ray with active glasses never went away.
 - [ViewX Liber and Immer](https://www.prnewswire.com/news-releases/viewx-launches-liber-and-immer-glasses-free-ai-3d-displays-on-kickstarter-302857181.html) - Glasses-free monitors with a 180 fps eye-tracking camera, a 15.6-inch Liber and a 27-inch Immer, both 4K, launched on Kickstarter on 25 August 2026 at 1,099 to 1,499 US dollars (planned retail 1,699 to 2,099). The press release names the stereo tools it works with, ReShade, Portal VR, Oku3D and Geo-11, which shows where PC stereo gaming lives today: in injectors on Windows. It does not state Linux support.
 - [Looking Glass](https://lookingglassfactory.com/) - Light-field displays, the commercial descendant of the glasses-free line; its old looking-glass.com domain now belongs to an unrelated company.
 - [Leia](https://www.leiainc.com) - Light-field displays and the conversion tooling around them, now operating under the name Immersity.
+- [DisplayXR](https://github.com/DisplayXR/displayxr-runtime) - An open OpenXR runtime for 3D displays (BSL-1.0): an application sees an OpenXR device, and each panel vendor's plug-in does its own weaving behind the runtime, placed from the desktop's window geometry.
+- [Moonlight3D](https://github.com/LeiaInc/Moonlight3D) - Leia's fork of the Moonlight game-streaming client for Android (GPL-3.0): half-width side-by-side streams shown in 3D on the Lume Pad 2 and the Nubia Pad 3D.
 - [Top 3D projectors](https://www.projectorcentral.com/top-3d-projectors.htm) - ProjectorCentral's list of 3D projectors on sale, updated September 2026: ten models from BenQ, XGIMI, Optoma, Epson, JVC, Hisense and Valerion, from about 500 to 17,000 US dollars, all working with 3D glasses. The cheapest way to 3D Blu-ray at cinema size today.
 
 ## Headsets and worn displays
@@ -1114,6 +1125,7 @@ No stereo involved, and the effect on presence is real.
 - [Stéréo-Club Français](https://www.image-en-relief.org/stereo/index.php) - Founded in 1903, with a monthly bulletin since 1904. It organised three ISU world congresses: in 1976 at Saint-Mandé, in 1991 at the Palais du Trocadéro in Paris, and in 2003 at Besançon ([French Wikipedia](https://fr.wikipedia.org/wiki/St%C3%A9r%C3%A9o-Club_fran%C3%A7ais)).
 - [STEREO CLUB Tokyo](http://www.stereoclub.jp/) - The Tokyo stereo-photography club, founded in 1996 and still holding seasonal meetings. It hosted the International Stereoscopic Union's 24th world congress at Tsukuba in 2023, the first held in Japan, and its [chronology of stereo photography in Japan](https://isu2023.stereoclub.jp/index_stereojapan_j.html), in Japanese, records a far older society: the Japan Binocular Photography Society (日本双眼寫眞會), founded in 1923 at the urging of Hayao Yoshikawa and Shūsuke Satō.
 - [Stereo World](https://www.stereoworld.org) - The National Stereoscopic Association's magazine, continuous since 1974.
+- [Giant Screen Cinema Association](https://www.giantscreencinema.com/) - The association of giant-screen theatres and the companies that make their films, more than 260 organisations in 20 countries.
 - [Phereo](https://phereo.com) - Stereo-photo community whose archive is historically important, still holding more than 200,000 images. It lost the images published between roughly January 2019 and October 2022; the loss has since stopped, but some functions such as search no longer work, so treat it as an archive rather than a live service. **Reddit stereo communities.** [r/CrossView](https://www.reddit.com/r/CrossView/), [r/ParallelView](https://www.reddit.com/r/ParallelView/), [r/Anaglyph](https://www.reddit.com/r/Anaglyph/) and [r/wigglegrams](https://www.reddit.com/r/wigglegrams/) are the most active day-to-day stereo photography communities on the web, each with a fixed convention for the pair it displays.
 
 ### Conferences and festivals
@@ -1141,6 +1153,7 @@ Where the field meets in person: the research conferences first, then the indust
 
 - [sony-bravia-linux](https://github.com/danielcamposramos/sony-bravia-linux) - The project this list grew out of. It documents why correctly authored 3D files play flat on hardware that supports them: the in-stream frame-packing SEI that displays act on and almost nothing wrote. Measurements on real sets, fixes taken upstream across the whole encode, remux, serve and play chain, tools that repair existing files losslessly, and the same research published in eleven languages so owners can find it in their own.
 - [Consumer Rights Wiki: Sony BRAVIA pre-Android Linux TVs](https://consumerrights.wiki/index.php?title=Sony_BRAVIA_pre-Android_Linux_TVs_(2011-2012)) - A worked example of documenting what happens to a 3D product line after its services are switched off, sourced to the manufacturer's own notices.
+- [3-D Film Archive](https://www.3dfilmarchive.com) - Founded in 1990 by Bob Furmanek to find, preserve and digitally restore the original dual-strip 35mm polarized 3D films of the 1950s, released on 3D Blu-ray with partners such as Kino Lorber and Flicker Alley, and in theatres.
 
 ### Services that were switched off
 
