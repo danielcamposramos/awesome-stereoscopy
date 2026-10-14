@@ -1,6 +1,7 @@
 # Stereoscopy in depth
 
-The [list](../readme.md) points at what exists. These pages go under it: the arithmetic, the signal layouts and the pipelines behind its entries, each drawn twice, once in plain text that reads anywhere and once in Mermaid for GitHub.
+The [list](../readme.md) points at what exists.
+These pages go under it: the arithmetic, the signal layouts and the pipelines behind its entries, each drawn twice, once in plain text that reads anywhere and once in Mermaid for GitHub.
 
 Every figure here names its source (FFmpeg's code, the Linux kernel, the cited papers and specifications), and each page was checked against those sources before it was published.
 
@@ -16,13 +17,12 @@ Every figure here names its source (FFmpeg's code, the Linux kernel, the cited p
 
 ## Reference
 
-- [NotebookLM review and regeneration kit](notebooklm/README.md): pinpoint
-  corrections to exported educational artifacts, reviewed source inputs, and
-  Deep Research/Studio prompts. Generated learning material is not primary evidence.
+- [NotebookLM review and regeneration kit](notebooklm/README.md): pinpoint corrections to exported educational artifacts, reviewed source inputs, and Deep Research/Studio prompts. Generated learning material is not primary evidence.
 
 - [Federated Signal Ledger pointers](reference/evidence-ledger/pointers.md): machine-checked pointers to measured claims kept in [sony-bravia-linux](https://github.com/danielcamposramos/sony-bravia-linux), bound by semantic hash rather than copied. The list's [Evidence ledger](../readme.md#evidence-ledger) introduces them.
 - [NotebookLM companion atlas](notebooklm-companion-atlas.md): the 14 public generated learning artefacts mapped by type, subject and canonical repository, with the boundary between discovery material and primary evidence made explicit.
 
 ## How these pages were made
 
-The guides were Daniel's requests, drafted by Gemini inside Google Jules and corrected against their sources before merge; [PROVENANCE.md](../PROVENANCE.md) has the full account. Corrections follow the same rule as the list: a claim without a source it can be checked against does not stay.
+The guides were Daniel's requests, drafted by Gemini inside Google Jules and corrected against their sources before merge; [PROVENANCE.md](../PROVENANCE.md) has the full account.
+Corrections follow the same rule as the list: a claim without a source it can be checked against does not stay.

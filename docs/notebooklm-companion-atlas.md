@@ -1,21 +1,15 @@
 # NotebookLM Companion Atlas
 
-Daniel Campos Ramos assembled the public NotebookLM notebook
-[Spatial Computing, Stereoscopic Optics & VR Systems Reference](https://notebook.google.com/notebook/6001af04-d8fd-4867-935f-809b85cf6ea8)
-from the project's research corpus. This page preserves a stable map of its
-generated learning artefacts and states how they may be used.
+Daniel Campos Ramos assembled the public NotebookLM notebook [Spatial Computing, Stereoscopic Optics & VR Systems Reference](https://notebook.google.com/notebook/6001af04-d8fd-4867-935f-809b85cf6ea8) from the project's research corpus.
+This page preserves a stable map of its generated learning artefacts and states how they may be used.
 
-These are **navigation and teaching aids**, not independent evidence. Each
-page identifies itself as AI-generated from user-provided sources. A “Based on
-62 sources” or “Based on 100 sources” badge does not expose the underlying
-source list on the public artefact page. Technical claims promoted into this
-repository must therefore cite the primary paper, specification, source code,
-or Signal Ledger claim directly.
+These are **navigation and teaching aids**, not independent evidence.
+Each page identifies itself as AI-generated from user-provided sources.
+A “Based on 62 sources” or “Based on 100 sources” badge does not expose the underlying source list on the public artefact page.
+Technical claims promoted into this repository must therefore cite the primary paper, specification, source code, or Signal Ledger claim directly.
 
-The 14 direct artefact links below were publicly readable without an account
-on 30 September 2026. Interactive cards, quizzes, and mind maps render inside
-Google's embedded viewer; their inner content may not be available to a plain
-HTML reader.
+The 14 direct artefact links below were publicly readable without an account on 30 September 2026.
+Interactive cards, quizzes, and mind maps render inside Google's embedded viewer; their inner content may not be available to a plain HTML reader.
 
 ## Artefact Map
 
@@ -38,48 +32,26 @@ HTML reader.
 
 ## Review Boundaries Already Found
 
-The [local export review and regeneration kit](notebooklm/README.md) contains
-specific page/timestamp corrections, reviewed text/table source inputs, and
-copy-ready Deep Research and Studio prompts. Original PDF/audio/video/image
-exports remain unchanged; the kit must not be mistaken for repaired recordings.
+The [local export review and regeneration kit](notebooklm/README.md) contains specific page/timestamp corrections, reviewed text/table source inputs, and copy-ready Deep Research and Studio prompts.
+Original PDF/audio/video/image exports remain unchanged; the kit must not be mistaken for repaired recordings.
 
-- The report named for anaglyph mathematics is substantially broader than its
-  title. Its subjects should be separated before any section is treated as a
-  focused reference.
-- The data table describes the MP4 `st3d` box's eight-bit `stereo_mode` syntax
-  field under “Supported Color Depth and Format”. That is a category error:
-  the field width is not the video's colour depth.
-- “Lossless Faraday” is stronger than the public page establishes. Until its
-  underlying paper and complete loss budget are checked, the safe description
-  is a **higher-theoretical-efficiency Faraday-rotator design**.
-- Precise efficiency, ghost-order, and material-constant numbers in the
-  Faraday/TGG material need direct primary-paper citations before reuse.
-- Panum's fusional area is not one fixed disparity limit; it varies with the
-  stimulus, retinal eccentricity, and observer.
-- Vergence-accommodation conflict and vestibular motion conflict are distinct
-  mechanisms. Reprojection and motion-based synthetic-frame generation are
-  likewise distinct operations.
-- A light-field display usually steers angular views through a physical
-  display surface; “projects an image into free space” is not a safe generic
-  definition.
+- The report named for anaglyph mathematics is substantially broader than its title. Its subjects should be separated before any section is treated as a focused reference.
+- The data table describes the MP4 `st3d` box's eight-bit `stereo_mode` syntax field under “Supported Color Depth and Format”. That is a category error: the field width is not the video's colour depth.
+- “Lossless Faraday” is stronger than the public page establishes. Until its underlying paper and complete loss budget are checked, the safe description is a **higher-theoretical-efficiency Faraday-rotator design**.
+- Precise efficiency, ghost-order, and material-constant numbers in the Faraday/TGG material need direct primary-paper citations before reuse.
+- Panum's fusional area is not one fixed disparity limit; it varies with the stimulus, retinal eccentricity, and observer.
+- Vergence-accommodation conflict and vestibular motion conflict are distinct mechanisms. Reprojection and motion-based synthetic-frame generation are likewise distinct operations.
+- A light-field display usually steers angular views through a physical display surface; “projects an image into free space” is not a safe generic definition.
 - Lighthouse v1 and v2 must not be collapsed into one signalling protocol.
 
 ## Documentation Opportunities
 
-The atlas exposes genuine gaps without requiring the root lists to become
-monoliths:
+The atlas exposes genuine gaps without requiring the root lists to become monoliths:
 
-1. `awesome-stereoscopy`: binocular fusion and visual comfort, including the
-   horopter, Panum's fusional area, fusion/diplopia, stereoacuity, and VAC.
-2. `awesome-stereoscopy`: autostereoscopic and light-field display optics,
-   separated from the existing product catalogue.
-3. `awesome-vr`: a near-eye optical stack guide covering Fresnel and pancake
-   optics, polarization passes, efficiency, ghosting, eye box, and eye relief.
-4. `awesome-vr`: separate guides for Lighthouse tracking and for late-stage
-   reprojection versus motion smoothing.
+1. `awesome-stereoscopy`: binocular fusion and visual comfort, including the horopter, Panum's fusional area, fusion/diplopia, stereoacuity, and VAC.
+2. `awesome-stereoscopy`: autostereoscopic and light-field display optics, separated from the existing product catalogue.
+3. `awesome-vr`: a near-eye optical stack guide covering Fresnel and pancake optics, polarization passes, efficiency, ghosting, eye box, and eye relief.
+4. `awesome-vr`: separate guides for Lighthouse tracking and for late-stage reprojection versus motion smoothing.
 
-The HDMI/SEI/Matroska lane is already documented in
-[`standards.md`](../standards.md) and the
-[frame-packing](frame-packing-and-hdmi-timings.md) and
-[Deep Color](stereo-deep-colour-link-budget.md) guides. New material there
-should close a specific source-backed gap rather than restate the atlas.
+The HDMI/SEI/Matroska lane is already documented in [`standards.md`](../standards.md) and the [frame-packing](frame-packing-and-hdmi-timings.md) and [Deep Color](stereo-deep-colour-link-budget.md) guides.
+New material there should close a specific source-backed gap rather than restate the atlas.

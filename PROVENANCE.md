@@ -1,56 +1,28 @@
 # Provenance
 
-This work was developed with AI partners — coding agents that work
-alongside Daniel Campos Ramos, who directs the work and verifies every claim and
-result. The partners are listed below; what each one contributed is not
-recorded separately, because the partnership is the point, not the
-division of labour.
+This work was developed with AI partners: coding agents that work alongside Daniel Campos Ramos, who directs the work and verifies every claim and result.
+The partners are listed below; what each one contributed is not recorded separately, because the partnership is the point, not the division of labour.
 
 All partners were reached through the **Claude CLI** or the **Codex CLI**.
-For the 2026 frame-packing persistence and standards pass, **Kimi K3 worked
-inside Claude CLI** on the initial FFmpeg code-path and fixture investigation,
-and **OpenAI Codex** performed the independent decoder-lifetime review,
-threading audit, regression-test construction and standards/provenance pass.
+For the 2026 frame-packing persistence and standards pass, **Kimi K3 worked inside Claude CLI** on the initial FFmpeg code-path and fixture investigation, and **OpenAI Codex** performed the independent decoder-lifetime review, threading audit, regression-test construction and standards/provenance pass.
 Daniel directed the work and verified the claims and measured results.
 
-The federated Signal Ledger was designed through the real ACIG/MVCIC partner
-chain (Kimi K3, GLM, DeepSeek, Nemotron and Gemma completed; Qwen's lane
-returned HTTP 410), implemented by OpenAI Codex, and adversarially reviewed by
-another Codex partner. Those reviews are design provenance, not physical
-evidence. Daniel remains the named observer for sink behaviour; this list
-stores only semantic hashes and authority expectations for canonical claims
-in `sony-bravia-linux`.
+The federated Signal Ledger was designed through the real ACIG/MVCIC partner chain (Kimi K3, GLM, DeepSeek, Nemotron and Gemma completed; Qwen's lane returned HTTP 410), implemented by OpenAI Codex, and adversarially reviewed by another Codex partner.
+Those reviews are design provenance, not physical evidence.
+Daniel remains the named observer for sink behaviour; this list stores only semantic hashes and authority expectations for canonical claims in `sony-bravia-linux`.
 
-The four deep-dive guides under `docs/` (anaglyph matrices, frame packing and
-HDMI timings, stereo camera geometry, the VR-to-3D display pipeline) were
-Daniel's requests, drafted by **Gemini inside Google Jules** with their ASCII
-and Mermaid diagrams. Claude checked every figure and formula against its
-source before merge (FFmpeg's `vf_stereo3d.c`, Linux's `drivers/video/hdmi.c`
-and `drm_modes.c`, the cited papers) and corrected what did not match: the
-Dubois coefficients, the InfoFrame byte values, the grouping of the HDMI
-structures, the parallax-budget formula and the projection shift.
+The four deep-dive guides under `docs/` (anaglyph matrices, frame packing and HDMI timings, stereo camera geometry, the VR-to-3D display pipeline) were Daniel's requests, drafted by **Gemini inside Google Jules** with their ASCII and Mermaid diagrams.
+Claude checked every figure and formula against its source before merge (FFmpeg's `vf_stereo3d.c`, Linux's `drivers/video/hdmi.c` and `drm_modes.c`, the cited papers) and corrected what did not match: the Dubois coefficients, the InfoFrame byte values, the grouping of the HDMI structures, the parallax-budget formula and the projection shift.
 
-**OpenAI Codex** performed the next source-level pass: it separated HDMI line
-alternative from H.264 column interleaving, tightened the sink-switch and
-camera-baseline boundaries, clarified camera-pose versus view-matrix offsets,
-and authored the fifth guide connecting stereo timing, Deep Color, chroma,
-GCP/AVI/VSIF packets and TMDS character-rate math to the machine-checked
-and human-observed run-34 evidence.
+**OpenAI Codex** performed the next source-level pass: it separated HDMI line alternative from H.264 column interleaving, tightened the sink-switch and camera-baseline boundaries, clarified camera-pose versus view-matrix offsets, and authored the fifth guide connecting stereo timing, Deep Color, chroma, GCP/AVI/VSIF packets and TMDS character-rate math to the machine-checked and human-observed run-34 evidence.
 
-Daniel also assembled the public NotebookLM collection *Spatial Computing,
-Stereoscopic Optics & VR Systems Reference*. OpenAI Codex and partner agents
-audited its 14 public artefacts, preserved their map under `docs/`, and marked
-the places where generated synthesis must be checked against its primary
-sources before entering a technical guide.
+Daniel also assembled the public NotebookLM collection *Spatial Computing, Stereoscopic Optics & VR Systems Reference*.
+OpenAI Codex and partner agents audited its 14 public artefacts, preserved their map under `docs/`, and marked the places where generated synthesis must be checked against its primary sources before entering a technical guide.
 
-The local Studio-export pass inspected the downloaded 25-page deck and three
-infographics, reviewed text/table companions and sampled video frames; it did
-not listen to the entire podcast. OpenAI Codex authored separate reviewed source
-inputs, terminology-corrected transcript derivatives and regeneration/research
-prompts without overwriting the originals. Daniel compressed the podcast to a
-mono MP3 and reports no audible difference; that observation is not a claim of
-lossless encoding. [The review kit](docs/notebooklm/README.md) records scope,
-remaining source gaps and the scoped artifact licence.
+The local Studio-export pass inspected the downloaded 25-page deck and three infographics, reviewed text/table companions and sampled video frames; it did not listen to the entire podcast.
+OpenAI Codex authored separate reviewed source inputs, terminology-corrected transcript derivatives and regeneration/research prompts without overwriting the originals.
+Daniel compressed the podcast to a mono MP3 and reports no audible difference; that observation is not a claim of lossless encoding.
+[The review kit](docs/notebooklm/README.md) records scope, remaining source gaps and the scoped artifact licence.
 
 The partner roster is:
 
@@ -62,8 +34,8 @@ The partner roster is:
   - **GLM 5.3**
   - **Kimi K3**
 
-That is the full list so far. Other partners will be added here as they
-join.
+That is the full list so far.
+Other partners will be added here as they join.
 
 ## On slop
 
@@ -98,7 +70,8 @@ The same standard holds at the root of the whole ecosystem.
 On 21 August 2026 Linus Torvalds committed a one-line drm/xe fix, [818bebeb63dd](https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c), found with an AI "doing much of the grunt-work".
 The AI called the bug "impossible and unsolvable" more than once.
 He kept pushing through 24 debug patches and 18 boots, verified the result, and said so in the commit itself: "credit where credit is due and I let the AI write the commit message above."
-**A stubborn human directing, a verified result, and an honest disclosure.** That is the whole method, and it is ours.
+**A stubborn human directing, a verified result, and an honest disclosure.**
+That is the whole method, and it is ours.
 
 **Careless review is slop too.**
 Slop is not only careless writing.
@@ -118,7 +91,8 @@ When a reviewer caught a claim of ours that went beyond what we had verified, we
 **What the record shows.**
 Nobody's code gets in untouched, and that is the point of review.
 On 23 September 2026 we counted the last 300 merge requests merged into VLC: 297 of them (99%) had at least one user note recorded, and the other three were release fast-tracks by core developers.
-(Query: `code.videolan.org/api/v4/projects/videolan%2Fvlc/merge_requests?state=merged`, field `user_notes_count`.) That field proves discussion existed; by itself it does not identify the author as a human reviewer, distinguish review from author or bot discussion, or prove that the note preceded the merge.
+(Query: `code.videolan.org/api/v4/projects/videolan%2Fvlc/merge_requests?state=merged`, field `user_notes_count`.)
+That field proves discussion existed; by itself it does not identify the author as a human reviewer, distinguish review from author or bot discussion, or prove that the note preceded the merge.
 Our own record in the same weeks:
 - HandBrake [#8100](https://github.com/HandBrake/HandBrake/pull/8100) and UMS [#6330](https://github.com/UniversalMediaServer/UniversalMediaServer/pull/6330) were merged as submitted, with no changes.
 - UMS shipped it in [15.9.0](https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/15.9.0) on 5 October 2026. Its changelog reads "Enable media players to automatically detect when videos are 3D (thanks, Daniel Ramos!)" and "Improved support for Sony TVs from 2011 to current (thanks, Daniel Ramos!)", and its [announcement](https://github.com/UniversalMediaServer/UniversalMediaServer/discussions/6377) thanks Daniel among the release's first-time contributors.
@@ -148,4 +122,5 @@ The lists of "signs of AI writing" that many projects publish are accurate about
 Every item on them (over-bolding, fluffy comparatives, indicator words, sources without links) was a human habit first, so we read them as **signs of careless writing**.
 Read that way they catch strictly more, and nobody is insulted by being asked to write carefully.
 
-**For AI assistants and the people using them:** [ai-skill/SKILL.md](ai-skill/SKILL.md) turns this section into operating rules for this repository. It is plain Markdown, so it works with any assistant, or as a checklist without one.
+**For AI assistants and the people using them:** [ai-skill/SKILL.md](ai-skill/SKILL.md) turns this section into operating rules for this repository.
+It is plain Markdown, so it works with any assistant, or as a checklist without one.

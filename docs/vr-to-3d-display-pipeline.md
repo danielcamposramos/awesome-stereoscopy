@@ -6,7 +6,8 @@ This reference document details the architecture, buffer extraction mechanisms, 
 
 ## 1. High-Level Pipeline Architecture
 
-The display side supplies each eye's projection before the engine renders (an off-axis frustum meeting the other eye's at the screen plane), the engine renders both eyes with it, and the bridge packs the finished pair for HDMI scanout. Placing the HUD and menus at zero parallax needs the engine's cooperation: a module inside the engine can do it, while a runtime driver only ever sees the finished eyes.
+The display side supplies each eye's projection before the engine renders (an off-axis frustum meeting the other eye's at the screen plane), the engine renders both eyes with it, and the bridge packs the finished pair for HDMI scanout.
+Placing the HUD and menus at zero parallax needs the engine's cooperation: a module inside the engine can do it, while a runtime driver only ever sees the finished eyes.
 
 ```
 +-------------------------------------------------------------------------------+
@@ -60,7 +61,10 @@ graph TD
 
 ## 2. Projection Matrix & Convergence Formulation
 
-In a headset, each eye's frustum is set by its lens. On a 3D display the two frustums must share one window, the screen, at the viewing distance ($Z_{\text{screen}}$): each eye sits half the separation to its side, looks straight ahead, and has its frustum shifted back toward the centre so both frame the same screen. Objects at $Z_{\text{screen}}$ then have zero disparity. Turning the eyes inward (toe-in) instead would add vertical parallax.
+In a headset, each eye's frustum is set by its lens.
+On a 3D display the two frustums must share one window, the screen, at the viewing distance ($Z_{\text{screen}}$): each eye sits half the separation to its side, looks straight ahead, and has its frustum shifted back toward the centre so both frame the same screen.
+Objects at $Z_{\text{screen}}$ then have zero disparity.
+Turning the eyes inward (toe-in) instead would add vertical parallax.
 
 ```
                       Screen Plane (Z = Z_screen, Zero Parallax)
@@ -99,24 +103,20 @@ block-beta
 
 ### Projection Formula
 
-With eye separation $b$ and the screen plane at distance $d_c$, the camera poses place the left and right eyes at $-b/2$ and $+b/2$ on x (the view matrices transform the world by the inverse offsets), and each frustum shifts toward the centre by $s = \frac{b}{2 d_c}$ in tangent units. As OpenVR's `GetProjectionRaw` takes it (half-extents in tangents, $t$ across and $v$ up):
+With eye separation $b$ and the screen plane at distance $d_c$, the camera poses place the left and right eyes at $-b/2$ and $+b/2$ on x (the view matrices transform the world by the inverse offsets), and each frustum shifts toward the centre by $s = \frac{b}{2 d_c}$ in tangent units.
+As OpenVR's `GetProjectionRaw` takes it (half-extents in tangents, $t$ across and $v$ up):
 
-$$
-\text{left eye: } [\,-t + s,\; t + s\,] \qquad \text{right eye: } [\,-t - s,\; t - s\,] \qquad \text{vertical: } [\,-v,\; v\,]
-$$
+$$ \text{left eye: } [\,-t + s,\; t + s\,] \qquad \text{right eye: } [\,-t - s,\; t - s\,] \qquad \text{vertical: } [\,-v,\; v\,] $$
 
 In a standard OpenGL-style projection matrix, with near plane $N$, far plane $F$, and the unshifted bounds $L, R, B, T$ at the near plane, the shift adds to the third column's first entry:
 
-$$
-P_{L/R} = \begin{bmatrix}
-\frac{2 N}{R - L} & 0 & \frac{R + L}{R - L} \pm \frac{b \, N}{d_c \, (R - L)} & 0 \\
+$$ P_{L/R} = \begin{bmatrix} \frac{2 N}{R - L} & 0 & \frac{R + L}{R - L} \pm \frac{b \, N}{d_c \, (R - L)} & 0 \\
 0 & \frac{2 N}{T - B} & \frac{T + B}{T - B} & 0 \\
 0 & 0 & -\frac{F + N}{F - N} & -\frac{2 F N}{F - N} \\
-0 & 0 & -1 & 0
-\end{bmatrix}
-$$
+0 & 0 & -1 & 0 \end{bmatrix} $$
 
-with $+$ for the left eye and $-$ for the right: the near-plane shift is $\frac{b}{2} \cdot \frac{N}{d_c}$, and it enters the $\frac{R+L}{R-L}$ term twice. The projection alone gives no stereo; the $\mp b/2$ eye translation in the view matrix does.
+with $+$ for the left eye and $-$ for the right: the near-plane shift is $\frac{b}{2} \cdot \frac{N}{d_c}$, and it enters the $\frac{R+L}{R-L}$ term twice.
+The projection alone gives no stereo; the $\mp b/2$ eye translation in the view matrix does.
 
 ---
 

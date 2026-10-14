@@ -4,7 +4,9 @@ Please open a pull request that adds one thing, or fixes one thing, and says why
 
 ## What belongs here
 
-Stereoscopy as a medium: presenting a different image to each eye, and everything needed to create, store, signal, deliver or display it. That includes worn displays, because a headset is a stereoscope you wear and the line from Wheatstone's mirrors to Cardboard and current head-mounted displays is one continuous idea. Historical material is welcome and wanted, because the formats only make sense in order.
+Stereoscopy as a medium: presenting a different image to each eye, and everything needed to create, store, signal, deliver or display it.
+That includes worn displays, because a headset is a stereoscope you wear and the line from Wheatstone's mirrors to Cardboard and current head-mounted displays is one continuous idea.
+Historical material is welcome and wanted, because the formats only make sense in order.
 
 ## What does not
 
@@ -23,4 +25,6 @@ Stereoscopy as a medium: presenting a different image to each eye, and everythin
 
 ## Using an AI assistant
 
-Load [ai-skill/SKILL.md](ai-skill/SKILL.md) first. It carries these rules plus the verification discipline behind every entry, and it works with any assistant. Assistance is welcome and never held against you; see [PROVENANCE.md](PROVENANCE.md#on-slop).
+Load [ai-skill/SKILL.md](ai-skill/SKILL.md) first.
+It carries these rules plus the verification discipline behind every entry, and it works with any assistant.
+Assistance is welcome and never held against you; see [PROVENANCE.md](PROVENANCE.md#on-slop).

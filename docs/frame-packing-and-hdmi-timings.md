@@ -1,15 +1,16 @@
 # Visual Guide to Stereo Frame Packing and HDMI Signal Timings
 
-This reference document details the video timing structures, framebuffer layouts, and wire-level transmission formats defined by HDMI 1.4a/1.4b and CTA-861 for stereoscopic 3D delivery. It provides both universal ASCII/Unicode diagrams and enhanced Mermaid diagrams.
+This reference document details the video timing structures, framebuffer layouts, and wire-level transmission formats defined by HDMI 1.4a/1.4b and CTA-861 for stereoscopic 3D delivery.
+It provides both universal ASCII/Unicode diagrams and enhanced Mermaid diagrams.
 
-For the separate interaction between these stereo timings, bits per component,
-chroma formats and link rate, see [Stereo 3D plus Deep Color on HDMI](stereo-deep-colour-link-budget.md).
+For the separate interaction between these stereo timings, bits per component, chroma formats and link rate, see [Stereo 3D plus Deep Color on HDMI](stereo-deep-colour-link-budget.md).
 
 ---
 
 ## 1. Overview of HDMI 1.4 Stereoscopic Structures
 
-HDMI 1.4 specifies how stereoscopic 3D frame layouts cross the digital video link: eight structures, each named by a four-bit `3D_Structure` code. They differ in how much of each eye survives the trip.
+HDMI 1.4 specifies how stereoscopic 3D frame layouts cross the digital video link: eight structures, each named by a four-bit `3D_Structure` code.
+They differ in how much of each eye survives the trip.
 
 ```
 +-------------------------------------------------------------------------------+
@@ -154,11 +155,11 @@ block-beta
 
 ### 3.3 Line Alternative
 
-Line alternative (Code 2) carries the left and right eyes on alternating lines. It is a signal structure, not to be confused with a passive (film-patterned retarder) panel's own row interleaving, which the display performs internally from whatever structure arrives.
+Line alternative (Code 2) carries the left and right eyes on alternating lines.
+It is a signal structure, not to be confused with a passive (film-patterned retarder) panel's own row interleaving, which the display performs internally from whatever structure arrives.
 
-Column interleaving is not an HDMI `3D_Structure`. It is
-`frame_packing_arrangement_type` 1 in the H.264 SEI vocabulary—an example of
-two standards using different format lists that must not be merged.
+Column interleaving is not an HDMI `3D_Structure`.
+It is `frame_packing_arrangement_type` 1 in the H.264 SEI vocabulary: an example of two standards using different format lists that must not be merged.
 
 ```
    Scanline 0: [ L L L L L L L L L L L L L L L L ] (Left Eye)
@@ -171,7 +172,9 @@ two standards using different format lists that must not be merged.
 
 ## 4. HDMI Vendor-Specific InfoFrame (VSIF) Signalling
 
-An HDMI sink is told to interpret a compatible video timing as 3D by a Vendor-Specific InfoFrame (VSIF) whose PB4 announces a 3D format. Whether it switches automatically still depends on the sink, the timing and its advertised capabilities. The layout below is the one Linux packs (`hdmi_vendor_infoframe_pack_only()` in `drivers/video/hdmi.c`):
+An HDMI sink is told to interpret a compatible video timing as 3D by a Vendor-Specific InfoFrame (VSIF) whose PB4 announces a 3D format.
+Whether it switches automatically still depends on the sink, the timing and its advertised capabilities.
+The layout below is the one Linux packs (`hdmi_vendor_infoframe_pack_only()` in `drivers/video/hdmi.c`):
 
 ```
 +-------------------------------------------------------------------------------+
@@ -218,9 +221,8 @@ sequenceDiagram
 | Side-by-Side Half | 8 | 1920 px | 1080 lines | Standard VBLANK | 50 / 59.94 / 60 Hz |
 | Top-and-Bottom | 6 | 1920 px | 1080 lines | Standard VBLANK | 24 / 50 / 60 Hz |
 
-These are common CTA/HDMI examples, not a universal promise that every sink
-accepts every row. The mandatory HDMI 1.4a baseline and any additional
-combinations declared by the sink's EDID decide the actual mode set.
+These are common CTA/HDMI examples, not a universal promise that every sink accepts every row.
+The mandatory HDMI 1.4a baseline and any additional combinations declared by the sink's EDID decide the actual mode set.
 
 ---
 

@@ -48,9 +48,8 @@ graph TD
 
 Parallax ($p$) is the distance between corresponding points of the left and right eye images on the display screen.
 
-The positive/negative naming below is the common cinema convention. Some
-computer-vision texts reverse the signs, so equations and interchange formats
-should define their convention rather than relying on the words alone.
+The positive/negative naming below is the common cinema convention.
+Some computer-vision texts reverse the signs, so equations and interchange formats should define their convention rather than relying on the words alone.
 
 ```
 1. ZERO PARALLAX (Screen Plane)
@@ -95,37 +94,30 @@ block-beta
 
 A traditional practical rule for natural depth:
 
-$$
-B = \frac{D_{\text{near}}}{30}
-$$
+$$ B = \frac{D_{\text{near}}}{30} $$
 
 Where:
 - $B$ = Camera baseline (distance between lens centers)
 - $D_{\text{near}}$ = Distance from camera to nearest subject in scene
 
-This is a starting heuristic, not a comfort or safety test. Screen size,
-viewing distance, focal length and the far limit of the scene all affect the
-displayed parallax; the budget calculation below is the stronger check.
+This is a starting heuristic, not a comfort or safety test.
+Screen size, viewing distance, focal length and the far limit of the scene all affect the displayed parallax; the budget calculation below is the stronger check.
 
 ### 3.2 Parallax Budget: From the Scene's Depth Range to a Baseline
 
-For parallel cameras (convergence set afterwards by horizontal image translation), a point at distance $D$ lands $f B / D$ apart on the two sensors. Between the nearest and farthest subjects the disparity therefore spans
+For parallel cameras (convergence set afterwards by horizontal image translation), a point at distance $D$ lands $f B / D$ apart on the two sensors.
+Between the nearest and farthest subjects the disparity therefore spans
 
-$$
-\Delta d = f \, B \left( \frac{1}{D_{\text{near}}} - \frac{1}{D_{\text{far}}} \right)
-$$
+$$ \Delta d = f \, B \left( \frac{1}{D_{\text{near}}} - \frac{1}{D_{\text{far}}} \right) $$
 
 on the sensor, and that span is magnified on the display by $W_{\text{screen}} / W_{\text{sensor}}$:
 
-$$
-\Delta p = \Delta d \cdot \frac{W_{\text{screen}}}{W_{\text{sensor}}}
-$$
+$$ \Delta p = \Delta d \cdot \frac{W_{\text{screen}}}{W_{\text{sensor}}} $$
 
-Horizontal image translation moves the whole span forward or back but does not change its size, so the span is what the baseline controls. Solving for the largest baseline that keeps $\Delta p$ inside a chosen budget $p_{\text{budget}}$:
+Horizontal image translation moves the whole span forward or back but does not change its size, so the span is what the baseline controls.
+Solving for the largest baseline that keeps $\Delta p$ inside a chosen budget $p_{\text{budget}}$:
 
-$$
-B_{\text{max}} = \frac{p_{\text{budget}} \, W_{\text{sensor}}}{W_{\text{screen}} \, f \left( \frac{1}{D_{\text{near}}} - \frac{1}{D_{\text{far}}} \right)}
-$$
+$$ B_{\text{max}} = \frac{p_{\text{budget}} \, W_{\text{sensor}}}{W_{\text{screen}} \, f \left( \frac{1}{D_{\text{near}}} - \frac{1}{D_{\text{far}}} \right)} $$
 
 Where:
 - $f$ = Lens focal length
@@ -133,7 +125,8 @@ Where:
 - $D_{\text{near}}$, $D_{\text{far}}$ = Distances to the nearest and farthest subjects
 - $W_{\text{sensor}}$, $W_{\text{screen}}$ = Sensor width and displayed image width
 
-The budget is a comfort choice, commonly expressed as a small percentage of screen width. One limit is physical rather than a matter of taste: positive parallax wider than the viewer's own eye separation (about 65 mm) makes the eyes diverge, so the far end of the span must stay below it on the largest screen the picture will be shown on.
+The budget is a comfort choice, commonly expressed as a small percentage of screen width.
+One limit is physical rather than a matter of taste: positive parallax wider than the viewer's own eye separation (about 65 mm) makes the eyes diverge, so the far end of the span must stay below it on the largest screen the picture will be shown on.
 
 ---
 

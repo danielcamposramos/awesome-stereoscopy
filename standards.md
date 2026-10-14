@@ -1,9 +1,7 @@
 # Stereoscopy standards and primary references
 
-This index points to the documents that define how stereoscopic intent moves
-from a coded video stream or container to a player, compositor, graphics driver
-and display. Edition pages are pinned where reproducibility matters; family
-landing pages are also included so readers can find later revisions.
+This index points to the documents that define how stereoscopic intent moves from a coded video stream or container to a player, compositor, graphics driver and display.
+Edition pages are pinned where reproducibility matters; family landing pages are also included so readers can find later revisions.
 
 The distinction used throughout this list is deliberate:
 
@@ -11,10 +9,8 @@ The distinction used throughout this list is deliberate:
 - **Implementation behaviour** comes from a named encoder, decoder or driver.
 - **Measured hardware behaviour** comes from a controlled device test.
 
-An IDR-correlated message cadence observed in an x264 file is therefore not
-presented as the lifetime rule of the H.264 message. The message's repetition
-field defines decoder persistence; where an encoder chooses to repeat the
-message is a separate implementation decision.
+An IDR-correlated message cadence observed in an x264 file is therefore not presented as the lifetime rule of the H.264 message.
+The message's repetition field defines decoder persistence; where an encoder chooses to repeat the message is a separate implementation decision.
 
 ## Coded-video signalling
 
@@ -24,20 +20,13 @@ message is a separate implementation decision.
 - [Pinned August 2024 edition](https://www.itu.int/rec/T-REC-H.264-202408-S/en)
 - [January 2012 edition used for clause-level verification](https://www.itu.int/rec/T-REC-H.264-201201-S/en)
 
-Annex D defines Supplemental Enhancement Information. In the verified 2012
-edition, clauses D.1.25 and D.2.25 define the frame-packing-arrangement syntax
-and semantics. The
-`frame_packing_arrangement` message carries the packing type, view order,
-quincunx flag, cancellation state and
-`frame_packing_arrangement_repetition_period`. A repetition period of zero is
-current-frame-only; a non-zero value makes the arrangement persistent under the
-message's specified later-message/cancellation/coded-video-sequence boundaries.
+Annex D defines Supplemental Enhancement Information.
+In the verified 2012 edition, clauses D.1.25 and D.2.25 define the frame-packing-arrangement syntax and semantics.
+The `frame_packing_arrangement` message carries the packing type, view order, quincunx flag, cancellation state and `frame_packing_arrangement_repetition_period`.
+A repetition period of zero is current-frame-only; a non-zero value makes the arrangement persistent under the message's specified later-message/cancellation/coded-video-sequence boundaries.
 It does not mean "until the next IDR".
 
-Search terms inside the recommendation:
-`frame_packing_arrangement_cancel_flag`,
-`frame_packing_arrangement_repetition_period`, and
-`frame_packing_arrangement_type`.
+Search terms inside the recommendation: `frame_packing_arrangement_cancel_flag`, `frame_packing_arrangement_repetition_period`, and `frame_packing_arrangement_type`.
 
 ### ITU-T H.265 | ISO/IEC 23008-2 (HEVC)
 
@@ -45,17 +34,11 @@ Search terms inside the recommendation:
 - [Pinned July 2024 edition](https://www.itu.int/rec/T-REC-H.265-202407-S/en)
 - [April 2013 edition used for clause-level verification](https://www.itu.int/rec/T-REC-H.265-201304-S/en)
 
-In the verified 2013 edition, clauses D.2.16 and D.3.16 define the syntax and
-semantics. HEVC's frame-packing message uses
-`frame_packing_arrangement_persistence_flag` rather than H.264's repetition
-period. A clear flag limits the arrangement to the current picture; a set flag
-retains it according to the message's persistence semantics until it is
-superseded or cancelled.
+In the verified 2013 edition, clauses D.2.16 and D.3.16 define the syntax and semantics.
+HEVC's frame-packing message uses `frame_packing_arrangement_persistence_flag` rather than H.264's repetition period.
+A clear flag limits the arrangement to the current picture; a set flag retains it according to the message's persistence semantics until it is superseded or cancelled.
 
-Search terms inside the recommendation:
-`frame_packing_arrangement_persistence_flag`,
-`frame_packing_arrangement_cancel_flag`, and
-`frame_packing_arrangement_type`.
+Search terms inside the recommendation: `frame_packing_arrangement_persistence_flag`, `frame_packing_arrangement_cancel_flag`, and `frame_packing_arrangement_type`.
 
 ### ITU-T H.274 | ISO/IEC 23002-7 (versatile SEI messages)
 
@@ -63,33 +46,26 @@ Search terms inside the recommendation:
 - [Pinned September 2023 edition](https://www.itu.int/rec/T-REC-H.274-202309-S/en)
 - [August 2020 edition used for clause-level verification](https://www.itu.int/rec/T-REC-H.274-202008-S/en)
 
-H.274 defines codec-independent versatile SEI messages used with newer video
-coding systems, including VVC. Its frame-packing syntax likewise carries a
-persistence flag. In the verified 2020 edition, clauses 8.6.1 and 8.6.2 define
-the syntax and semantics: zero is current-picture-only, one persists in output
-order until a new coded-layer video sequence, end of bitstream, or a later
-applicable frame-packing message. A decoder implementation that shares
-H.264/H.265/H.274 SEI code must still preserve the scalar frame-packing state
-across that codec's own frame/thread contexts.
+H.274 defines codec-independent versatile SEI messages used with newer video coding systems, including VVC.
+Its frame-packing syntax likewise carries a persistence flag.
+In the verified 2020 edition, clauses 8.6.1 and 8.6.2 define the syntax and semantics: zero is current-picture-only, one persists in output order until a new coded-layer video sequence, end of bitstream, or a later applicable frame-packing message.
+A decoder implementation that shares H.264/H.265/H.274 SEI code must still preserve the scalar frame-packing state across that codec's own frame/thread contexts.
 
 ## Broadcast and delivery profiles
 
-### ETSI TS 101 547-2 — DVB frame-compatible 3DTV
+### ETSI TS 101 547-2: DVB frame-compatible 3DTV
 
 - [Version 1.2.1 PDF from ETSI](https://www.etsi.org/deliver/etsi_ts/101500_101599/10154702/01.02.01_60/ts_10154702v010201p.pdf)
 
-Clause 6.4.1 specifies use of the H.264 frame-packing-arrangement SEI in a
-frame-compatible 3D service. This application profile requires a much denser
-message cadence than common files and defines cancellation signalling around
-2D/3D transitions. That delivery rule is evidence about DVB services, not a
-redefinition of H.264's underlying persistence fields.
+Clause 6.4.1 specifies use of the H.264 frame-packing-arrangement SEI in a frame-compatible 3D service.
+This application profile requires a much denser message cadence than common files and defines cancellation signalling around 2D/3D transitions.
+That delivery rule is evidence about DVB services, not a redefinition of H.264's underlying persistence fields.
 
 ### DVB specification catalogue
 
 - [DVB specifications](https://dvb.org/specifications/)
 
-Use the catalogue to locate later frame-compatible and service-compatible 3DTV
-documents and their status.
+Use the catalogue to locate later frame-compatible and service-compatible 3DTV documents and their status.
 
 ## Container signalling
 
@@ -98,9 +74,9 @@ documents and their status.
 - [Matroska element specification](https://www.matroska.org/technical/elements.html)
 - [Matroska specification source](https://github.com/ietf-wg-cellar/matroska-specification)
 
-`StereoMode` is track/container metadata. It is not the H.264/H.265 in-stream
-frame-packing SEI, and remuxing or delivery paths may preserve one while losing
-the other. A player must also define precedence when both exist and disagree.
+`StereoMode` is track/container metadata.
+It is not the H.264/H.265 in-stream frame-packing SEI, and remuxing or delivery paths may preserve one while losing the other.
+A player must also define precedence when both exist and disagree.
 
 ## Display-link signalling
 
@@ -113,11 +89,9 @@ Detailed raster visualisations, VSIF packet layouts, and signal timings are docu
 - [Linux HDMI wire definitions](https://github.com/torvalds/linux/blob/master/include/linux/hdmi.h)
 - [Linux DRM stereo-mode definitions](https://github.com/torvalds/linux/blob/master/include/drm/drm_modes.h)
 
-The public HDMI material establishes the 1.4-era stereo feature family. The
-Linux headers are the auditable implementation vocabulary for frame packing,
-field/line alternatives, full and half side-by-side, top-and-bottom and depth
-structures. Capability exposure through EDID/DRM and actual scanout/infoframe
-generation are separate driver responsibilities.
+The public HDMI material establishes the 1.4-era stereo feature family.
+The Linux headers are the auditable implementation vocabulary for frame packing, field/line alternatives, full and half side-by-side, top-and-bottom and depth structures.
+Capability exposure through EDID/DRM and actual scanout/infoframe generation are separate driver responsibilities.
 
 ### DisplayPort and DVI
 
@@ -125,12 +99,9 @@ generation are separate driver responsibilities.
 - [Linux DisplayPort stereo field definitions](https://github.com/torvalds/linux/blob/master/include/drm/display/drm_dp.h)
 - [DVI 1.0, DDWG, April 1999 (archived copy)](https://glenwing.github.io/docs/DVI-1.0.pdf)
 
-DisplayPort carries stereo natively: VESA's FAQ states that the protocol
-transmits left- and right-eye display data, and the Linux header defines the
-stereo field of the Main Stream Attribute (no 3D, right eye, left eye). DVI has
-no stereo signalling of its own. A DVI output driving an HDMI sink through a
-passive adapter carries HDMI's 3D InfoFrame only because the sink declares
-HDMI in its EDID, and the same holds for a DP++ output in TMDS mode.
+DisplayPort carries stereo natively: VESA's FAQ states that the protocol transmits left- and right-eye display data, and the Linux header defines the stereo field of the Main Stream Attribute (no 3D, right eye, left eye).
+DVI has no stereo signalling of its own.
+A DVI output driving an HDMI sink through a passive adapter carries HDMI's 3D InfoFrame only because the sink declares HDMI in its EDID, and the same holds for a DP++ output in TMDS mode.
 
 ### HDR over HDMI (deep-colour container and static metadata)
 
@@ -140,35 +111,15 @@ HDMI in its EDID, and the same holds for a DP++ output in TMDS mode.
 - [Pinned in-force edition BT.2100-3, February 2025](https://www.itu.int/rec/R-REC-BT.2100-3-202502-I/en)
 - [Linux DRM HDR metadata uapi definition](https://github.com/torvalds/linux/blob/master/include/uapi/drm/drm_mode.h)
 
-HDR is the colour-depth-domain neighbour of the stereo signalling indexed
-above and rides the same EDID blocks and InfoFrame machinery. HDMI 2.0a
-added HDR transport to the link by referencing CEA-861.3; CTA-861.3-A
-defines the HDR Static Metadata Data Block in EDID and the Dynamic Range
-and Mastering InfoFrame on the wire; BT.2100 pins the 10- and 12-bit
-PQ/HLG image parameters. The classic HDR10 wire transport carries 10-bit
-samples in a 12-bit YCbCr 4:2:2 container, so a link layer that clips wire
-depth or mis-parses capability blocks gates HDR from below. The CTA
-standard is member-priced, so the official CTA-hosted preview is the link
-usable for direct citation.
+HDR is the colour-depth-domain neighbour of the stereo signalling indexed above and rides the same EDID blocks and InfoFrame machinery.
+HDMI 2.0a added HDR transport to the link by referencing CEA-861.3; CTA-861.3-A defines the HDR Static Metadata Data Block in EDID and the Dynamic Range and Mastering InfoFrame on the wire; BT.2100 pins the 10- and 12-bit PQ/HLG image parameters.
+The classic HDR10 wire transport carries 10-bit samples in a 12-bit YCbCr 4:2:2 container, so a link layer that clips wire depth or mis-parses capability blocks gates HDR from below.
+The CTA standard is member-priced, so the official CTA-hosted preview is the link usable for direct citation.
 
-Driver note (September 2026 source survey): HDR support across Linux GPU
-drivers is uneven, and the location of a defect determines who can repair
-it. i915 is the reference path — [the DRM HDR metadata layer originated
-there](https://lists.freedesktop.org/archives/dri-devel/2019-March/211334.html).
-amdgpu's pipeline is wired in open code, where colour/HDR-adjacent defects
-such as [CTA-mode quantization range](https://lkml.iu.edu/2609.1/08639.html)
-and [swapped gamma transfer functions](https://lore.gitlab.freedesktop.org/drm-ai-reviews/20260311211837.2482799-1-alex.hung@amd.com/)
-can be reviewed and fixed publicly. A [source audit of nouveau 7.3-rc4](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/research/nouveau-hdr-gap-2026-09-22.md)
-finds no HDR metadata connector property or DRM InfoFrame emission path;
-its [HDMI Deep Color series](https://lore.kernel.org/dri-devel/20260922215317.611388-1-Capitain_Jack@yahoo.com/)
-and [colour-format follow-on](https://lore.kernel.org/dri-devel/20260922215336.612239-1-Capitain_Jack@yahoo.com/)
-were since measured on a stereo-capable sink, 12-bpc links and 3D together,
-and submitted.
-The proprietary NVIDIA stack exposes the property through open glue but
-hands output policy to closed NVKMS; [the measured 10-vs-12-bit deep-colour
-narrowing and related HDR reports](https://github.com/NVIDIA/open-gpu-kernel-modules/issues/1384)
-therefore require NVIDIA's participation. What is repairable is what can be
-read.
+Driver note (September 2026 source survey): HDR support across Linux GPU drivers is uneven, and the location of a defect determines who can repair it. i915 is the reference path: [the DRM HDR metadata layer originated there](https://lists.freedesktop.org/archives/dri-devel/2019-March/211334.html). amdgpu's pipeline is wired in open code, where colour/HDR-adjacent defects such as [CTA-mode quantization range](https://lkml.iu.edu/2609.1/08639.html) and [swapped gamma transfer functions](https://lore.gitlab.freedesktop.org/drm-ai-reviews/20260311211837.2482799-1-alex.hung@amd.com/) can be reviewed and fixed publicly.
+A [source audit of nouveau 7.3-rc4](https://github.com/danielcamposramos/sony-bravia-linux/blob/main/docs/research/nouveau-hdr-gap-2026-09-22.md) finds no HDR metadata connector property or DRM InfoFrame emission path; its [HDMI Deep Color series](https://lore.kernel.org/dri-devel/20260922215317.611388-1-Capitain_Jack@yahoo.com/) and [colour-format follow-on](https://lore.kernel.org/dri-devel/20260922215336.612239-1-Capitain_Jack@yahoo.com/) were since measured on a stereo-capable sink, 12-bpc links and 3D together, and submitted.
+The proprietary NVIDIA stack exposes the property through open glue but hands output policy to closed NVKMS; [the measured 10-vs-12-bit deep-colour narrowing and related HDR reports](https://github.com/NVIDIA/open-gpu-kernel-modules/issues/1384) therefore require NVIDIA's participation.
+What is repairable is what can be read.
 
 ## Implementations useful for cross-checking
 
@@ -183,45 +134,27 @@ read.
 
 - [DASH-IF IOP Part 7: Video, v5.0.0 (2022-05)](https://dashif.org/docs/IOP-Guidelines/DASH-IF-IOP-Part7-v5.0.0.pdf)
 
-ISO/IEC 23009-1 clause 5.8.5.3 defines a `FramePacking` descriptor for an
-Adaptation Set or Representation, carrying a `@schemeIdUri` and a `@value`.
-Two codec-specific `@schemeIdUri` forms exist for backward compatibility —
-`urn:mpeg:dash:14496:10:frame_packing_arrangement_type:2011` for H.264
-content and `urn:mpeg:dash:13818:1:stereo_video_format_type:2011` for
-MPEG-2 content — both taking the value defined for `VideoFramePackingType`
-in the CICP registry, ISO/IEC 23090-1. DASH-IF's own interoperability
-guidelines recommend using that CICP scheme directly instead,
-`urn:mpeg:mpegB:cicp:VideoFramePackingType`, rather than either legacy
-form. ISO/IEC 23009-1 itself is paywalled at ISO; the citation above is
-DASH-IF's freely readable interoperability guideline, which names the
-clause and all three schemeIdUri values.
+ISO/IEC 23009-1 clause 5.8.5.3 defines a `FramePacking` descriptor for an Adaptation Set or Representation, carrying a `@schemeIdUri` and a `@value`.
+Two codec-specific `@schemeIdUri` forms exist for backward compatibility, `urn:mpeg:dash:14496:10:frame_packing_arrangement_type:2011` for H.264 content and `urn:mpeg:dash:13818:1:stereo_video_format_type:2011` for MPEG-2 content, both taking the value defined for `VideoFramePackingType` in the CICP registry, ISO/IEC 23090-1.
+DASH-IF's own interoperability guidelines recommend using that CICP scheme directly instead, `urn:mpeg:mpegB:cicp:VideoFramePackingType`, rather than either legacy form.
+ISO/IEC 23009-1 itself is paywalled at ISO; the citation above is DASH-IF's freely readable interoperability guideline, which names the clause and all three schemeIdUri values.
 
 ## Still-image container signalling
 
 ### MPO stereo attribute tags (CIPA DC-007)
 
-CIPA's Multi-Picture Format standard — DC-007, currently at edition
-DC-007-Translation-2026 (see [CIPA standards](https://www.cipa.jp/e/std/std-sec.html)
-in the main list, where the PDF sits behind a disclaimer page rather than
-a direct link) — carries recommended stereo attribute tags beyond the two
-JPEG images themselves. Table 8 of the standard recommends, for Disparity
-images: Convergence Angle, tag `0xB205`, type SRATIONAL, in degrees; and
-Baseline Length, tag `0xB206`, type RATIONAL, in metres. Recorded here so a
-writer or reader of MPO files knows what to look for, separately from the
-verification of the two-image index itself.
+CIPA's Multi-Picture Format standard: DC-007, currently at edition DC-007-Translation-2026 (see [CIPA standards](https://www.cipa.jp/e/std/std-sec.html) in the main list, where the PDF sits behind a disclaimer page rather than a direct link): carries recommended stereo attribute tags beyond the two JPEG images themselves.
+Table 8 of the standard recommends, for Disparity images: Convergence Angle, tag `0xB205`, type SRATIONAL, in degrees; and Baseline Length, tag `0xB206`, type RATIONAL, in metres.
+Recorded here so a writer or reader of MPO files knows what to look for, separately from the verification of the two-image index itself.
 
 ## Why the documents are linked, not mirrored
 
-ITU marks the selected recommendations as freely available for download, but
-its [copyright notice](https://www.itu.int/en/Pages/copyright.aspx) says ITU
-holds copyright and asks users to request permission before reproducing its
-materials. ETSI and HDMI documents have their own terms. This CC0 repository
-therefore hosts the index, interoperable facts and links—not unlicensed copies
-of standards PDFs. A document can be added locally only when its licence or
-written permission allows redistribution under compatible terms.
+ITU marks the selected recommendations as freely available for download, but its [copyright notice](https://www.itu.int/en/Pages/copyright.aspx) says ITU holds copyright and asks users to request permission before reproducing its materials.
+ETSI and HDMI documents have their own terms.
+This CC0 repository therefore hosts the index, interoperable facts and links, not unlicensed copies of standards PDFs.
+A document can be added locally only when its licence or written permission allows redistribution under compatible terms.
 
-For download-integrity provenance, these are the SHA-256 hashes of the official
-PDFs retrieved for clause verification on 2026-09-21:
+For download-integrity provenance, these are the SHA-256 hashes of the official PDFs retrieved for clause verification on 2026-09-21:
 
 - H.264 (01/2012): `44107ff68c172de90a4a234c58c68ed18f915f92cbce1df07aea8a756a4f5913`
 - H.265 (04/2013): `0b9de482de3f901e7f6fa2192bfae30c01a96b7b5651f166ff67249b7d186c68`
