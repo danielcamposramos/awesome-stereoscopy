@@ -150,7 +150,7 @@ Recorded here so a writer or reader of MPO files knows what to look for, separat
 ### SVGStereo (a mark for SVG, which has none of its own)
 
 SVG has no stereo field, so Sparky Stereo OS defines one: [SVGStereo](https://github.com/Sparky-OS/svgstereo), version 0.2 (14 October 2026), CC0.
-One namespaced attribute on the root `svg` element, `svgstereo:layout`, names the packing; its values map one to one onto Matroska `StereoMode` ([RFC 9559](https://www.rfc-editor.org/rfc/rfc9559)) and the H.264 and H.265 `frame_packing_arrangement_type` (Table D-8).
+One namespaced attribute on the root `svg` element, `svgstereo:layout`, names the packing; its values map one to one onto Matroska `StereoMode` ([RFC 9559](https://www.rfc-editor.org/rfc/rfc9559)) and the H.264 and H.265 `frame_packing_arrangement_type` (Table D-8 in H.264 V15, 08/2024, D-9 in V16, 06/2026).
 Version 0.2 covers animated drawings (SVG 1.1 Second Edition, chapter 19): one timeline for both views, the layout fixed while the drawing plays, and nothing crossing the boundary between the views.
 Renderers that do not read it draw the file as before, because SVG lets elements carry attributes from other namespaces ([SVG 1.1, section 23.1](https://www.w3.org/TR/SVG11/extend.html#ForeignNamespaces)).
 

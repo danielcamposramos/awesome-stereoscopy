@@ -292,7 +292,7 @@ Every stereoscopic file answers one question: where is the second eye?
 The answers, in rough order of age:
 
 - [Anaglyph 3D](https://en.wikipedia.org/wiki/Anaglyph_3D) - Both eyes multiplexed into colour channels, 1853 onwards. Lossy and universal: it plays on anything, including paper, and it survives being printed, photocopied or posted anywhere. The autostereogram above survives the same treatment, and needs no filters to do it; anaglyph's advantage is that it works on any image rather than only on images built for the trick.
-- [SVGStereo](https://github.com/Sparky-OS/svgstereo) - A proposed mark for SVG drawings that hold a stereo pair: one `layout` attribute in its own namespace on the root element, with values tied to RFC 9559 `StereoMode` and H.264/H.265 Table D-8. Renderers that do not read it ignore it (SVG 1.1 Second Edition, section 23.1). Proposed in 2026; disclosure: Daniel, who maintains this list, wrote it.
+- [SVGStereo](https://github.com/Sparky-OS/svgstereo) - A proposed mark for SVG drawings that hold a stereo pair: one `layout` attribute in its own namespace on the root element, with values tied to RFC 9559 `StereoMode` and H.264/H.265 Table D-8 (H.264 V15, 08/2024; D-9 in H.264 V16, 06/2026). Renderers that do not read it ignore it (SVG 1.1 Second Edition, section 23.1). Proposed in 2026; disclosure: Daniel, who maintains this list, wrote it.
 
 ### Anaglyph colour codes
 
@@ -830,7 +830,7 @@ Each entry links its public branch; measurements and packages are listed on the 
 Disclosure: Daniel, who maintains this list, leads this work.
 
 - [Qt, stereo branch](https://github.com/Sparky-OS/qtbase/tree/stereo3d-csd) - Two-view EGL windows on Wayland, and client-side decorations that keep both eyes, so a Qt program's stereo surface survives the toolkit.
-- [Qt Multimedia, stereo branch](https://github.com/Sparky-OS/qtmultimedia/tree/stereo3d-6.11) - `QVideoFrameFormat::StereoMode` names every packing of H.264 and H.265 Table D-8 and RFC 9559, both eye orders, filled from FFmpeg's stereo side data.
+- [Qt Multimedia, stereo branch](https://github.com/Sparky-OS/qtmultimedia/tree/stereo3d-6.11) - `QVideoFrameFormat::StereoMode` names every packing of H.264 and H.265 Table D-8 (H.264 V15, 08/2024; D-9 in H.264 V16, 06/2026) and RFC 9559, both eye orders, filled from FFmpeg's stereo side data.
 - [MpvQt, stereo branch](https://invent.kde.org/danielcamposramos/mpvqt/-/tree/stereo3d) - The video as its own layer below the window, declared as full side by side while the video is 3D, at 10 bits or half float; Haruna and PlasmaTube build on it.
 - [Haruna, stereo branch](https://invent.kde.org/danielcamposramos/haruna/-/tree/stereo3d) - 3D video played in that layer, with the controls, subtitles and playlist identical in both eyes.
 - [Dragon Player, stereo branch](https://invent.kde.org/danielcamposramos/dragon/-/tree/stereo3d-26.04) - 3D video for every packing, with an input format menu and Swap Eyes for video that declares nothing.
