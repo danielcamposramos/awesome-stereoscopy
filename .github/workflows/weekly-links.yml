@@ -6,6 +6,7 @@ on:
 permissions:
   contents: read
   issues: write
+  actions: read
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -15,13 +16,44 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # 403/429 are usually bot-walls, not dead pages; a human checks those by hand.
-          args: --no-progress --max-concurrency 4 --accept 200..=299,403,429 './**/*.md'
-          output: ./lychee/out.md
+          # A failing link is retried after 30, 60 and 120 seconds (lychee doubles the wait).
+          args: --no-progress --max-concurrency 4 --max-retries 3 --retry-wait-time 30 --accept 200..=299,403,429 './**/*.md'
+          format: json
+          output: ./lychee/out.json
+          jobSummary: false
           fail: false
-      - name: Open an issue listing failures
-        if: steps.lychee.outputs.exit_code != 0
-        uses: peter-evans/create-issue-from-file@v5
+      # Failures are counted per link across scans; a link that passes starts over.
+      - name: Fetch the previous scan's link history
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p previous
+          run=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow weekly-links.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          if [ -n "$run" ]; then
+            gh run download "$run" --repo "$GITHUB_REPOSITORY" --name link-history --dir previous || echo "No history in run $run; counting from this scan."
+          fi
+      - id: history
+        name: Count consecutive failures per link
+        run: python3 .github/scripts/link_history.py lychee/out.json previous/link-history.json link-history.json lychee/offline.md
+      - uses: actions/upload-artifact@v4
         with:
-          title: Weekly link scan found failures
-          content-filepath: ./lychee/out.md
-          labels: dead-link
+          name: link-history
+          path: link-history.json
+          retention-days: 90
+      # Only links that failed three scans in a row open (or update) the issue; it closes when they pass.
+      - name: Open, update or close the offline-links issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OFFLINE: ${{ steps.history.outputs.offline }}
+        run: |
+          title='Links offline for three weekly scans'
+          open=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --label dead-link --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+          if [ "$OFFLINE" != 0 ]; then
+            if [ -n "$open" ]; then
+              gh issue edit "$open" --repo "$GITHUB_REPOSITORY" --body-file lychee/offline.md
+            else
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --label dead-link --body-file lychee/offline.md
+            fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --repo "$GITHUB_REPOSITORY" --comment "Every link listed here passed this week's scan."
+          fi
