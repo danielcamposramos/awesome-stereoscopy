@@ -23,6 +23,20 @@ Historical material is welcome and wanted, because the formats only make sense i
 - If a project is abandoned or a service is unreliable, say so plainly in the description. An honest note is more useful than an omission, and readers will find out anyway.
 - Historical entries should carry a date, because in this subject the date usually explains the format.
 
+## Curators
+
+The list is Daniel's, and every change goes through a pull request that he reviews as code owner.
+Regular contributors can take on an area of the list, and the steps are written here so everyone climbs the same ladder.
+
+- **Contributor.** Fork, pull request, one change per request. The checks run on their own after your first merged change.
+- **Curator.** Your name and area are listed in [`.github/CURATORS`](.github/CURATORS). On any pull request you can comment `/recheck` to rerun its checks and `/scan-links` to start the link scan of the whole list. You review submissions in your area when asked, and your review is on the record. Earned by merged entries that hold against their primary sources, honest notes on what could not be verified, and a correction handled well.
+- **Collaborator.** Write access on GitHub, the only level a repository owned by a personal account offers. You can be requested as reviewer, label and triage, rerun and approve CI, and merge a pull request once it has Daniel's review as code owner. Earned after thirty days of clean record as curator, or earlier when Daniel decides the record already shows it. The protection of `main` does not change: one code owner review, every conversation resolved and the lint check. Releases stay with Daniel.
+- **Co-curator.** A `CODEOWNERS` line for the pages of your area, so your approval closes pull requests that touch only them. Decided case by case, when the area has pages of its own.
+
+Curators, by name and area:
+
+- Sisir ([captof-omuamua](https://github.com/captof-omuamua)): historical and regional stereo photography beyond Europe and North America; curator since 21 October 2026, collaborator since 23 October 2026.
+
 ## Using an AI assistant
 
 Load [ai-skill/SKILL.md](ai-skill/SKILL.md) first.
