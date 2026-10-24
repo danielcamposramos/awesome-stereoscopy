@@ -195,6 +195,31 @@ The layout below is the one Linux packs (`hdmi_vendor_infoframe_pack_only()` in 
 +------------+-------------------------------+----------------------------------+
 ```
 
+### 4.1 Worked packets
+
+Complete packets, header to last payload byte, with the checksum worked out.
+PB0 is whatever makes all the bytes sum to a multiple of 256: for frame packing, 0x81 + 0x01 + 0x05 + 0x03 + 0x0C + 0x40 = 0xD6, and 0x100 − 0xD6 = 0x2A.
+
+```
+frame packing:          81 01 05 2A 03 0C 00 40 00
+top-and-bottom:         81 01 05 CA 03 0C 00 40 60
+side-by-side half:      81 01 06 A9 03 0C 00 40 80 00
+HDMI_VIC 1, not 3D:     81 01 05 49 03 0C 00 20 01
+```
+
+The OUI goes on the wire least significant byte first, which is why 0x000C03 reads `03 0C 00`.
+Side-by-side half is the only defined structure that carries the extra 3D_Ext_Data byte, so it alone has payload length 6.
+
+This is the HDMI 1.4 VSIF, identified by the HDMI Licensing OUI 0x000C03.
+The HDMI Forum's own VSIF reuses InfoFrame type 0x81 under a different OUI, 0xC45DD8, for later features; Linux defines the two separately (`HDMI_IEEE_OUI` and `HDMI_FORUM_IEEE_OUI` in `include/linux/hdmi.h`), and a packet of one generation must never be read as the other.
+
+The VSIF is defined in section 8.2.3 of the HDMI specification, which in 1.4a also absorbed the 3D structures first published in Appendix H.
+That section number comes from the specification's revision history; the full text is licensed by HDMI Licensing and was not read for this guide, so the byte layout above rests on the Linux implementation.
+
+[`verify_hdmi14_vsif.py`](../.github/scripts/verify_hdmi14_vsif.py) checks this section: it packs every structure and every 3D_Ext_Data value, confirms each packet above byte for byte against values worked out by hand, rejects corrupted checksums, mismatched lengths, reserved codes and HDMI Forum packets, and recomputes the frame-packing rasters in section 5 from the 2D timings in Linux's CTA-861 table.
+It checks arithmetic only, not how a display responds.
+Run it with `python3 .github/scripts/verify_hdmi14_vsif.py`; it needs nothing beyond Python 3.
+
 ```mermaid
 sequenceDiagram
     autonumber
