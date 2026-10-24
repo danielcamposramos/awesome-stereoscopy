@@ -9,6 +9,8 @@ Daniel directed the work and verified the claims and measured results.
 
 For the field-sequential preservation guide and its verification, contributor Sisir (captof-omuamua) worked with OpenAI Codex, which researched the format behaviour, wrote the source-linked guide and authored the checks for pixel samples, eye order, cadence and timestamps. Daniel ran the three test groups against the FFmpeg 9.0.2 shipped in Sparky Stereo OS, and they passed. The synthetic fixtures verify packing and timestamps; they do not establish exposure timing in real cameras.
 
+For the worked HDMI 1.4 Vendor-Specific InfoFrame packets and their arithmetic check (section 4.1 of the frame-packing guide), contributor Sisir (captof-omuamua) worked with Claude (Anthropic) via Claude Code, as disclosed in the pull request. Before merge, the four packet checksums and the two frame-packing rasters were worked out again by hand against the CTA-861 timings. The check covers arithmetic only, not how a display responds.
+
 The federated Signal Ledger was designed through the real ACIG/MVCIC partner chain (Kimi K3, GLM, DeepSeek, Nemotron and Gemma completed; Qwen's lane returned HTTP 410), implemented by OpenAI Codex, and adversarially reviewed by another Codex partner.
 Those reviews are design provenance, not physical evidence.
 Daniel remains the named observer for sink behaviour; this list stores only semantic hashes and authority expectations for canonical claims in `sony-bravia-linux`.
