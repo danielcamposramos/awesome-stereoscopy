@@ -1,0 +1,27 @@
+name: HDMI 1.4 VSIF arithmetic
+
+on:
+  pull_request:
+    paths:
+      - 'docs/frame-packing-and-hdmi-timings.md'
+      - '.github/scripts/verify_hdmi14_vsif.py'
+      - '.github/workflows/hdmi14-vsif.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/frame-packing-and-hdmi-timings.md'
+      - '.github/scripts/verify_hdmi14_vsif.py'
+      - '.github/workflows/hdmi14-vsif.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify VSIF bytes, checksums and frame-packing rasters
+        run: python3 .github/scripts/verify_hdmi14_vsif.py
