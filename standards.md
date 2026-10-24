@@ -171,4 +171,5 @@ For download-integrity provenance, these are the SHA-256 hashes of the official 
 
 Proposed `_KDE_NET_WM_STEREO_CONTENT_CHILD_PLACE`, support version 8: an independent destination rectangle and below-parent placement for an already listed native child, without changing its source-sized buffer or its existing stereo declaration.
 The [stereo-layer specification](https://github.com/Sparky-OS/stereo-layer/blob/main/docs/x11-child-place.md) defines the five CARDINAL values, limits, ordinary-layer behaviour and input requirements.
+A child that holds both views at full width declares the size of one view in its own `_KDE_NET_WM_STEREO_CONTENT_ONE_VIEW_SIZE` at the same support version 8; the declared place wins over it, and the specification gives the order.
 This is a compositor transport property, not a file-format mark.
