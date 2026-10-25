@@ -154,6 +154,16 @@ One namespaced attribute on the root `svg` element, `svgstereo:layout`, names th
 Version 0.2 covers animated drawings (SVG 1.1 Second Edition, chapter 19): one timeline for both views, the layout fixed while the drawing plays, and nothing crossing the boundary between the views.
 Renderers that do not read it draw the file as before, because SVG lets elements carry attributes from other namespaces ([SVG 1.1, section 23.1](https://www.w3.org/TR/SVG11/extend.html#ForeignNamespaces)).
 
+## Web signalling
+
+### WebXR Device API and WebXR Layers (W3C Immersive Web Working Group)
+
+The [WebXR Device API](https://www.w3.org/TR/webxr/) is written in the open at [immersive-web/webxr](https://github.com/immersive-web/webxr), which this index follows.
+Its `inline-stereo` session mode ([pull request #1436](https://github.com/immersive-web/webxr/pull/1436), merged 9 June 2026, from issue [#1348](https://github.com/immersive-web/webxr/issues/1348)) gives a session drawn inside the page one view per eye; when head tracking is not granted, the browser may show the content in fixed stereo.
+That is the first standard way for a page to draw stereo outside an immersive session, so a 3D screen can show it with no headset.
+Questions raised in its review stay open: whether a browser may show one view for accessibility, how projection and view matrices are defined for tracked inline stereo, and content at a scale other than 1:1.
+[WebXR Layers](https://www.w3.org/TR/webxrlayers-1/) names `"stereo-left-right"` and `"stereo-top-bottom"` in `XRLayerLayout`, for layers made from an HTML video element too; layers exist only in an immersive session.
+
 ## Why the documents are linked, not mirrored
 
 ITU marks the selected recommendations as freely available for download, but its [copyright notice](https://www.itu.int/en/Pages/copyright.aspx) says ITU holds copyright and asks users to request permission before reproducing its materials.
