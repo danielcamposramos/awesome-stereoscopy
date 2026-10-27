@@ -74,6 +74,11 @@ Use the catalogue to locate later frame-compatible and service-compatible 3DTV d
 - [Matroska element specification](https://www.matroska.org/technical/elements.html)
 - [Matroska specification source](https://github.com/ietf-wg-cellar/matroska-specification)
 
+The live [IANA Matroska registry](https://www.iana.org/assignments/matroska) extends the RFC's original table.
+On 26 October 2026 IANA assigned StereoMode 15 through 20 for packed picture-and-depth layouts, after Track Plane Types 3 through 5 on 20 October for separate left-eye, right-eye and background depth tracks.
+Daniel Ramos is the change controller; both registrations reference the [immutable stereo-layer v1.9.0 specification](https://github.com/Sparky-OS/stereo-layer/blob/v1.9.0/docs/depth-marks.md).
+Registry assignment is separate from support in any muxer, decoder or player.
+
 `StereoMode` is track/container metadata.
 It is not the H.264/H.265 in-stream frame-packing SEI, and remuxing or delivery paths may preserve one while losing the other.
 A player must also define precedence when both exist and disagree.
