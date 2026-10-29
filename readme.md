@@ -1030,6 +1030,14 @@ The optics and the tracking changed; the stereo pair did not.
 - [Apple Vision Pro](https://en.wikipedia.org/wiki/Apple_Vision_Pro) - Notable here for making stereoscopic capture ordinary again: its "spatial video" is an MV-HEVC stereo pair shot on a phone.
 - [Augmented reality](https://en.wikipedia.org/wiki/Augmented_reality) - The same stereo optics aimed at the world instead of a virtual scene; "mixed reality" redirects here.
 
+### DIY headsets and optical calibration
+
+- [Relativty](https://github.com/relativty/Relativty) - Open hardware, firmware and a SteamVR driver for a DIY stereo headset. The May 2023 build guide separates the PC-connected displays from the Arduino IMU tracker; the basic design tracks rotation, with no built-in controllers.
+- [CNCDan DIY VR](https://github.com/dmcke5/DIY_VR) - Printable headset with adjustable eye spacing, replaceable lenses and STEP assembly models. The repository preserves the Relativty-based V1 and documents V2 with HadesVR firmware, controller support and optional positional tracking through PSMoveServiceEX.
+- [OpenVR Arduino HMD](https://github.com/r57zone/OpenVR-ArduinoHMD) - SteamVR driver pairing an HDMI display with an Arduino rotation tracker. Its Windows-oriented setup documents eye spacing, lens distortion, display placement and per-eye rendering resolution.
+- [Project North Star calibration](https://docs.projectnorthstar.org/project-north-star/calibration/getting-started) - Optical calibration for an open, see-through AR headset: measures the effects of display and reflector placement on each eye's image. Its 2D distortion-map and 3D geometry methods produce different, non-interchangeable calibration files.
+- [DIY VR: How to build your own headset, and why you probably won't want to](https://arstechnica.com/gadgets/2026/10/diy-vr-how-to-build-your-own-headset-and-why-you-probably-wont-want-to/) - Tim Stevens, Ars Technica, 19 October 2026: a Relativty/CNCDan build account covering optics, fragile displays, sensor substitution, calibration and fit; [archived capture](https://web.archive.org/web/20261019211337/https://arstechnica.com/gadgets/2026/10/diy-vr-how-to-build-your-own-headset-and-why-you-probably-wont-want-to/).
+
 ### Open software for headsets
 
 - [OpenXR](https://en.wikipedia.org/wiki/OpenXR) - The Khronos standard that replaced one vendor API per headset; [SDK and specification sources](https://github.com/KhronosGroup/OpenXR-SDK).
@@ -1079,8 +1087,12 @@ The lenses come in a phone holder that still sells well: a [search for "vr glass
 - [Sunshine](https://github.com/LizardByte/Sunshine) and [Moonlight](https://github.com/moonlight-stream/moonlight-qt) - Open-source (GPL-3.0) game streaming, a PC host and a client for phones, televisions and other computers. Neither knows anything about stereo, which is exactly why they work here: they carry whatever frame the PC renders, so a side-by-side frame from Depth3D reaches the phone intact.
 
 **What this path does not solve.**
-The phone still needs a player that sends each half of a side-by-side frame to one eye, and no open-source Android player that does this and is clearly maintained was found.
-VLC [renders side-by-side sources as anaglyph](https://wiki.videolan.org/3D) on the desktop rather than splitting them for a viewer.
+Transporting the pair still needs a receiver that sends the correct image to each eye and applies the viewer's optical calibration.
+[Flat Headset](https://github.com/Sparky-OS/flat-headset) now provides an open Android implementation for Sparky Stereo OS's desktop stream, with viewer-profile lens correction and no head tracking.
+Its [19 October physical test](https://github.com/Sparky-OS/flat-headset/blob/main/docs/usb-desktop-2026-10-19.md) established a usable desktop with responsive mouse control on a Redmi Note 7 over USB tethering at half top-and-bottom resolution; video still had uneven cadence.
+The [development APK and source](https://github.com/Sparky-OS/flat-headset/tree/main/apk) are published as a debug-signed test build, with matching PC updates required.
+This is a qualified development path for that desktop stack, not a general Moonlight receiver or a tracked VR runtime.
+Disclosure: Daniel, who maintains this list, leads this work.
 A current buying guide dismisses phone viewers as "a neat demo a decade ago" and recommends a [Meta Quest 3S at $349, or a used Quest 2 at around $150](https://vr.org/best-budget-vr-headset), which is sound advice for anyone who can afford it.
 For anyone who cannot, the phone already in their pocket and a few rupees of plastic and glass remain the only full-colour stereo within reach, since the television makers stopped building 3D sets with their 2017 ranges.
 
